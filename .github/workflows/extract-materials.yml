@@ -1,0 +1,29 @@
+name: Extract study slide index
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'materials/**'
+      - 'scripts/extract_materials.py'
+      - '.github/workflows/extract-materials.yml'
+permissions:
+  contents: write
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install python-pptx==1.0.2
+      - run: python scripts/extract_materials.py
+      - name: Commit generated lesson index
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/lessons.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Generate slide-based study index"
+            git push
+          fi
