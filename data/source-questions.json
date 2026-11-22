@@ -1,0 +1,230 @@
+{
+  "source": "CompTIA Security+ SY0-701 lesson slide excerpts",
+  "notice": "Original practice questions authored from the extracted slide previews; verify against the source slides.",
+  "questions": [
+    {
+      "lesson": 1,
+      "domain": 1,
+      "prompt": "A record is changed without permission. Which information-security property was violated?",
+      "options": [
+        "Integrity",
+        "Availability",
+        "Confidentiality",
+        "Non-repudiation"
+      ],
+      "answer": 0,
+      "slide": 4,
+      "explanation": "The Information Security slide describes integrity as data being stored and transferred as intended, with authorized modifications."
+    },
+    {
+      "lesson": 2,
+      "domain": 2,
+      "prompt": "A threat actor already has authorized access to an organization. Which attribute best describes the actor?",
+      "options": [
+        "Internal",
+        "External",
+        "Unauthenticated",
+        "Anonymous"
+      ],
+      "answer": 0,
+      "slide": 5,
+      "explanation": "The Attributes of Threat Actors slide distinguishes internal threats by their existing authorized access."
+    },
+    {
+      "lesson": 3,
+      "domain": 1,
+      "prompt": "Which key decrypts data that was encrypted with the recipient's public key?",
+      "options": [
+        "The matching private key",
+        "A different public key",
+        "The sender's password",
+        "A hash digest"
+      ],
+      "answer": 0,
+      "slide": 7,
+      "explanation": "The Asymmetric Encryption slide describes a public/private key pair and decryption using the private key."
+    },
+    {
+      "lesson": 4,
+      "domain": 4,
+      "prompt": "Which pair meets the slide's definition of multifactor authentication?",
+      "options": [
+        "Password and physical token",
+        "Password and PIN",
+        "Two separate passwords",
+        "PIN and security question"
+      ],
+      "answer": 0,
+      "slide": 7,
+      "explanation": "The Multifactor Authentication slide distinguishes knowledge plus possession from two knowledge factors."
+    },
+    {
+      "lesson": 5,
+      "domain": 3,
+      "prompt": "Which network design groups systems with the same access-control requirements?",
+      "options": [
+        "Security zones",
+        "A flat broadcast domain",
+        "A single shared account",
+        "An unmanaged hub"
+      ],
+      "answer": 0,
+      "slide": 8,
+      "explanation": "The Security Zones slide defines zones as segments whose hosts share security and access-control requirements."
+    },
+    {
+      "lesson": 6,
+      "domain": 3,
+      "prompt": "Which cloud document clarifies what the customer and provider must each secure?",
+      "options": [
+        "Responsibility matrix",
+        "Routing table",
+        "Password history",
+        "Incident ticket"
+      ],
+      "answer": 0,
+      "slide": 6,
+      "explanation": "The Responsibility Matrix slide describes the balance of responsibility between the customer and cloud provider."
+    },
+    {
+      "lesson": 7,
+      "domain": 3,
+      "prompt": "Which technology is specifically listed for tracking mobile assets?",
+      "options": [
+        "Mobile Device Management",
+        "A print server",
+        "A packet repeater",
+        "A public DNS resolver"
+      ],
+      "answer": 0,
+      "slide": 4,
+      "explanation": "The Asset Tracking slide lists MDM among asset tracking and monitoring methods."
+    },
+    {
+      "lesson": 8,
+      "domain": 2,
+      "prompt": "Which description best fits a zero-day vulnerability?",
+      "options": [
+        "A previously unknown software or hardware flaw",
+        "A patch installed on release day",
+        "A device that has reached end of life",
+        "A vulnerability already remediated"
+      ],
+      "answer": 0,
+      "slide": 5,
+      "explanation": "The Zero-Day Vulnerabilities slide describes previously unknown software or hardware flaws."
+    },
+    {
+      "lesson": 9,
+      "domain": 3,
+      "prompt": "Which organization is named as a source of secure configuration benchmarks?",
+      "options": [
+        "Center for Internet Security",
+        "World Trade Organization",
+        "Internet Movie Database",
+        "International Maritime Organization"
+      ],
+      "answer": 0,
+      "slide": 3,
+      "explanation": "The Benchmarks and Secure Configuration Guides slide names CIS and STIGs."
+    },
+    {
+      "lesson": 10,
+      "domain": 4,
+      "prompt": "Which capability is explicitly included under advanced endpoint protection?",
+      "options": [
+        "Endpoint Detection and Response",
+        "Unrestricted local administrator rights",
+        "Disabling patch management",
+        "Cleartext credential storage"
+      ],
+      "answer": 0,
+      "slide": 5,
+      "explanation": "The Advanced Endpoint Protection slide lists EDR, XDR, and host-based intrusion detection/prevention."
+    },
+    {
+      "lesson": 11,
+      "domain": 3,
+      "prompt": "According to the Transport Layer Security slide, which TLS versions should be used?",
+      "options": [
+        "TLS 1.2 or newer",
+        "SSL 2.0 only",
+        "TLS 1.0 only",
+        "SSL 3.0 only"
+      ],
+      "answer": 0,
+      "slide": 4,
+      "explanation": "The Transport Layer Security slide advises TLS 1.2 or newer and disabling older versions."
+    },
+    {
+      "lesson": 12,
+      "domain": 4,
+      "prompt": "Which activity is identified as part of incident response preparation?",
+      "options": [
+        "Establishing a response team and triage process",
+        "Deleting evidence before collection",
+        "Publishing all incident details immediately",
+        "Ignoring the communication plan"
+      ],
+      "answer": 0,
+      "slide": 5,
+      "explanation": "The Preparation slide includes incident-response roles, reporting, categorization and prioritization."
+    },
+    {
+      "lesson": 13,
+      "domain": 2,
+      "prompt": "Which malicious software type is concealed inside a seemingly benign program?",
+      "options": [
+        "Trojan",
+        "Worm",
+        "Tracking cookie",
+        "Patch"
+      ],
+      "answer": 0,
+      "slide": 4,
+      "explanation": "The Malware Classification slide describes trojans as malicious programs concealed within benign ones."
+    },
+    {
+      "lesson": 14,
+      "domain": 5,
+      "prompt": "Which governance document provides step-by-step instructions and checklists?",
+      "options": [
+        "Procedure",
+        "Guideline",
+        "Mission statement",
+        "Asset label"
+      ],
+      "answer": 0,
+      "slide": 5,
+      "explanation": "The Procedures slide describes step-by-step instructions and checklists for repeatable tasks."
+    },
+    {
+      "lesson": 15,
+      "domain": 5,
+      "prompt": "What does inherent risk represent?",
+      "options": [
+        "Risk before mitigation",
+        "Risk remaining after mitigation",
+        "Only risks transferred to insurance",
+        "Only risks accepted by leadership"
+      ],
+      "answer": 0,
+      "slide": 5,
+      "explanation": "The Risk Identification and Assessment slide defines inherent risk as the level before mitigation."
+    },
+    {
+      "lesson": 16,
+      "domain": 5,
+      "prompt": "What term describes legal jurisdiction requirements affecting where data is processed or stored?",
+      "options": [
+        "Data sovereignty",
+        "Network segmentation",
+        "Data compression",
+        "Endpoint isolation"
+      ],
+      "answer": 0,
+      "slide": 5,
+      "explanation": "The Data Sovereignty slide addresses jurisdictional restrictions on data processing and storage."
+    }
+  ]
+}
