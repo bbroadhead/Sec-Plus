@@ -5,6 +5,7 @@ Only excerpts from the slides are emitted. The textbook is not duplicated.
 import json,re
 from pathlib import Path
 from pptx import Presentation
+import fitz
 
 root=Path(__file__).resolve().parents[1]
 out=[]
@@ -28,10 +29,20 @@ for path in sorted((root/'materials').glob('sy0-701_Lesson *.pptx')):
                 'path':'materials/'+path.name,
                 'slideCount':len(prs.slides),
                 'slides':slides})
+# Index the textbook's table of contents without republishing its pages.
+pdf=root/'materials'/'CompTIA Security+ SY0-701 Student.pdf'
+chapters=[]
+if pdf.exists():
+    doc=fitz.open(pdf)
+    for level,title,page in doc.get_toc():
+        title=' '.join(title.split())
+        if title and level<=2:
+            chapters.append({'level':level,'title':title[:180],'page':page})
+    doc.close()
 target=root/'data'/'lessons.json'
 target.parent.mkdir(exist_ok=True)
 target.write_text(json.dumps({'lessons':out,'textbook':{'title':'CompTIA Security+ SY0-701 Student',
     'path':'materials/CompTIA Security+ SY0-701 Student.pdf',
-    'note':'Consult the original textbook for complete explanations; its text is not republished.'}},
+    'note':'Consult the original textbook for complete explanations; its text is not republished.', 'chapters':chapters}},
     ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print('Indexed',len(out),'lessons and',sum(len(x['slides']) for x in out),'slides')
