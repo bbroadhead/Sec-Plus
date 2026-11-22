@@ -1,0 +1,2488 @@
+{
+  "lessons": [
+    {
+      "lesson": 1,
+      "title": "Summarizing Fundamental Security Concepts",
+      "path": "materials/sy0-701_Lesson 01.pptx",
+      "slideCount": 19,
+      "slides": [
+        {
+          "number": 1,
+          "title": "Summarizing Fundamental Security Concepts",
+          "preview": "Lesson 1 • CompTIA Security+ Exam SY0-701"
+        },
+        {
+          "number": 2,
+          "title": "Objectives",
+          "preview": "Summarize information security concepts • Compare and contrast security control types • Describe security roles and responsibilities"
+        },
+        {
+          "number": 3,
+          "title": "Security Concepts",
+          "preview": "Topic 1A • Lesson 1"
+        },
+        {
+          "number": 4,
+          "title": "Information Security",
+          "preview": "Confidentiality​ • Information should only be read by authorized persons • Integrity​ • Data is stored and transferred as intended and any modification is authorized​ • Availability​ • Information is accessible to those authorized to view or modify it​ • Non-repudiation​ • Persons cannot deny creating or modifying data​"
+        },
+        {
+          "number": 5,
+          "title": "Cybersecurity Framework",
+          "preview": ""
+        },
+        {
+          "number": 6,
+          "title": "Gap Analysis",
+          "preview": ""
+        },
+        {
+          "number": 7,
+          "title": "Access Control",
+          "preview": ""
+        },
+        {
+          "number": 8,
+          "title": "Information security",
+          "preview": "CIA triad • Cybersecurity framework • Gap analysis • Access control • IAM and AAA • Security Concepts"
+        },
+        {
+          "number": 9,
+          "title": "Assisted Lab: Exploring the Lab Environment",
+          "preview": "Assisted Lab: Perform System Configuration Gap Analysis"
+        },
+        {
+          "number": 10,
+          "title": "Security Controls",
+          "preview": "Topic 1B • Lesson 1"
+        },
+        {
+          "number": 11,
+          "title": "Security Control Categories​",
+          "preview": "Managerial​ • Give oversight of system​ • Operational​ • Relies on a person for implementation​ • Technical​ • Implemented in operating systems, software, and security appliances​ • Physical • Devices that mediate access to premises and hardware"
+        },
+        {
+          "number": 12,
+          "title": "Security Control Functional Types (1)​",
+          "preview": "Preventive​ • Physically or logically restricts unauthorized access​ • Operates before an attack​ • Detective​ • Identifies attempted or successful intrusion​s • Operates during an attack​ • Corrective​ • Responds to and fixes an incident and may prevent its reoccurrence​ • Operates after an attack​​ • Images © 123rf.com."
+        },
+        {
+          "number": 13,
+          "title": "Security Control Functional Types (2)​",
+          "preview": "Directive​ • Enforces a rule of behavior • Deterrent​ • Psychologically discourages intrusion​s • Compensating​ • Substitutes for a principal control​ • Associated with framework compliance measures"
+        },
+        {
+          "number": 14,
+          "title": "Information Security Roles and Responsibilities​",
+          "preview": "Overall responsibility​ • Chief Information Officer (CIO)​ • Chief Security Officer (CSO)​ • Managerial​ • Technical​ • Information Systems Security Officer (ISSO)​ • Non-technical​ • Due care/liability​ • Image credit: Shannon Fagan © 123rf.com."
+        },
+        {
+          "number": 15,
+          "title": "Information Security Competencies​",
+          "preview": "Risk assessments and testing​ • Specifying, sourcing, installing, and configuring secure devices and software​ • Access control and user privileges​ • Auditing logs and events​ • Incident response​ and reporting • Business continuity and disaster recovery​ • Security training and education programs​"
+        },
+        {
+          "number": 16,
+          "title": "Information Security Business Units​",
+          "preview": "Security Operations Center (SOC)​ • DevSecOps​ • Development, security, and operations​ • Incident response​ • Cyber incident response team (CIRT)​ • Image © gorodenkoff 123RF.com"
+        },
+        {
+          "number": 17,
+          "title": "Security control categories​",
+          "preview": "Managerial, operational, technical, physical • Security control functional types • Preventive, detective, corrective plus directive, deterrent, compensating • Information security roles and responsibilities​ • Information security competencies​ • Information security business units​ • SOC, DevSecOps, and CIRT • Security Controls"
+        },
+        {
+          "number": 18,
+          "title": "Assisted Lab: Configuring Examples of Security Control Types",
+          "preview": ""
+        },
+        {
+          "number": 19,
+          "title": "Summary",
+          "preview": "Lesson 1 • CompTIA Security+ Exam SY0-701"
+        }
+      ]
+    },
+    {
+      "lesson": 2,
+      "title": "Comparing Threat Types",
+      "path": "materials/sy0-701_Lesson 02.pptx",
+      "slideCount": 29,
+      "slides": [
+        {
+          "number": 1,
+          "title": "Comparing Threat Types",
+          "preview": "Lesson 2 • CompTIA Security+ Exam SY0-701"
+        },
+        {
+          "number": 2,
+          "title": "Objectives",
+          "preview": "Compare and contrast attributes and motivations of threat actor types • Explain common threat vectors and attack surfaces"
+        },
+        {
+          "number": 3,
+          "title": "Threat Actors",
+          "preview": "Topic 2A • Lesson 2"
+        },
+        {
+          "number": 4,
+          "title": "Vulnerability, Threat, and Risk​",
+          "preview": ""
+        },
+        {
+          "number": 5,
+          "title": "Attributes of Threat Actors​",
+          "preview": "Known threats versus adversary behaviors​ • Internal/external​ • Internal threats have authorized access already • Attribute of threat actor, not where attack takes place • Level of sophistication/capability​ • Low capability actors rely on commodity tools​ • High capability actors can develop new attacks • Access to political or military assets • Resources/funding​"
+        },
+        {
+          "number": 6,
+          "title": "Motivations of Threat Actors",
+          "preview": "Intent/motivation​ • Maliciously targeted versus opportunistic​ • Accidental/unintentional​ • Strategies • Service disruption, data exfiltration, and disinformation • Chaotic motivations • Financial motivations • Blackmail, extortion, and fraud • Political motivations • Whistleblowers, campaign groups, nation-state actors"
+        },
+        {
+          "number": 7,
+          "title": "Hackers and Hacktivists",
+          "preview": "The “Lone Hacker”​ • White hats versus black hats • Authorized versus non-authorized • Unskilled attackers • “Script kiddies​” • Hacker teams and hacktivists​"
+        },
+        {
+          "number": 8,
+          "title": "Nation-state Actors and Advanced Persistent Threats​",
+          "preview": "Attached to military/secret services • High level of capability​ • Advanced Persistent Threat (APT)​ • Espionage and strategic advantage​ • Deniability​ • False flag operations​ • Screenshot © 2023 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation."
+        },
+        {
+          "number": 9,
+          "title": "Organized Crime and Competitors",
+          "preview": "Organized crime • Operate across legal jurisdictions​ • Motivated by criminal profit​ • Can be very well resourced and funded​ • Competitors​ • Cyber espionage​ and disinformation • Combine with insider threat​"
+        },
+        {
+          "number": 10,
+          "title": "Internal Threat Actors​",
+          "preview": "Malicious internal threat​ • Has or has had authorized access​ • Employees, contractors, partners​ • Sabotage, financial gain, business advantage​ • Unintentional insider threat​ • Weak policies and procedures​ • Weak adherence to policies and procedures​ • Lack of training/security awareness​ • Shadow IT​"
+        },
+        {
+          "number": 11,
+          "title": "Vulnerability, threat, and risk​",
+          "preview": "Attributes of threat actors​ • Internal/external, level of sophistication/capability, resources/funding • Motivations of threat actors • Service disruption, data exfiltration, disinformation • Chaotic, financial, political • Hackers and hacktivists • Nation-state actors and advanced persistent threats​ • Organized crime and competitors • Internal threat actors​ • Threat Actors"
+        },
+        {
+          "number": 12,
+          "title": "Attack Surface",
+          "preview": "Topic 2B • Lesson 2"
+        },
+        {
+          "number": 13,
+          "title": "Attack Surface and Vectors​",
+          "preview": "Attack surface​ • Points where an attacker can discover/exploit vulnerabilities • Physical, network, application​, and human surfaces • Whole organization or single system/app scope • Threat vectors​ • High capability actors can expand attack surface by developing novel vectors"
+        },
+        {
+          "number": 14,
+          "title": "Vulnerable Software Vectors",
+          "preview": "Vulnerable software • Faults in code or design • Delays and difficulties in patching • Unsupported systems and applications • Client-based vs. agentless • Characteristic of automated vulnerability scanners"
+        },
+        {
+          "number": 15,
+          "title": "Network Vectors",
+          "preview": "Remote versus local exploit techniques • Unsecure networks • Lack of confidentiality, integrity, availability • Specific vectors • Direct access and wired (physical ports) • Remote, wireless, cloud, and Bluetooth • Default credentials • Open service port (TCP and UDP ports)"
+        },
+        {
+          "number": 16,
+          "title": "Lure-based Vectors",
+          "preview": "Bait that will tempt the target into opening it • Removable device • Drop attack • Executable file • Trojan Horse malware • Document files • Macro and scripting technologies • Image files • Viewer/browser vulnerabilities"
+        },
+        {
+          "number": 17,
+          "title": "Message-based Vectors",
+          "preview": "Email • Short Message Service (SMS) • Instant messaging (IM) • Web and social media • Voice calls"
+        },
+        {
+          "number": 18,
+          "title": "Supply Chain Attack Surface",
+          "preview": "End-to-end process of designing, manufacturing, and distributing goods and services to a customer • Procurement management • Suppliers, vendors, and business partners • Whole supply chain can be highly complex • Deny threat actors opportunity, time, and resources • Managed service providers (MSPs)"
+        },
+        {
+          "number": 19,
+          "title": "Attack surface and vectors​",
+          "preview": "Vulnerable software • Network vectors • Remote versus local • Direct access, wired, remote/wireless, cloud, Bluetooth, default credentials, open ports • Lure-based vectors • Devices, programs, documents, images • Message-based vectors • Email, SMS, IM, web/social media • Supply chain attack surface • Design, manufacture, distribution • Attack Surface"
+        },
+        {
+          "number": 20,
+          "title": "Assisted Lab: Finding Open Service Ports",
+          "preview": ""
+        },
+        {
+          "number": 21,
+          "title": "Social Engineering",
+          "preview": "Topic 2C • Lesson 2"
+        },
+        {
+          "number": 22,
+          "title": "Human Vectors",
+          "preview": "“Hacking the human”​ • Purposes of social engineering​ • Reconnaissance and eliciting information​ • Intrusion and gaining unauthorized access​ • Many possible scenarios​ • Persuade a user to run a malicious file​ • Contact a help desk and solicit information​ • Gain access to premises and install a monitoring device​"
+        },
+        {
+          "number": 23,
+          "title": "Impersonation and Pretexting​",
+          "preview": "Impersonation​ means pretending to be someone else​ • Persuasiveness/consensus/liking approach • Coercion/threat/urgency approach • Pretexting​ • Exploit situations where identity-proofing is difficult​ • Using a scenario with convincing additional detail​ • Obtain or spoof data that supports the identity claim​"
+        },
+        {
+          "number": 24,
+          "title": "Phishing and Pharming",
+          "preview": "Phishing • Trick target into using a malicious resource​ • Spoof legitimate communications and sites​ • Vishing​ • Using a voice channel​ • SMiShing​ • Using text messaging​​ • Passive techniques have less risk of detection​ • Pharming​ • Redirection by DNS spoofing​"
+        },
+        {
+          "number": 25,
+          "title": "Typosquatting​",
+          "preview": "Make phishing messages more convincing​ • Email spoofing techniques • From field confusion • Typosquatting • Cousin domains that look like a trusted domain"
+        },
+        {
+          "number": 26,
+          "title": "Business Email Compromise",
+          "preview": "Target phishing/vishing/SMiShing to a specific individual • Pose as colleague, business partner, or vendor • Spear phishing, whaling, CEO fraud, angler phishing, … • Brand impersonation and disinformation • Make convincing fake phishing messages, business correspondence, and pharming websites • Disinformation versus misinformation • Watering hole attack • Compromise a third-party site that the threat actor knows is u"
+        },
+        {
+          "number": 27,
+          "title": "Social engineering",
+          "preview": "Human vectors • Impersonation and pretexting​ • Phishing and pharming • Typosquatting​ • Business email compromise • Social Engineering"
+        },
+        {
+          "number": 28,
+          "title": "Assisted Lab: Using SET to Perform Social Engineering",
+          "preview": ""
+        },
+        {
+          "number": 29,
+          "title": "Summary",
+          "preview": "Lesson 2 • CompTIA Security+ Exam SY0-701"
+        }
+      ]
+    },
+    {
+      "lesson": 3,
+      "title": "Explaining Appropriate Cryptographic Solutions",
+      "path": "materials/sy0-701_Lesson 03.pptx",
+      "slideCount": 34,
+      "slides": [
+        {
+          "number": 1,
+          "title": "Explaining Appropriate Cryptographic Solutions",
+          "preview": "Lesson 3 • CompTIA Security+ Exam SY0-701"
+        },
+        {
+          "number": 2,
+          "title": "Objectives",
+          "preview": "Compare and contrast cryptographic algorithms • Explain the importance of public key infrastructure and digital certificates • Explain the importance of using appropriate cryptographic solutions for encryption and key exchange"
+        },
+        {
+          "number": 3,
+          "title": "Cryptographic Algorithms",
+          "preview": "Topic 3A • Lesson 3"
+        },
+        {
+          "number": 4,
+          "title": "Cryptographic Concepts​",
+          "preview": "Encryption and decryption—encoding and decoding​ • Plaintext is the unencoded message​ • Ciphertext is the coded message​ • Cipher is the means of change or algorithm​ • Cryptanalysis is the art of cracking cryptographic systems​ • Meet Alice and Bob (and observe Mallory, lurking)​ • Hashing algorithms​ • Encryption ciphers​ • Symmetric​ • Asymmetric​​"
+        },
+        {
+          "number": 5,
+          "title": "Symmetric Encryption",
+          "preview": "Encryption uses a reversible process (algorithm) based on a ​key that is only known by authorized persons • Substitution​ and transposition​ • Process should be too complex to unravel without the key​ • Symmetric algorithms • Same secret key is used for encryption and decryption​ • Fast—suitable for bulk encryption of large amounts of data​ • Problem storing and distributing key securely​ • Confidentiality only— send"
+        },
+        {
+          "number": 6,
+          "title": "Key Length",
+          "preview": "Key ensures ciphertext remains protected even when the operation of the algorithm is known​ • Range of key values is the keyspace​ • Longer key bit length means a larger keyspace​ • Protects against brute force cryptanalysis • Advanced Encryption Standard (AES/AES256)​ • 256-bit key is exponentially stronger than 128-bit key • Larger keys use more CPU/memory/power resources"
+        },
+        {
+          "number": 7,
+          "title": "Asymmetric Encryption​",
+          "preview": "Public/private key pair​ • If the public key encrypts, only the private key can decrypt​ • Private key cannot be derived from the public key​ • Private key must be kept secret​ • Public key is easy to distribute (anyone can have it)​ • Used for small amounts of authentication data​ • Different ciphers have different recommended key lengths • Rivest, Shamir, Adelman (RSA) cipher (2,048-bit or better) • Elliptic Curve "
+        },
+        {
+          "number": 8,
+          "title": "Hashing",
+          "preview": "Fixed length digest from variable string with cryptographic properties​ • One-way (plaintext cannot be recovered from the digest)​ • Anti-collision (no two plaintexts are likely to produce the same digest)​ • Used for password storage and checksums (integrity)​ • Secure Hash Algorithm (SHA)​ • 256-bit or better • Message Digest Algorithm (MD5)​ • 128-bit only • Images © 123rf.com."
+        },
+        {
+          "number": 9,
+          "title": "Digital Signatures​",
+          "preview": "Using public key cryptography with hashing​ • Digital signatures provide integrity, authentication, non-repudiation​"
+        },
+        {
+          "number": 10,
+          "title": "Cryptographic concepts​",
+          "preview": "Symmetric encryption • Same secret key encrypts and decrypts • Key length • Asymmetric encryption​ • Public/private key pair • Hashing • Non-reversible • Digital signatures​ • Sign message hash with private key and validate with public key • Cryptographic Algorithms"
+        },
+        {
+          "number": 11,
+          "title": "Applied Lab: Using Storage Encryption",
+          "preview": ""
+        },
+        {
+          "number": 12,
+          "title": "Public Key Infrastructure",
+          "preview": "Topic 3B • Lesson 3"
+        },
+        {
+          "number": 13,
+          "title": "Certificate Authorities​",
+          "preview": "Public key infrastructure (PKI) • Prove identity of a public key holder (subject user or computer) • Certificate authority (CA) • Repository of certificates and public keys issued to verified subjects • Third-party CA • Entity that has established widespread trust in its policies and procedures for issuing certificates"
+        },
+        {
+          "number": 14,
+          "title": "Digital Certificates​",
+          "preview": "Contains subject’s public key​ • Information identifying the subject plus usage and validity​ • Digital certificate standards​ • X.509 Public Key Infrastructure (PKIX)​ • PKCS (Public Key Cryptography Standards)​​"
+        },
+        {
+          "number": 15,
+          "title": "Root of Trust​",
+          "preview": "Root certificate • Self-signed, so users must trust in the CA’s security procedures • Single CA​ • CA issues certificates directly to subjects • Hierarchical/chain of trust​ • Root CA​ • Intermediate CAs​ • Leaf certificates​ • Self-signed certificates • Use certificate security without PKI, but provide no root of trust • Screenshot used with permission from Microsoft."
+        },
+        {
+          "number": 16,
+          "title": "Certificate Signing Requests",
+          "preview": "Registration identification and authentication procedures​ • Certificate Signing Request (CSR)​ • Subject generates key pair and sends public key to CA with CSR​ • Subject does NOT send private key: this must be kept known to the subject • CA performs subject identity checks​ • CA signs and issues certificate​"
+        },
+        {
+          "number": 17,
+          "title": "Subject Name Attributes​",
+          "preview": "Common Name (CN)​ • Legacy method of recording fully qualified domain name (FQDN​) • Deprecated by standards​ • BUT still used in many implementations​ • Subject Alternative Name (SAN)​ • Structured identifiers​: name and/or IP address • List multiple host/subdomains​ • Use wildcard subdomain​​ • Screenshot used with permission from Microsoft."
+        },
+        {
+          "number": 18,
+          "title": "Certificate Revocation​",
+          "preview": "Revocation versus suspension​ • Reason codes​ • Certificate Revocation List (CRL)​ • List of revoked and suspended certificates​ • Browser CRL checking​ • Online Certificate Status Protocol (OCSP) ​ • Client queries single certificate per transaction​ • Provide real-time status information (though some rely on CRLs)​ • Screenshot used with permission from Microsoft."
+        },
+        {
+          "number": 19,
+          "title": "Key Management​",
+          "preview": "Key lifecycle​ • Key generation​ • Storage​ • Revocation​ • Expiration and renewal​ • Decentralized key management • Each host or user account stores its own private key • Key management system • Keys are generated and stored on a centralized server • Key Management Interoperability Protocol (KMIP)"
+        },
+        {
+          "number": 20,
+          "title": "Cryptoprocessors and Secure Enclaves",
+          "preview": "Key generation challenges • Entropy and random number generation • Tamper-evident storage • Trusted Platform Module (TPM)​ • Cryptoprocessor implemented on CPU (or motherboard) • Hardware Security Module (HSM)​ • Cryptoprocessor in removable or dedicated hardware form factor (or virtual appliance) • Reduced attack surface and tamper-evident​ • Secure enclave • Protect keys loaded in system memory"
+        },
+        {
+          "number": 21,
+          "title": "Key Escrow​",
+          "preview": "Keys can be backed up to protect against data loss​ • Anyone with access to backup keys could impersonate the true key holder​ • Escrow backup​ • Placing archived keys with a trusted third party​ • M-of-N control • Key recovery processes can be protected by M of N control​ • Split key into multiple parts held by different key recovery agents"
+        },
+        {
+          "number": 22,
+          "title": "Certificate authorities​",
+          "preview": "Digital certificates​ • Root of trust​ • Certificate signing requests • Subject name attributes​ • Certificate revocation​ • Key management​ • Cryptoprocessors and secure enclaves • Key escrow​ • Public Key Infrastructure"
+        },
+        {
+          "number": 23,
+          "title": "Cryptographic Solutions",
+          "preview": "Topic 3C • Lesson 3"
+        },
+        {
+          "number": 24,
+          "title": "Encryption Supporting Confidentiality",
+          "preview": "Data states • Data at rest, data in transit, data in use • Bulk encryption • Using a private asymmetric key is inefficient for large amounts of data • Private key (key encryption key) is used to encrypt a symmetric key (media/data encryption key)"
+        },
+        {
+          "number": 25,
+          "title": "Disk and File Encryption",
+          "preview": "Data at rest storage levels • Full disk and partition encryption • Encrypt whole disk or partition on disk • Often performed by drive firmware (self-encrypting) • Volume and file encryption • Often performed by OS/software • Usually requires file system support"
+        },
+        {
+          "number": 26,
+          "title": "Database Encryption",
+          "preview": "Structured data • Tables, columns (fields), and rows (records) • Database Management System (DBMS) • Structured Query Language (SQL) • Database-level encryption • Page-level decryption and encryption as data is moved from disk to memory • Record-level encryption • Cell/column versus record-level • Enforce fine-grained access controls to support compliance requirements for privacy/security"
+        },
+        {
+          "number": 27,
+          "title": "Transport Encryption and Key Exchange",
+          "preview": ""
+        },
+        {
+          "number": 28,
+          "title": "Perfect Forward Secrecy",
+          "preview": ""
+        },
+        {
+          "number": 29,
+          "title": "Salting and Key Stretching",
+          "preview": "Password hashes • User-generated data is low entropy​ • Brute force attack discovers value by generating every possible value and finding a match • Salting​ • Add a random value to each password when hashing it for storage​ • Prevents use of pre-computed hash tables​ • Key stretching​ • Use additional rounds to strengthen keys​ • Makes attacker do more work, so slows down brute force​​"
+        },
+        {
+          "number": 30,
+          "title": "Blockchain",
+          "preview": "Expanding list of transactional records (blocks)​ • Each block is linked by hashing​ • Open public ledger​ • Ledger of transactions performed on a digital asset​ • Peer-to-peer so transactions are public​ • Transactions cannot be deleted or reversed​ • Widely used for cryptocurrencies​ • Potential uses for financial transactions, online voting systems, identity management systems, notarization, data storage, …​"
+        },
+        {
+          "number": 31,
+          "title": "Obfuscation",
+          "preview": "Steganography • Concealing messages within a covertext​ • Often uses file data that can be manipulated without introducing obvious artifacts​ • Covert channels​ • Data masking • Redacting information from fields • Tokenization • Substituting data with token • Reversible with access to the token server • De-identification"
+        },
+        {
+          "number": 32,
+          "title": "Encryption supporting confidentiality",
+          "preview": "Disk and file encryption • Database encryption • Transport encryption and key exchange • Perfect forward secrecy • Salting and key stretching • Blockchain • Obfuscation • Cryptographic Solutions"
+        },
+        {
+          "number": 33,
+          "title": "Assisted Lab: Using Hashing and Salting",
+          "preview": ""
+        },
+        {
+          "number": 34,
+          "title": "Summary",
+          "preview": "Lesson 3 • CompTIA Security+ Exam SY0-701"
+        }
+      ]
+    },
+    {
+      "lesson": 4,
+      "title": "Implement Identity and Access Management",
+      "path": "materials/sy0-701_Lesson 04.pptx",
+      "slideCount": 34,
+      "slides": [
+        {
+          "number": 1,
+          "title": "Implement Identity and Access Management",
+          "preview": "Lesson 4 • CompTIA Security+ Exam SY0-701"
+        },
+        {
+          "number": 2,
+          "title": "Objectives",
+          "preview": "Implement password-based and multifactor authentication • Implement account policies and authorization solutions • Implement single sign-on and federated identity solutions"
+        },
+        {
+          "number": 3,
+          "title": "Authentication",
+          "preview": "Topic 4A • Lesson 4"
+        },
+        {
+          "number": 4,
+          "title": "Authentication Design​",
+          "preview": "Meet requirements for confidentiality, integrity, and availability​ • Keeps credentials secure​ (confidentiality • Threat actors cannot bypass or subvert the authentication mechanism​ (integrity​) • Mechanism does not cause undue delay or support issues​ (availability​) • Something you know​: knowledge factor​ • Password​ • Personal identification number (PIN)​ • Screenshot used with permission from Microsoft."
+        },
+        {
+          "number": 5,
+          "title": "Password Concepts",
+          "preview": "Length​ • Complexity​ • Character combinations​ • Aging​ • Reuse​ and history • Expiration • NIST guidance​ • Password hints​"
+        },
+        {
+          "number": 6,
+          "title": "Password Managers",
+          "preview": "Vault and master password • Built-in OS/browser password managers • Third-party cloud/plug-in • Per-site password generation • Secure filling"
+        },
+        {
+          "number": 7,
+          "title": "Multifactor Authentication​",
+          "preview": "Multifactor authentication (MFA)​ • Something you KNOW and something you HAVE​ • NOT something you KNOW and something else you KNOW • Something you have​ • Ownership factor​: hardware tokens and fobs​ • Something you are/do​ • Biometric factor​​​: fingerprint and facial scans • Somewhere you are​ • Geolocation via location services​ • IP/network location"
+        },
+        {
+          "number": 8,
+          "title": "Biometric Authentication​",
+          "preview": "Android is a trademark of Google LLC. • Enrollment​ • Sensor and feature extraction​ • Sensor/camera types • Efficacy rates and considerations​ • False Rejection Rate (FRR) or Type I error​ • False Acceptance Rate (FAR) or Type II error​ • Throughput, cost, and inaccessibility • Fingerprint recognition • Facial recognition"
+        },
+        {
+          "number": 9,
+          "title": "Hard Authentication Tokens",
+          "preview": "Token generation types • Certificate-based (requires PKI) • One-time password (OTP) • Fast Identity Online (FIDO) Universal 2nd Factor (U2F) • Authenticator form factors • Smart card • One-time password (OTP)​ fob • Security key • Activation method to show presence • Image © 123RF.com."
+        },
+        {
+          "number": 10,
+          "title": "Soft Authentication Tokens",
+          "preview": "Transmit a code via an out-of-band channel​ • Short message service (SMS)​ • Email account​ • Phone call​ • Push notification​ • Authenticator app • Possibility of interception​​"
+        },
+        {
+          "number": 11,
+          "title": "Passwordless Authentication",
+          "preview": "Rely on authenticator rather than password • Accounts identified by public/private key pair, but doesn’t have to use PKI • Private key stored only on authenticator • Authenticator can require biometric or PIN proof of presence (local gesture) • Attestation • Verify authenticator as root of trust"
+        },
+        {
+          "number": 12,
+          "title": "Authentication",
+          "preview": "Authentication design​ • Something you know/are/have • Password concepts and password managers • Multifactor authentication​ • Biometric authentication​ • Hard authentication tokens • Smart cards, OTP generators, FIDO U2F • Soft authentication tokens • Two-step verification • Passwordless authentication"
+        },
+        {
+          "number": 13,
+          "title": "Assisted Lab Managing Password Security",
+          "preview": ""
+        },
+        {
+          "number": 14,
+          "title": "Access Management",
+          "preview": "Topic 4B • Lesson 4"
+        },
+        {
+          "number": 15,
+          "title": "Discretionary and Mandatory Access Control​",
+          "preview": "Access control model determines how users receive permissions/rights​ • Discretionary Access Control (DAC)​ • Based on resource ownership​ • Access Control Lists (ACLs)​ • Vulnerable to compromised privileged user accounts​ • Mandatory Access Control (MAC)​ • Labels and clearance​ • System policies to restrict access​"
+        },
+        {
+          "number": 16,
+          "title": "Role-based and Attribute-Based Access Control​",
+          "preview": "Role-Based Access Control (RBAC)​ • Non-discretionary and more centralized control​ • Based on defining roles then allocating users to roles​ • Users should only inherit role permissions to perform particular tasks​​ • Security groups • Assign permissions to security groups and assign user accounts to relevant groups​ • Groups can be mapped to roles • Attribute-Based Access Control (ABAC)​ • Access decisions based on"
+        },
+        {
+          "number": 17,
+          "title": "Rule-Based Access Control​",
+          "preview": "Non-discretionary​ • System determines rules, not users​ • MAC, RBAC, and ABAC • Conditional access​ • Continual authentication​ • User account control (UAC)​ and sudo"
+        },
+        {
+          "number": 18,
+          "title": "Least Privilege Permission Assignments",
+          "preview": "Principle of least privilege • Sufficient permissions only • Implications • Insufficient permissions • Authorization creep • Auditing"
+        },
+        {
+          "number": 19,
+          "title": "User Account Provisioning",
+          "preview": "Provisioning • Identity proofing • Issuing credentials​ • Asset allocation ​ • Policy awareness and security education • Permission assignments and implications • Deprovisioning • Employees or contractors leaving company or project, or changing roles • Remove or disable permission assignments"
+        },
+        {
+          "number": 20,
+          "title": "Account Attributes and Access Policies​",
+          "preview": "Account attributes​ • Security identifier (SID, account name, credential​) • Extended profile attributes​ • Per-app settings and files​ • Access policies​ • File permissions​ • Access rights​ • Active Directory Group Policy Objects (GPOs)​ • Screenshot used with permission from Microsoft."
+        },
+        {
+          "number": 21,
+          "title": "Account Restrictions​",
+          "preview": "Location-based policies • Network/logical location • Geolocation​ • By IP address​ • By Location Services​ • Time-based restrictions​ • Logon hours​ • Logon duration​ • Impossible travel time/risky login​ • Temporary permissions"
+        },
+        {
+          "number": 22,
+          "title": "Privileged Access Management",
+          "preview": "Policies, procedures, and technical controls to prevent the malicious abuse of privileged accounts​ • Accounts with system-wide access • Secure administrative workstations • Policies​ for zero standing privileges for administrators • Temporary elevation • Password vaulting/brokering • Ephemeral credentials"
+        },
+        {
+          "number": 23,
+          "title": "Discretionary and mandatory access control​",
+          "preview": "Role-based and attribute-based access control​ • Rule-based access control​ • Least privilege permission assignments • User account provisioning • Identity proofing, secure credentials, asset allocation, policy/awareness training, permissions assignments • Account attributes and access policies​ • Account restrictions​ • Location- and time-based • Privileged access management • Zero standing privileges and ephemeral/"
+        },
+        {
+          "number": 24,
+          "title": "Assisted Lab: Managing Permissions",
+          "preview": ""
+        },
+        {
+          "number": 25,
+          "title": "Identity Management",
+          "preview": "Topic 4C • Lesson 4"
+        },
+        {
+          "number": 26,
+          "title": "Local , Network, and Remote Authentication​",
+          "preview": "Authentication providers​ • Passwords versus password hashes​ • Windows authentication​ • Local sign-in​ • Network sign-in (Kerberos and NTLM)​ • Remote sign-in​ • Linux authentication​ • /etc/passwd and /etc/shadow​ • Pluggable authentication modules (PAMs)​"
+        },
+        {
+          "number": 27,
+          "title": "Directory Services​",
+          "preview": "Database of subjects​ • Users, computers, security groups/roles, and services​ • Access Control Lists (authorizations)​ • X.500 and Lightweight Directory Access Protocol (LDAP)​ • Distinguished names​ • Attribute=Value pairs​​ • CN=WIDGETWEB, OU=Marketing, O=Widget, C=UK, DC=widget, DC=foo"
+        },
+        {
+          "number": 28,
+          "title": "Single Sign-on Authentication​",
+          "preview": "Kerberos • Clients​ • Application servers​ • Key Distribution Center (KDC)​ • Authentication Service – Ticket Granting Ticket​ • Ticket Granting Service – Service Ticket​​"
+        },
+        {
+          "number": 29,
+          "title": "Single Sign-on Authorization​",
+          "preview": "Images © 123rf.com."
+        },
+        {
+          "number": 30,
+          "title": "Federation",
+          "preview": "Networks under separate administrative control share user identities • Identity providers and claims • Interoperability • Service providers and identity providers • Shared frameworks and protocols • Images © 123rf.com."
+        },
+        {
+          "number": 31,
+          "title": "Security Assertion Markup Language​",
+          "preview": "Open standard for implementing identity and service provider communications​ • Attestations/assertions​ • XML format​ • Signed using XML signature specification​ • Communications protocols​ • HTTPS​ • Simple Object Access Protocol (SOAP)​​"
+        },
+        {
+          "number": 32,
+          "title": "Open Authorization",
+          "preview": "“User-centric” federated services better suited to consumer websites​ • Representational State Transfer (REST) Application Programming Interfaces (APIs) (RESTful APIs)​ • Framework for implementation not a protocol​ • OAuth​ • Designed to communicate authorizations, rather than explicitly authenticate a subject​ • Client sites and apps interact with OAuth IdPs and resource servers that hold the principal’s account/da"
+        },
+        {
+          "number": 33,
+          "title": "Local, network, and remote authentication​",
+          "preview": "Directory services​ • LDAP and distinguished name attributes • Single sign-on authentication​ and authorization • Kerberos • Federation • Identity providers and service providers • Security Assertion Markup Language​ • Open authorization (OAuth) • Identity Management"
+        },
+        {
+          "number": 34,
+          "title": "Summary",
+          "preview": "Lesson 4 • CompTIA Security+ Exam SY0-701"
+        }
+      ]
+    },
+    {
+      "lesson": 5,
+      "title": "Maintain Enterprise Campus Network Architecture",
+      "path": "materials/sy0-701_Lesson 05.pptx",
+      "slideCount": 37,
+      "slides": [
+        {
+          "number": 1,
+          "title": "Maintain Enterprise Campus Network Architecture",
+          "preview": "Lesson 5 • CompTIA Security+ Exam SY0-701"
+        },
+        {
+          "number": 2,
+          "title": "Objectives",
+          "preview": "Compare and contrast security implications of different on-premises network architecture models • Apply security principles to secure on-premises network architecture • Select effective controls to secure on-premises network architecture • Ensure secure communications for remote access and tunneling"
+        },
+        {
+          "number": 3,
+          "title": "Enterprise Network Architecture",
+          "preview": "Topic 5A • Lesson 5"
+        },
+        {
+          "number": 4,
+          "title": "Architecture and Infrastructure Concepts",
+          "preview": "Selection and placement • Infrastructure (media, appliances, addressing/forwarding for connectivity) • Applications/services • Data • Workflows • Access • Email mailbox server • Mail transfer server"
+        },
+        {
+          "number": 5,
+          "title": "Network Infrastructure",
+          "preview": "Images © 123rf.com."
+        },
+        {
+          "number": 6,
+          "title": "Switching Infrastructure Considerations",
+          "preview": "Topology of nodes and links • Physical versus logical • On-premises networks • Office/campus • Structured cabling • Hierarchical design • Limit size of broadcast domains • Enforce segmentation • Images © 123rf.com."
+        },
+        {
+          "number": 7,
+          "title": "Routing Infrastructure Considerations",
+          "preview": "Layer 3 logical segmentation • Networks and subnetworks (subnets) • Internet Protocol (IP) • IPv4 and IPv6 • Network prefix/subnet mask • Virtual LAN (VLAN) • Map layer 2 switch port topology to layer 3 IP subnet topology • Makes logical topology independent of port location on physical switches"
+        },
+        {
+          "number": 8,
+          "title": "Security Zones",
+          "preview": "Segment containing hosts with same access control/security requirements • Public versus private • Database and file servers • Compartmentalize different types of data assets • Client devices • Public-facing app servers • Network infrastructure servers"
+        },
+        {
+          "number": 9,
+          "title": "Attack Surface",
+          "preview": "Points at which threat actor can gain access • Layer 1/2 versus layer 3 versus layer 4/7 • Defense in depth and layered security controls • What problems arise from weaknesses in the network design/architecture? • Single points of failure • Complex dependencies • Availability over confidentiality and integrity • Lack of documentation and change control • Overdependence on perimeter security"
+        },
+        {
+          "number": 10,
+          "title": "Port Security",
+          "preview": "Physical port security and administratively disabled ports • MAC filtering and limiting • 802.1X, EAP, and RADIUS • Supplicant (user’s computer) • Authenticator/RADIUS client (switch) • Authentication/RADIUS server • IEEE 802.1X allows switches to implement EAP over LAN (EAPoL) • Extensible Authentication Protocol (EAP) provides framework for authentication methods/factors • Remote Authentication Dial-in User Service"
+        },
+        {
+          "number": 11,
+          "title": "Physical Isolation",
+          "preview": "Single host or group of hosts not connected to any other network • Air gapped • Difficult to manage • Updates via media devices"
+        },
+        {
+          "number": 12,
+          "title": "Architecture Considerations (1)",
+          "preview": "Cost • Upfront capital cost and loss of value through depreciation • Ongoing maintenance and support • Compute and responsiveness • Reduce workload processing time • Scalability and ease of deployment • Minimize costs associated with increasing (or decreasing) workloads"
+        },
+        {
+          "number": 13,
+          "title": "Architecture Considerations (2)",
+          "preview": "Availability • Minimize downtime • Resilience and ease of recovery • Reduce time taken to recover from failures • Power • Costs of high compute resources and reliability of infrastructure • Patch availability • Mitigate vulnerabilities • Inability patch due to third-party management or lack of vendor support • Risk transference • Contracting infrastructure to third-parties"
+        },
+        {
+          "number": 14,
+          "title": "Architecture and infrastructure concepts",
+          "preview": "Media, applications/services, data supporting workflows • Network infrastructure • OSI layer model • Switching and routing infrastructure considerations • Security zones and attack surface • Port security and physical isolation • MAC filtering, 802.1X/EAP/RADIUS • Architecture considerations • Cost, compute/responsiveness, scalability/ease of deployment, availability, resilience/ease of recovery, power, patch availab"
+        },
+        {
+          "number": 15,
+          "title": "Network Security Appliances",
+          "preview": "Topic 5B • Lesson 5"
+        },
+        {
+          "number": 16,
+          "title": "Device Placement",
+          "preview": "Selection of effective controls • Enforce segmentation, apply access controls, monitor traffic • Defense in depth • Zone border (mostly preventive) • Within zone (mostly detective) • Endpoint controls (preventive, detective, and corrective)"
+        },
+        {
+          "number": 17,
+          "title": "Device Attributes",
+          "preview": "Active versus passive • Passive controls don’t require hosts to be configured to use them (and might not be detectable by hosts) • Active controls require host configuration or software agents • Inline versus tap/monitor • Inline is installed as part of cable path (“bump-in-the-wire”) • Switched port analyzer (SPAN) or mirror port • Test access point (TAP) • Fail-open • Preserves access on fail to prioritize availabi"
+        },
+        {
+          "number": 18,
+          "title": "Firewalls",
+          "preview": "Enforce a network access control list (ACL) • Packet filtering inspects headers only • Source and destination IP address • Protocol ID/type (TCP, UDP, ICMP, routing protocols, and so on) • Source and destination port numbers (TCP or UDP application type) • Drop/deny/reject or accept/permit a packet (and/or log) • Inbound, outbound, or both • Placement and attributes • Routed, bridged, or inline placement • Firewall a"
+        },
+        {
+          "number": 19,
+          "title": "Layer 4 and Layer 7 Firewalls",
+          "preview": "Stateful inspection validates connections • State table stores connection information • Transport layer (layer 4) • TCP handshake • New versus established and related connections • Application layer (layer 7) • Validate protocol and match threat signatures • Application layer gateway, stateful multilayer inspection, or deep packet inspection • Application-specific filtering • Screenshot used with permission from Rubi"
+        },
+        {
+          "number": 20,
+          "title": "Proxy Servers",
+          "preview": "Forward proxy server • Proxy opens connections with external servers on behalf of internal clients • Application-specific filters • Non-transparent and transparent proxies • User authentication • Reverse proxy server • Proxy opens connections with internal servers on behalf of external clients"
+        },
+        {
+          "number": 21,
+          "title": "Intrusion Detection Systems",
+          "preview": "Sensor captures traffic • Placement • Inline versus mirror/tap/monitor • Intrusion Detection System (IDS) • Detection engine performs real-time analysis of indicators • Passive logging/alerting • Intrusion Prevention System (IPS) • Active response (block, reset, redirect) • Inline response versus integration with other security tools • Screenshot Security Onion securityonion.net"
+        },
+        {
+          "number": 22,
+          "title": "Next-generation Firewalls and Unified Threat Management",
+          "preview": "Next-generation firewall • Application-aware filtering, user account-based filtering, IPS, cloud inspection, … • Unified threat management (UTM) • Combining security controls into single agent and management platforms • Firewall, anti-malware, network intrusion prevention, spam filtering, content filtering, data loss prevention, VPN, cloud access gateway, …"
+        },
+        {
+          "number": 23,
+          "title": "Load Balancers",
+          "preview": "Distributes requests across farm or pool of servers (nodes) • Layer 4 load balancer • Layer 7 load balancer (content switch) • Scheduling • Round robin • Fewest existing connections / best response time • Weighting • Heartbeat and health checks • Source IP affinity • Session persistence • Images © 123rf.com."
+        },
+        {
+          "number": 24,
+          "title": "Web Application Firewalls",
+          "preview": "Able to inspect code in HTTP packets • Matches suspicious code to vulnerability database • Can be implemented as software on host or as appliance • Screenshot used with permission from Microsoft."
+        },
+        {
+          "number": 25,
+          "title": "Device placement",
+          "preview": "Defense in depth plus use of preventive, detective, and corrective controls • Device attributes • Active versus passive, inline versus TAP/monitor, fail-open versus fail-closed • Firewalls (layer 4/7) • Proxy servers • Intrusion detection systems • Next-generation firewalls and unified threat management • Load balancers • Web application firewalls • Network Security Appliances"
+        },
+        {
+          "number": 26,
+          "title": "Virtual Private Networks",
+          "preview": "Topic 5C • Lesson 5"
+        },
+        {
+          "number": 27,
+          "title": "Remote Access Architecture (1)",
+          "preview": "Images © 123RF.com."
+        },
+        {
+          "number": 28,
+          "title": "Remote Access Architecture (2)",
+          "preview": "Images © 123RF.com."
+        },
+        {
+          "number": 29,
+          "title": "Transport Layer Security Tunneling",
+          "preview": "Use TLS to negotiate a secure connection • Machines authenticated by PKI certificates • Mutual authentication allows VPN gateway to authenticate client certificates • User account authentication via RADIUS • Tunnel network traffic over TLS • Can use TCP or UDP • Screenshot used with permission from Rubicon Communications, LLC."
+        },
+        {
+          "number": 30,
+          "title": "Internet Protocol Security Tunneling",
+          "preview": "Provides confidentiality and/or integrity • Authentication Header (AH) • Signs packet but does not encrypt payload • Provides authentication/integrity only • Encapsulation Security Payload (ESP) • Provides confidentiality and/or authentication/integrity • Modes • Transport mode for host-to-host connections on a private network • Tunnel mode between gateways across an unsecure network • Screenshot used with permission"
+        },
+        {
+          "number": 31,
+          "title": "Internet Key Exchange",
+          "preview": "Establishes Security Association (SA) between peers • Phase I provides authentication • PKI/certificates • Pre-shared key • Phase II establishes cipher suites and key sizes and use of AH or ESP • IKE v1 supports host-to-host and site-to-site tunneling • IKE v2 adds better support for client-to-site remote access VPN • Screenshot used with permission from Rubicon Communications, LLC."
+        },
+        {
+          "number": 32,
+          "title": "Remote Desktop",
+          "preview": "GUI-based remote terminal software • Remote Desktop Protocol (RDP) • Connect to physical machines • RDP gateway to virtual desktops and apps • HTML5/clientless • Access desktops and web applications from Internet via gateway to internal network • Browser support for canvas element plus WebSockets"
+        },
+        {
+          "number": 33,
+          "title": "Secure Shell",
+          "preview": "Remote administration with public key cryptography security • Host key identifies server • Client authentication • Username/password • Public key authentication • Kerberos • Key management • SSH commands • ssh versus scp (Secure Copy) • Screenshot used with permission from PuTTY."
+        },
+        {
+          "number": 34,
+          "title": "Out-of-band Management and Jump Servers",
+          "preview": "Images © 123rf.com. • Secure admin workstations (SAWs) • Out-of-band (OOB) management • Serial/modem/console port • Virtual terminal • Separate cabling or VLAN isolation • Jump servers • Single host accepts SSH or RDP connections from SAWs • Forwards connections to app servers • App servers only accept connections from jump server"
+        },
+        {
+          "number": 35,
+          "title": "Remote access architecture",
+          "preview": "Tunneling, client-to-site remote access VPN, site-to-site VPN • Transport Layer Security (TLS) tunneling • Internet Protocol Security (IPSec) tunneling • Internet Key Exchange • Remote Desktop • Secure Shell • Out-of-band management and jump servers • Virtual Private Networks"
+        },
+        {
+          "number": 36,
+          "title": "Assisted Lab: Setting up Remote Access",
+          "preview": "Assisted Lab: Using IPSec Tunneling"
+        },
+        {
+          "number": 37,
+          "title": "Summary",
+          "preview": "Lesson 5 • CompTIA Security+ Exam SY0-701"
+        }
+      ]
+    },
+    {
+      "lesson": 6,
+      "title": "Secure Cloud Network Architecture",
+      "path": "materials/sy0-701_Lesson 06.pptx",
+      "slideCount": 33,
+      "slides": [
+        {
+          "number": 1,
+          "title": "Secure Cloud Network Architecture",
+          "preview": "Lesson 6 • CompTIA Security+ Exam SY0-701"
+        },
+        {
+          "number": 2,
+          "title": "Cloud Infrastructure",
+          "preview": "Topic 6A • Lesson 6"
+        },
+        {
+          "number": 3,
+          "title": "Cloud Deployment Models",
+          "preview": "Public (or multi-tenant) • Private • Hosted Private • Community • Hybrid Cloud"
+        },
+        {
+          "number": 4,
+          "title": "Cloud Deployment Models",
+          "preview": "Security Considerations • Single-tenant architecture • Multi-tenant architecture • Hybrid architecture • Serverless architecture"
+        },
+        {
+          "number": 5,
+          "title": "Cloud Service Models",
+          "preview": "Models • Software as a Service • Platform as a Service • Infrastructure as a Service • Third-Party Vendors"
+        },
+        {
+          "number": 6,
+          "title": "Responsibility Matrix",
+          "preview": "Describes the balance of responsibility between a customer and a cloud service provider • Responsibility model"
+        },
+        {
+          "number": 7,
+          "title": "Responsibility Matrix",
+          "preview": "Cloud Service Provider • Physical security of the infrastructure • Securing computer, storage, and network equipment • Securing foundational elements of networking, such as DDoS protection • Cloud storage backup and recovery • Security of cloud infrastructure resource isolation among tenants • Tenant resource identity and access control • Security, monitoring, and incident response for the infrastructure • Securing a"
+        },
+        {
+          "number": 8,
+          "title": "Responsibility Matrix",
+          "preview": "Cloud Service Customer • User identity management • Configuring the geographic location for storing data and running services • User and service access controls to cloud resources • Data and application security configuration • Protection of operating systems, when deployed • Use and configuration of encryption, especially the protection of keys"
+        },
+        {
+          "number": 9,
+          "title": "Centralized and Decentralized Computing",
+          "preview": "Centralized computing architecture • All data processing and storage is performed in a single location • All users and devices rely on the central server/authority • Decentralized computing architecture • Data processing and storage distributed across multiple locations or devices • Increasingly important design trend impacting modern infrastructures"
+        },
+        {
+          "number": 10,
+          "title": "Centralized and Decentralized Computing",
+          "preview": "Decentralized computing examples • Blockchain • Peer-to-peer (P2P) • Content Delivery Networks (CDNs) • Internet of Things (IoT) • Distributed databases • TOR (The Onion Router)"
+        },
+        {
+          "number": 11,
+          "title": "Resilient Architecture Concepts",
+          "preview": "Replication • High Availability Across Zones • Local replication • Regional replication • Geo-redundant storage (GRS)"
+        },
+        {
+          "number": 12,
+          "title": "Application Virtualization and Container Virtualization",
+          "preview": "Application virtualization • Containerization • Container versus virtual machine • Comparison of VMs versus containers."
+        },
+        {
+          "number": 13,
+          "title": "Cloud Architecture",
+          "preview": "Virtual Private Cloud (VPC) • A cloud computing model in which the cloud provider manages the infrastructure and automatically allocates resources as needed, charging only for the actual usage of the application • Serverless Computing • A private network segment made available to a single cloud consumer on a public cloud • Microservices • An architectural approach to building software applications as a collection of "
+        },
+        {
+          "number": 14,
+          "title": "Cloud Automation Technologies",
+          "preview": "Infrastructure as Code (IaC) • Responsiveness • Load Balancing • Edge Computing • Auto-Scaling"
+        },
+        {
+          "number": 15,
+          "title": "Software Defined Networking",
+          "preview": "Network functions are divided into three “planes” • Control plane • Decisions about how traffic should be prioritized, secured, and where it should be switched • Data plane • Handles the switching and routing of traffic and imposition of security access controls • Management plane • Monitors traffic conditions and network status"
+        },
+        {
+          "number": 16,
+          "title": "Software Defined Networking",
+          "preview": "SDN is an important part of the latest automation and orchestration technologies • SDN architecture reduces complexity of enforcing security policy • Enables fully automated deployment (or provisioning) of network links, appliances, and servers • Data plane devices managed by a control plane device and monitored by a management plane. (Images © 123RF.com.)"
+        },
+        {
+          "number": 17,
+          "title": "Cloud Architecture Features",
+          "preview": "Considerations for Cloud Infrastructure • Cost • Scalability • Resilience • Ease of deployment • Ease of recovery • SLA and ISA • Power • Compute"
+        },
+        {
+          "number": 18,
+          "title": "Cloud Security Considerations",
+          "preview": "Considerations for Cloud Infrastructure Security • Data protection • Patching • Secure Communication • Software-Defined Wide Area Network (SD-WAN) • Secure Access • Secure Access Service Edge (SASE)"
+        },
+        {
+          "number": 19,
+          "title": "Cloud Deployment Models",
+          "preview": "Cloud Services Models • Responsibility Matrix • Centralized and Decentralized Computing • Resilient Architecture Concepts • Application Virtualization and Container Virtualization • Cloud Architecture • Cloud Automation Technologies • Software Defined Networking • Cloud Architecture Features • Cloud Security Considerations • Cloud Infrastructure"
+        },
+        {
+          "number": 20,
+          "title": "Assisted Lab: Using Containers",
+          "preview": "Assisted Lab: Using Virtualization"
+        },
+        {
+          "number": 21,
+          "title": "Embedded Systems and Zero Trust Architecture",
+          "preview": "Topic 6B • Lesson 6"
+        },
+        {
+          "number": 22,
+          "title": "Embedded Systems",
+          "preview": "Specialized computers • Many consumer and commercial use cases. • Some examples: • Home appliances • Smartphones and tablets • Automotive systems • Industrial automation • Medical devices • Aerospace and defense • Real-Time Operating Systems"
+        },
+        {
+          "number": 23,
+          "title": "Industrial Control Systems",
+          "preview": "Industrial control systems (ICSs) • Human-machine interfaces (HMIs) • Data historian • Programmable Logic Controller (PLC) • Supervisory Control and Data Acquisition (SCADA) • ICS/SCADA Applications • Energy • Industrial • Fabrication and manufacturing • Logistics • Facilities"
+        },
+        {
+          "number": 24,
+          "title": "Internet of Things",
+          "preview": "Network of physical devices, vehicles, appliances, and other objects embedded with sensors, software, and connectivity, enabling them to collect and exchange data • The significantly decreased cost of IoT sensors and devices over the past few years has made them more affordable and accessible to businesses and consumers • Advances in connectivity technology, such as 5G and low-power wireless networks, have made conne"
+        },
+        {
+          "number": 25,
+          "title": "Internet of Things",
+          "preview": "Security Risks Associated with IoT • Many IoT devices have limited processing power and memory • Difficult to implement stringent security controls • Rushed to market • Lacking or misrepresented security capability • “Un-patchable” • Lack of standards in design of IoT devices • Collect and transmit sensitive information"
+        },
+        {
+          "number": 26,
+          "title": "Internet of Things",
+          "preview": "Best Practice Guidance for IoT • The Internet of Things Security Foundation (IoTSF) • https://iotsecurityfoundation.org • Industrial Internet Consortium (IIC) Security Framework • https://www.iiconsortium.org/iisf/ • Cloud Security Alliance (CSA) IoT Security Controls Framework • https://cloudsecurityalliance.org/artifacts/iot-security-controls-framework • European Telecommunications Standards Institute (ETSI) IoT Se"
+        },
+        {
+          "number": 27,
+          "title": "Deperimeterization and Zero Trust",
+          "preview": "Deperimeterization • Shifts focus from defending the network boundaries to protecting individual resources • Zero Trust • “Never trust, always verify”"
+        },
+        {
+          "number": 28,
+          "title": "Deperimeterization and Zero Trust",
+          "preview": "Trends Driving Deperimeterization • Cloud • Remote Work • Mobile • Outsourcing & Contracting • Wireless Networks"
+        },
+        {
+          "number": 29,
+          "title": "Deperimeterization and Zero Trust",
+          "preview": "The Key Benefits of a Zero Trust Architecture • Greater security • Better access controls • Improved governance and compliance • Increased granularity"
+        },
+        {
+          "number": 30,
+          "title": "Deperimeterization and Zero Trust",
+          "preview": "Essential Components of a Zero Trust Architecture • Network and endpoint security • Identity and access management (IAM • Policy-based enforcement • Cloud security • Network visibility • Network segmentation • Data protection • Threat detection and prevention"
+        },
+        {
+          "number": 31,
+          "title": "Zero Trust Security Concepts",
+          "preview": "Assumes that all devices, users, and services are not inherently trusted, regardless of whether inside or outside a network's perimeter • Components in NIST's zero trust architecture framework."
+        },
+        {
+          "number": 32,
+          "title": "Embedded Systems",
+          "preview": "Industrial Control Systems • Internet of Things • Deperimeterization and Zero Trust • Embedded Systems and Zero Trust Architecture"
+        },
+        {
+          "number": 33,
+          "title": "Summary",
+          "preview": "Lesson 6 • CompTIA Security+ Exam SY0-701"
+        }
+      ]
+    },
+    {
+      "lesson": 7,
+      "title": "Explain Resiliency and Site Security Concepts",
+      "path": "materials/sy0-701_Lesson 07.pptx",
+      "slideCount": 30,
+      "slides": [
+        {
+          "number": 1,
+          "title": "Explain Resiliency and Site Security Concepts",
+          "preview": "Lesson 7 • CompTIA Security+ Exam SY0-701"
+        },
+        {
+          "number": 2,
+          "title": "Asset Management",
+          "preview": "Topic 7A • Lesson 7"
+        },
+        {
+          "number": 3,
+          "title": "Asset Tracking",
+          "preview": "Assets • Anything with value! • Cyber asset tracking is IT centric • Assignment and Ownership"
+        },
+        {
+          "number": 4,
+          "title": "Asset Tracking",
+          "preview": "Asset Tracking and Monitoring • Manual Inventory • Network Scanning • Asset Management Software • Configuration Management Database (CMDB) • Mobile Device Management (MDM) • Cloud Asset Discovery"
+        },
+        {
+          "number": 5,
+          "title": "Asset Protection Concepts",
+          "preview": "Identify and prioritize assets based on sensitivity and impact • Standard naming convention • Configuration management • Change control and change management"
+        },
+        {
+          "number": 6,
+          "title": "Data Backups",
+          "preview": "Ensure the availability and integrity of an organization's critical data and systems • Simple backups vs Enterprise Data Protection Strategy • Critical capabilities for enterprise backup solutions typically include: • Support for various environments (virtual, physical, and cloud) • Data deduplication and compression to optimize storage space • Instant recovery and replication for quick failover • Ransomware protecti"
+        },
+        {
+          "number": 7,
+          "title": "Advanced Data Protection",
+          "preview": "Snapshots • VM snapshots • Filesystem snapshots • SAN snapshots • The checkpoint configuration section for a Hyper-V virtual machine. Checkpoints refer to Microsoft's implementation of snapshot functionality. (Screenshot used with permission from Microsoft.)"
+        },
+        {
+          "number": 8,
+          "title": "Advanced Data Protection",
+          "preview": "Replication and Journaling • Database mirroring • SAN replication • VM replication"
+        },
+        {
+          "number": 9,
+          "title": "Secure Data Destruction",
+          "preview": "Asset Disposal • Sanitization • Destruction • Certification • Active KillDisk data wiping software. (Screenshot used with permission from LSoft Technologies, Inc.)"
+        },
+        {
+          "number": 10,
+          "title": "Asset Tracking",
+          "preview": "Asset Protection Changes • Data Backups • Advanced Data Protection • Secure Data Classification • Asset Management"
+        },
+        {
+          "number": 11,
+          "title": "Applied Lab: Implement Backups",
+          "preview": "Assisted Lab: Performing Drive Sanitization"
+        },
+        {
+          "number": 12,
+          "title": "Redundancy Strategies",
+          "preview": "Topic 7B • Lesson 7"
+        },
+        {
+          "number": 13,
+          "title": "Continuity of Operations",
+          "preview": "Ensuring that an organization can maintain or quickly resume its critical functions in the event of a disruption, disaster, or crisis • Regular testing and updating of continuity of operations plans (COOP) are crucial to ensure the organization can maintain essential functions during and after disruptive events • Backups play a critical role in the continuity of operations plans (COOP) by safeguarding against data lo"
+        },
+        {
+          "number": 14,
+          "title": "Capacity Planning Risks",
+          "preview": "People Risks • Cross-Training • Remote Work Plans • Alternative Reporting Structures • Changes in Workforce Capacity • Rapid hiring • Layoffs"
+        },
+        {
+          "number": 15,
+          "title": "High Availability",
+          "preview": "Scalability and Elasticity • Fault Tolerance and Redundancy • Site-level Resiliency • Hot • Warm • Cold • Cloud"
+        },
+        {
+          "number": 16,
+          "title": "High Availability",
+          "preview": "Testing Redundancy and High Availability • Load Testing • Failover Testing • Validate Monitoring Effectiveness • Do warning alerts/notifications work?"
+        },
+        {
+          "number": 17,
+          "title": "Clustering",
+          "preview": "Multiple redundant processing nodes that share data with one another • Virtual IP • Active/Passive (A/P) • Active/Active (A/A) • Application Clustering • Topology of clustered load balancing architecture. (Images © 123RF.com.)"
+        },
+        {
+          "number": 18,
+          "title": "Power Redundancy",
+          "preview": "Dual Power Supplies • Managed Power Distribution Units (PDUs) • Battery Backups and Uninterruptible Power Supplies (UPSs) • Generators"
+        },
+        {
+          "number": 19,
+          "title": "Diversity and Defense in Depth",
+          "preview": "Platform diversity • Multi-Cloud • Vendor Diversity • Cybersecurity • Business Resilience • Innovation • Competition • Customization and Flexibility • Risk Management • Compliance"
+        },
+        {
+          "number": 20,
+          "title": "Deception Technologies",
+          "preview": "Honeypots • Honeynets • Honeyfiles • Honeytokens • Fake telemetry"
+        },
+        {
+          "number": 21,
+          "title": "Testing Resiliency",
+          "preview": "Tabletop Exercises • Failover Tests • Simulations • Parallel Processing Tests • Robust Documentation"
+        },
+        {
+          "number": 22,
+          "title": "Continuity of Operations",
+          "preview": "Capacity Planning Risks • High Availability • Clustering • Power Redundancy • Diversity and Defense in Depth • Deception Technologies • Testing Resiliency • Redundancy Strategies"
+        },
+        {
+          "number": 23,
+          "title": "Physical Security",
+          "preview": "Topic 7C • Lesson 7"
+        },
+        {
+          "number": 24,
+          "title": "Physical Security Controls",
+          "preview": "Provides the first line of defense against physical access to an organization's critical assets • Protect physical components that store assets, such as • Servers & Equipment • Datacenters • People • Other critical infrastructure"
+        },
+        {
+          "number": 25,
+          "title": "Site Layout, Fencing, and Lighting",
+          "preview": "Physical Security Through Environmental Design • Barricades and Entry/Exit Points • Fencing • Lighting • Bollards"
+        },
+        {
+          "number": 26,
+          "title": "Gateways and Locks",
+          "preview": "Physical • Electronic • Access Control Vestibule (Mantrap) • Cable Locks • Access Badges • Generic examples of a biometric thumbprint scanner lock and a token-based key card lock. (Images from user macrovector © 123RF.com.)"
+        },
+        {
+          "number": 27,
+          "title": "Security Guards and Cameras",
+          "preview": "Surveillance (CCTV) • Motion Recognition • Object Detection • Drones/UAV • CCTV installed to monitor a server room. (Image by Dario Lo Presti © 123RF.com.)"
+        },
+        {
+          "number": 28,
+          "title": "Alarm Systems and Sensors",
+          "preview": "Alarms Types • Circuit • Motion Detection • Noise Detection • Proximity • Duress • Sensor Types • Infrared • Pressure • Microwave • Ultrasonic"
+        },
+        {
+          "number": 29,
+          "title": "Physical Security Controls",
+          "preview": "Site Layout, Fencing, and Lighting • Gateways and Locks • Security Guards and Cameras • Alarm Systems and Sensors • Physical Security"
+        },
+        {
+          "number": 30,
+          "title": "Summary",
+          "preview": "Lesson 7 • CompTIA Security+ Exam SY0-701"
+        }
+      ]
+    },
+    {
+      "lesson": 8,
+      "title": "Explain Vulnerability Management",
+      "path": "materials/sy0-701_Lesson 08.pptx",
+      "slideCount": 35,
+      "slides": [
+        {
+          "number": 1,
+          "title": "Explain Vulnerability Management",
+          "preview": "Lesson 8 • CompTIA Security+ Exam SY0-701"
+        },
+        {
+          "number": 2,
+          "title": "Device and OS Vulnerabilities",
+          "preview": "Topic 8A • Lesson 8"
+        },
+        {
+          "number": 3,
+          "title": "Operating System Vulnerabilities",
+          "preview": "Vulnerabilities in an OS can lead to significant problems when successfully exploited • Microsoft Windows Client and Server • Apple macOS • Linux • Android • iOS"
+        },
+        {
+          "number": 4,
+          "title": "Vulnerability Types",
+          "preview": "Legacy Systems • End-of-Life (EOL) Systems • Firmware Vulnerabilities • Virtualization Vulnerabilities • Application Vulnerabilities"
+        },
+        {
+          "number": 5,
+          "title": "Zero-Day Vulnerabilities",
+          "preview": "Previously unknown software or hardware flaws. • Developers have \"zero days\" to fix once the vulnerability becomes known • Traditional security measures like antivirus and firewalls are often ineffective • Zero-day vulnerabilities have significant financial value • Adversaries generally use a zero-day vulnerability against high-value targets"
+        },
+        {
+          "number": 6,
+          "title": "Misconfiguration Vulnerabilities",
+          "preview": "Common cause of security vulnerabilities • Default configurations • Hardware/devices • Software • Cloud services • Using search engine results to solve technical problems"
+        },
+        {
+          "number": 7,
+          "title": "Cryptographic Vulnerabilities",
+          "preview": "Cryptography forms the backbone of secure communication • Weaknesses in cryptographic systems, protocols, or algorithms • Methods no longer deemed secure • Weak Keys • Misconfigured cipher suites • Improperly protected keys"
+        },
+        {
+          "number": 8,
+          "title": "Sideloading, Rooting, and Jailbreaking",
+          "preview": "Rooting and jailbreaking are methods used to gain elevated privileges on mobile devices • Rooting - gaining root access or administrative privileges on an Android device • Jailbreaking - gaining full access to an iOS device (iPhone or iPad) • Sideloading - installing applications from sources other than the official app store • F-Droid • Android APK (Android Application Package) files"
+        },
+        {
+          "number": 9,
+          "title": "Sideloading, Rooting, and Jailbreaking",
+          "preview": "Rooting and jailbreaking are methods used to gain elevated privileges on mobile devices • Rooting • Gaining root access or administrative privileges on an Android device • Jailbreaking • Gaining full access to an iOS device (iPhone or iPad) • Sideloading • Installing applications from sources other than the official app store • F-Droid • Android APK (Android Application Package) files • The F-Droid Android applicatio"
+        },
+        {
+          "number": 10,
+          "title": "Operating System Vulnerabilities",
+          "preview": "Vulnerability Types • Zero-Day Vulnerabilities • Misconfiguration Vulnerabilities • Cryptographic Vulnerabilities • Sideloading, Rooting, and Jailbreaking • Device and OS Vulnerabilities"
+        },
+        {
+          "number": 11,
+          "title": "Application and Cloud Vulnerabilities",
+          "preview": "Topic 8B • Lesson 8"
+        },
+        {
+          "number": 12,
+          "title": "Application Vulnerabilities",
+          "preview": "Race Condition • Time-of-check to time-of-use (TOCTOU) • Memory Injection • Buffer Overflow • Type-Safe Programming Languages • Malicious Update • When executed normally, a function will return control to the calling function. If the code is vulnerable, an attacker can pass malicious data to the function, overflow the stack, and run arbitrary code to gain a shell on the target system."
+        },
+        {
+          "number": 13,
+          "title": "Evaluation Scope",
+          "preview": "Scope refers to the product, system, or service being analyzed for potential security vulnerabilities • Practices • Security Testing • Documentation Review • Source Code Analysis • Configuration Assessment • Cryptographic Analysis • Compliance Verification • Security Architecture Review"
+        },
+        {
+          "number": 14,
+          "title": "Web Application Attacks",
+          "preview": "Specifically target applications accessible over the Internet • Cross-Site Scripting (XSS) • Cross-Site Request Forgery (CSRF) • SQL Injection (SQLi)"
+        },
+        {
+          "number": 15,
+          "title": "Cloud-based Application Attacks",
+          "preview": "Target applications hosted on cloud platforms • Exploit potential vulnerabilities within the hosted applications • Exploit cloud infrastructure the applications run on • Cloud As an Attack Platform • Cloud Access Security Brokers"
+        },
+        {
+          "number": 16,
+          "title": "Supply Chain",
+          "preview": "Potential risks and weaknesses introduced into products during their development, distribution, and maintenance lifecycle • Hardware Suppliers • Software Providers • Software Bill of Materials • Dependency Analysis and SBOM Tools"
+        },
+        {
+          "number": 17,
+          "title": "Application Vulnerabilities",
+          "preview": "Evaluation Scope • Web Application Attacks • Cloud-based Application Attacks • Supply Chain • Application and Cloud Vulnerabilities"
+        },
+        {
+          "number": 18,
+          "title": "Assisted Lab: Exploiting and Detecting SQLi",
+          "preview": ""
+        },
+        {
+          "number": 19,
+          "title": "Vulnerability Identification Methods",
+          "preview": "Topic 8C • Lesson 8"
+        },
+        {
+          "number": 20,
+          "title": "Vulnerability Scanning",
+          "preview": "Cornerstone of modern cybersecurity practices • Focused on identifying, classifying, remediating, and mitigating vulnerabilities • Helps to locate and identify misconfigurations • Greenbone OpenVAS vulnerability scanner with Security Assistant web application interface as installed on Kali Linux. (Screenshot used with permission from Greenbone Networks, http://www.openvas.org.)"
+        },
+        {
+          "number": 21,
+          "title": "Vulnerability Scanning",
+          "preview": "Network Vulnerability Scanners • Tenable Nessus • OpenVAS • Credentialed and Non-Credentialed Scans • Application and Web Application Scanners • Package Monitoring • Configuring credentials for use in target (scope) definitions in Greenbone OpenVAS as installed on Kali Linux. (Screenshot used with permission from Greenbone Networks, http://www.openvas.org.)"
+        },
+        {
+          "number": 22,
+          "title": "Threat Feeds",
+          "preview": "Real-time, continuously updated sources of information about potential threats and vulnerabilities • Provide timely information and context about new threats • IBM X-Force Exchange threat intelligence portal. (Image copyright 2019 IBM Security exchange.xforce.ibmcloud.com.)"
+        },
+        {
+          "number": 23,
+          "title": "Threat Feeds",
+          "preview": "Open-source and proprietary threat feeds • IBM X-Force Exchange • Mandiant's FireEye • Recorded Future • Proofpoint Emerging Threats • Abuse.ch • Information-Sharing Organizations • Information Sharing and Analysis Centers (ISACs) • Open-Source Intelligence • Search engines, blogs, forums, social media platforms, and the dark web"
+        },
+        {
+          "number": 24,
+          "title": "Deep and Dark Web",
+          "preview": "Deep Web • Any part of the World Wide Web that is not indexed by a search engine • Dark Net • A network established as an overlay to Internet infrastructure, such as The Onion Router (TOR), Freenet, or I2P, that acts to anonymize usage • Dark Web • Sites, content, and services accessible only over a dark net • Using the TOR browser to view the AlphaBay market, now closed by law enforcement. (Screenshot used with perm"
+        },
+        {
+          "number": 25,
+          "title": "Other Vulnerability Assessment Methods",
+          "preview": "Penetration Testing • Unknown environment (previously black box) testing • Known environment (previously white box) testing • Partially known environment (previously gray box) testing • Bug Bounties • Auditing"
+        },
+        {
+          "number": 26,
+          "title": "Vulnerability Scanning",
+          "preview": "Threat Feeds • Deep and Dark Web • Other Vulnerability Assessment Methods • Vulnerability Identification Methods"
+        },
+        {
+          "number": 27,
+          "title": "Assisted Lab: Working with Threat Feeds",
+          "preview": ""
+        },
+        {
+          "number": 28,
+          "title": "Vulnerability Analysis and Remediation",
+          "preview": "Topic 8D • Lesson 8"
+        },
+        {
+          "number": 29,
+          "title": "Common Vulnerabilities and Exposures",
+          "preview": "Vulnerability Feed • National Vulnerability Database (NVD) • Security Content Automation Protocol (SCAP) • Common Vulnerabilities and Exposures (CVE) • Common Vulnerability Scoring System (CVSS)"
+        },
+        {
+          "number": 30,
+          "title": "False Positives, False Negatives, and Log Review",
+          "preview": "False Positive • Scanner or another assessment tool incorrectly identifies a vulnerability • False Negatives • Vulnerabilities that go undetected in a scan • Validate vulnerability reports by examining logs • Scan report listing multiple high-severity vulnerabilities found in a Windows host. (Screenshot: Greenbone Community Edition greenbone.net/en/community-edition.)"
+        },
+        {
+          "number": 31,
+          "title": "Vulnerability Analysis",
+          "preview": "Prioritization • Classification • Exposure Factor • Impacts • Environmental Variables • Risk Tolerance"
+        },
+        {
+          "number": 32,
+          "title": "Vulnerability Response and Remediation",
+          "preview": "Remediation Practices • Patching • Cybersecurity insurance • Segmentation • Compensating controls • Exceptions and exemptions • Validation • Re-scanning • Auditing • Verification • Reporting"
+        },
+        {
+          "number": 33,
+          "title": "Common Vulnerabilities and Exposures",
+          "preview": "False Positives, False Negatives, and Log Review • Vulnerability Analysis • Vulnerability Response and Remediation • Vulnerability Analysis and Remediation"
+        },
+        {
+          "number": 34,
+          "title": "Assisted Lab: Performing Vulnerability Scans",
+          "preview": ""
+        },
+        {
+          "number": 35,
+          "title": "Summary",
+          "preview": "Lesson 8 • CompTIA Security+ Exam SY0-701"
+        }
+      ]
+    },
+    {
+      "lesson": 9,
+      "title": "Evaluate Network Security Capabilities",
+      "path": "materials/sy0-701_Lesson 09.pptx",
+      "slideCount": 20,
+      "slides": [
+        {
+          "number": 1,
+          "title": "Evaluate Network Security Capabilities",
+          "preview": "Lesson 9 • CompTIA Security+ Exam SY0-701"
+        },
+        {
+          "number": 2,
+          "title": "Network Security Baselines",
+          "preview": "Topic 9A • Lesson 9"
+        },
+        {
+          "number": 3,
+          "title": "Benchmarks and Secure Configuration Guides (1 of 2)",
+          "preview": "Secure baseline • Collection of standard configurations and settings for operating systems, network devices, software, cloud instances, patching and updates, access controls, logging, monitoring, password policies, encryption, endpoint protection, and many others • Center for Internet Security (CIS) • Security Technical Implementation Guides (STIGs) • Vendor provided guidance"
+        },
+        {
+          "number": 4,
+          "title": "Benchmarks and Secure Configuration Guides (2 of 2)",
+          "preview": "Configuration management • Help manage, deploy, and measure compliance with established secure baselines • Puppet • Chef • Ansible • Security Content Automation Protocol (SCAP) • OpenSCAP • CIS-CAT Pro • SCAP Compliance Checker (SCC)"
+        },
+        {
+          "number": 5,
+          "title": "Switches and Routers",
+          "preview": "Examples of changes designed to improve security: • Change Default Credentials • Disable Unnecessary • Use Secure Management Protocols • Implement Access Control Lists (ACLs) • Enable Logging and Monitoring • Configure Port Security • Strong Password • Physically Secure Equipment"
+        },
+        {
+          "number": 6,
+          "title": "Server Hardware and Operating Systems",
+          "preview": "Examples of changes designed to improve security: • Change Default Credentials • Disable Unnecessary Services • Apply Software Security Patches and Updates Regularly • Least Privilege Principle • Use Firewalls and Intrusion Detection Systems (IDS) • Secure Configuration using CIS or STIG baselines • Strong Access Controls • Enable Logging and Monitoring • Use Antivirus and Antimalware Solutions • Physical Security of"
+        },
+        {
+          "number": 7,
+          "title": "Wireless Network Installation Considerations",
+          "preview": "Wireless Access Point (WAP) Placement • Site Surveys and Heat Maps • Example output from Lizard System's Wi-Fi Scanner tool. (Screenshot courtesy of Lizard Systems.)"
+        },
+        {
+          "number": 8,
+          "title": "Wireless Encryption",
+          "preview": "Open • WEP • WPS • WPA & WPA2 • WPA3 • Device Provisioning Protocol (DPP) a.k.a. “Easy Connect” to replace WPS • Simultaneous Authentication of Equals (SAE) • Enhanced Open • Configuring a TP-LINK SOHO access point with wireless encryption and authentication settings. In this example, the 2.4 GHz band allows legacy connections with WPA2-Personal security, while the 5 GHz network is for 802.11ax (Wi-Fi 6) capable devi"
+        },
+        {
+          "number": 9,
+          "title": "Wi-Fi Authentication Methods",
+          "preview": "WPA2 Pre-Shared Key Authentication • WPA3 Personal Authentication • WPA2/WPA3-Enterprise • RADIUS • EAP"
+        },
+        {
+          "number": 10,
+          "title": "Network Access Control",
+          "preview": "Authenticates users/devices before allowing them access to the network • Agent versus agentless • PacketFence supports the use of several scanning techniques, including vulnerability scanners, such as Nessus and OpenVAS, Windows Management Instrumentation (WMI) queries, and log parsers. (Screenshot used with permission from packetfence.org.)"
+        },
+        {
+          "number": 11,
+          "title": "Benchmarks and Secure Configuration Guides",
+          "preview": "Wireless Network Installation Considerations • Wireless Encryption • Wi-Fi Authentication Methods • Network Access Control • Network Security Baselines"
+        },
+        {
+          "number": 12,
+          "title": "Assisted Lab: Understanding Security Baselines",
+          "preview": ""
+        },
+        {
+          "number": 13,
+          "title": "Network Security Capability Enhancement",
+          "preview": "Topic 9B • Lesson 9"
+        },
+        {
+          "number": 14,
+          "title": "Access Control Lists",
+          "preview": "ACL • List of permissions associated with a network device, such as a router or a switch, that controls traffic at a network interface level • Firewall Rule • Dictates how inbound or outbound network traffic for specific IP addresses, IP ranges, or network interfaces • Screened Subnet • A neutral zone, separating public-facing servers from sensitive internal network resources • Sample firewall rules configured on IPF"
+        },
+        {
+          "number": 15,
+          "title": "Intrusion Detection and Prevention Systems",
+          "preview": "Host-based • Network-based • Both look for suspicious patterns or activities that could indicate a network or system intrusion • They differ in their responses to perceived threats • Snort • Suricata • OSSEC • The Security Onion Alerts dashboard displaying several alerts captured using the Emerging Threats (ET) ruleset and Suricata. (Screenshot used with permission from Security Onion.)"
+        },
+        {
+          "number": 16,
+          "title": "IDS and IPS Detection Methods",
+          "preview": "Signature-Based Detection • Anomaly-based detection • Trend Analysis • Behavioral-based detection • Network Behavior and Anomaly Detection (NBAD) • User and Entity Behavior Analytics (UEBA) • Snort rules file supplied by the open-source Emerging Threats community feed."
+        },
+        {
+          "number": 17,
+          "title": "Web Filtering",
+          "preview": "Block users from accessing malicious or inappropriate websites • Enforce compliance with acceptable use • Block malware • Protection from phishing attacks • Agent-Based Filtering • Centralized Web Filtering • URL Scanning • Content Categorization • Block Rules • Reputation-Based Filtering • Decrypting and inspecting HTTPS traffic • Web filter content categories using the IPFire open-source firewall. (Screenshot used "
+        },
+        {
+          "number": 18,
+          "title": "Access Control Lists",
+          "preview": "Intrusion Detection and Prevention Systems • IDS and IPS Detection Methods • Web Filtering • Network Security Capability Enhancement"
+        },
+        {
+          "number": 19,
+          "title": "Applied Lab: Implementing a Firewall",
+          "preview": ""
+        },
+        {
+          "number": 20,
+          "title": "Summary",
+          "preview": "Lesson 9 • CompTIA Security+ Exam SY0-701"
+        }
+      ]
+    },
+    {
+      "lesson": 10,
+      "title": "Assess Endpoint Security Capabilities",
+      "path": "materials/sy0-701_Lesson 10.pptx",
+      "slideCount": 18,
+      "slides": [
+        {
+          "number": 1,
+          "title": "Assess Endpoint Security Capabilities",
+          "preview": "Lesson 10 • CompTIA Security+ Exam SY0-701"
+        },
+        {
+          "number": 2,
+          "title": "Implement Endpoint Security",
+          "preview": "Topic 10A • Lesson 10"
+        },
+        {
+          "number": 3,
+          "title": "Endpoint Hardening",
+          "preview": "Operating System Security • Workstations • Servers • Baseline Configuration • Interfaces • Services • Ports • Storage • Many others • Using Security Compliance Manager to compare settings in a production GPO with Microsoft's template policy settings. (Screenshot used with permission from Microsoft.)"
+        },
+        {
+          "number": 4,
+          "title": "Endpoint Protection",
+          "preview": "Segmentation • Isolation • Antivirus and Antimalware • Disk Encryption • Patch Management • A segmented network showing Marketing and Finance subnets and the placement of network devices. Traffic between the two networks is controlled by the router. (Images © 123RF.com.)"
+        },
+        {
+          "number": 5,
+          "title": "Advanced Endpoint Protection",
+          "preview": "Endpoint Detection and Response (EDR) • Extended Detection and Response (XDR) • Host-Based Intrusion Detection/Prevention (HIDS/HIPS) • User Behavior Analytics (UBA)/User and Entity Behavior Analytics (UEBA)"
+        },
+        {
+          "number": 6,
+          "title": "Endpoint Configuration",
+          "preview": "Principle of Least Privilege • Access Control Lists • File System Permissions • Application Allow Lists and Block Lists • Monitoring • Configuration Enforcement • Group Policy • SELinux • Configuring an access control entry for a folder. (Screenshot used with permission from Microsoft.)"
+        },
+        {
+          "number": 7,
+          "title": "Hardening Techniques",
+          "preview": "Protecting Physical Ports • Encryption • Full Disk Encryption (FDE) • Removable Media Encryption • Virtual Private Networks (VPNs) • Email Encryption • Host-Based Firewalls and IPS • Endpoint Protection • Changing Defaults • Removing Unnecessary Software"
+        },
+        {
+          "number": 8,
+          "title": "Hardening Specialized Devices",
+          "preview": "ICS/SCADA • Strict network segmentation • Robust authentication • Unidirectional gateways (or data diodes) • Limit data flow to one direction • Embedded and RTOS • Select devices based on security capabilities"
+        },
+        {
+          "number": 9,
+          "title": "Endpoint Hardening",
+          "preview": "Endpoint Protection • Advanced Endpoint Protection • Endpoint Configuration • Hardening Techniques • Hardening Specialized Devices • Endpoint Security"
+        },
+        {
+          "number": 10,
+          "title": "Assisted Lab: Using Group Policy",
+          "preview": "Applied Lab: Hardening"
+        },
+        {
+          "number": 11,
+          "title": "Mobile Device Hardening",
+          "preview": "Topic 10B • Lesson 10"
+        },
+        {
+          "number": 12,
+          "title": "Mobile Hardening Techniques",
+          "preview": "Many similarities between hardening mobile devices or traditional computers • Mobile devices are more prone to physical loss or theft • Deployment Models • Bring your own device (BYOD • Corporate owned, business only (COBO) • Corporate owned, personally enabled (COPE) • Choose your own device (CYOD) • Mobile Device Management • Full Device and External Media Encryption"
+        },
+        {
+          "number": 13,
+          "title": "Full Device Encryption and External Media",
+          "preview": "In iOS, there are various levels of encryption • All user data on the device is always encrypted • Email data and any apps using the “Data Protection” option are subject to a second round of encryption • In iOS, Data Protection encryption is enabled automatically when you configure a password lock on the device • A mobile device contains a solid state (flash memory) drive for persistent storage of apps and data"
+        },
+        {
+          "number": 14,
+          "title": "Location Services",
+          "preview": "Global Positioning System (GPS) • Indoor Positioning System (IPS) • Geofencing • GPS Tagging (ex. EXIF Data) • Primary concern of location services is privacy • Restricting device permissions such as camera and screen capture using Intune. (Screenshot used with permission from Microsoft.)"
+        },
+        {
+          "number": 15,
+          "title": "Cellular and GPS Connection Methods",
+          "preview": "Cellular/Mobile Data Connections • Global Positioning System (GPS) • Locking down Android connectivity methods with Intune—note that most settings can be applied only to Samsung KNOX-capable devices. (Screenshot used with permission from Microsoft.)"
+        },
+        {
+          "number": 16,
+          "title": "Wi-Fi and Tethering Connection Methods",
+          "preview": "Mobile devices usually default to using a Wi-Fi connection • Home/Public vs Enterprise Network • Rogue/Evil Twin networks • Personal Area Networks (PANs) • Peripherals • Other devices/computers • Ad Hoc Wi-Fi and Wi-Fi Direct • Tethering and Hotspots"
+        },
+        {
+          "number": 17,
+          "title": "Mobile Hardening Techniques",
+          "preview": "Full Device Encryption and External Media • Location Services • Cellular and GPS Connection Methods • Wi-Fi and Tethering Connection Methods • Bluetooth Connection Methods • Near-Field Communications and Mobile Payment Services"
+        },
+        {
+          "number": 18,
+          "title": "Summary",
+          "preview": "Lesson 10 • CompTIA Security+ Exam SY0-701"
+        }
+      ]
+    },
+    {
+      "lesson": 11,
+      "title": "Enhance Application Security Capabilities",
+      "path": "materials/sy0-701_Lesson 11.pptx",
+      "slideCount": 26,
+      "slides": [
+        {
+          "number": 1,
+          "title": "Enhance Application Security Capabilities",
+          "preview": "Lesson 11 • CompTIA Security+ Exam SY0-701"
+        },
+        {
+          "number": 2,
+          "title": "Application Protocol Security Baselines",
+          "preview": "Topic 11A • Lesson 11"
+        },
+        {
+          "number": 3,
+          "title": "Secure Protocols",
+          "preview": "Many of the protocols used today were developed many decades ago • Functionality was primary focus • Trustworthiness was assumed • Cybersecurity was less of an issue than it is today • Insecure Protocols • Transmit data in clear text format • Generally, cannot be secured • Must be avoided • Same functionality and secure • More complex to configure"
+        },
+        {
+          "number": 4,
+          "title": "Transport Layer Security",
+          "preview": "Most Common Uses • Secure HTTP communications • Virtual Private Networking (VPN) • SSL/TLS Versions • SSL 2.0, 3.0 • TLS 1.0, 1.1, 1.2, 1.3 • Only use TLS version 1.2 or newer • Disable all others • Downgrade attack"
+        },
+        {
+          "number": 5,
+          "title": "Transport Layer Security",
+          "preview": "Cipher Suites • Describe the mix of algorithms used to implement TLS protections • Prior to TLS 1.3 • ECDHE-RSA-AES128-GCM-SHA256 • TLS 1.3 uses shortened suites • TLS_AES_256_GCM_SHA384 • Only lists bulk encryption key strength, mode of operation and hash type • Viewing the TLS handshake in a Wireshark packet capture. Note that the connection is using TLS 1.3 and one of the shortened cipher suites (TLS_AES_128_GCM_S"
+        },
+        {
+          "number": 6,
+          "title": "Secure Directory Services",
+          "preview": "A Network directory contains • Subjects (users, computers, and services) • Objects (directories and files) available in the environment • Permissions that subjects have over objects • High-value attack target • Lightweight Directory Access Protocol (LDAP) • Default is cleartext communication"
+        },
+        {
+          "number": 7,
+          "title": "Simple Network Management Protocol Security",
+          "preview": "Simple Network Management Protocol (SNMP) • Management and monitoring • SNMP monitor + agents • Provides very detailed information about systems • Uses “Community Strings” default “Public” and “Private” • Can be used to issue commands • SNMPv3 has secure features, other versions should be avoided"
+        },
+        {
+          "number": 8,
+          "title": "File Transfer Services",
+          "preview": "File Transfer Protocol • Cleartext • Used to host and share files • SSH • Primarily used to access a shell remotely • Very versatile protocol • Can be used as a tunnel for other protocols • FTP (SFTP) and FTP Over SSL (FTPS) • SFTP is FTP tunneled through SSH • FTPS is FTP secured using TLS"
+        },
+        {
+          "number": 9,
+          "title": "Email Services",
+          "preview": "SMTP • Cleartext by default • Transmit email between systems • SMTPS is secure configuration • Open Relay • Improperly configured SMTP server • Used to send SPAM • POP & IMAP • Used to access mailboxes • POPS & IMAPS are secure • Configuring mailbox access protocols on a server."
+        },
+        {
+          "number": 10,
+          "title": "Email Security (1 of 3)",
+          "preview": "Sender Policy Framework (SPF) • Email validation method that helps detect and prevent sender address forgery • Uses data saved in DNS TXT Records • Can use to identify “authorized senders” • Hosted email • Marketing campaigns, etc. • Displaying the TXT records for microsoft.com using the dig tool. (Screenshot used with permission from Microsoft.)"
+        },
+        {
+          "number": 11,
+          "title": "Email Security (2 of 3)",
+          "preview": "DomainKeys Identified Mail (DKIM) • Sender signs emails using a digital signature • Receiver uses a DKIM record in the sender's DNS to verify the signature • Domain-based Message Authentication, Reporting & Conformance (DMARC) • Uses the results of SPF and DKIM checks to define rules for handling messages • Provides reporting capabilities • Email activity • Identify systems sending emails • Identify unauthorized acti"
+        },
+        {
+          "number": 12,
+          "title": "Email Security (3 of 3)",
+          "preview": "Email Gateway • Control point for all incoming and outgoing email • Anti-spam filters and antivirus scanners • Sophisticated threat detection algorithms • Identify phishing attempts, Business Email Compromise (BEC) Attack • Harmful attachments and malicious URLs • URL Sanitization/Link Anonymization/Safe Linking/Web Link Transformation • Secure/Multipurpose Internet Mail Extensions (S/MIME) • Encrypts emails to provi"
+        },
+        {
+          "number": 13,
+          "title": "Email Data Loss Prevention",
+          "preview": "Email is one of the most frequently used communication channels within organizations • Conduit for sensitive data • Encourages careless handling of sensitive data (ease of use) and prone to human error • Common channel for data loss • GDPR, HIPAA, and PCI DSS, (and others) have requirements for protecting data • DLP scans emails and attachments for certain types of sensitive information • Prevents unauthorized sharin"
+        },
+        {
+          "number": 14,
+          "title": "DNS Filtering",
+          "preview": "Block or allow access to specific websites • DNS filter checks requests against a database of domain names • Block access to malicious sites • Content/Site Restrictions • Ad-blocking (Pi-Hole, AdGuard) • OpenDNS opendns.com • Quad9 quad9.net • CleanBrowsing cleanbrowsing.org • Cisco Umbrella umbrella.cisco.com/products/dns-layer-network-security • CloudFlare DNS cloudflare.com/application-services/products/dns/ • The"
+        },
+        {
+          "number": 15,
+          "title": "DNS Security",
+          "preview": "DNS Contains valuable information about hosts on a network • Internal records should not be accessible from the Internet • DNS protocol is often exploited to perform data exfiltration • DNS can be exploited to provide malicious data (ex. Attacker IP instead of real IP) • DNS Security Extensions (DNSSEC) • Mitigate spoofing and poisoning attacks • Provides a validation process for DNS responses • Authoritative server "
+        },
+        {
+          "number": 16,
+          "title": "Secure Protocols",
+          "preview": "Transport Layer Security • Secure Directory Services • Simple Network Management Protocol Security • File Transfer Services • Email Services • Email Security • Email Data Loss Prevention • DNS Filtering • Application Protocol Security Baselines"
+        },
+        {
+          "number": 17,
+          "title": "Assisted Lab: Performing DNS Filtering",
+          "preview": ""
+        },
+        {
+          "number": 18,
+          "title": "Cloud and Web Application Security Concepts",
+          "preview": "Topic 11B • Lesson 11"
+        },
+        {
+          "number": 19,
+          "title": "Secure Coding Techniques (1 of 2)",
+          "preview": "Pressure to release an application often overshadows the requirement to ensure it is secure • Coding practices must implement secure development practices • Code Signing • Secure Cookies • Static/Dynamic Code Analysis • Peer Review • Reviewing the digital signature contained within the Bitwarden Password Management app installer."
+        },
+        {
+          "number": 20,
+          "title": "Secure Coding Techniques (2 of 2)",
+          "preview": "Input Validation • Attacker provides specially crafted data to an application to manipulate its behavior • Injection Attack • Methods used to perform input validation: • Allow/Block Lists • Data Type checks • Range checks • Regular Expressions • Encoding"
+        },
+        {
+          "number": 21,
+          "title": "Application Protections (1 of 2)",
+          "preview": "Data exposure • Allows privileged information to be read by unauthorized user • Access token • Password • Personal data • Error Handling • Safely handle and control errors • Report errors to logs instead of user interface • Application Security in the Cloud • Application security supports the shared responsibility model • Secure applications running on a secure cloud platform"
+        },
+        {
+          "number": 22,
+          "title": "Application Protections (2 of 2)",
+          "preview": "Memory Management • Buffer overflow attacks are a decades-old problem • Input validation is an important defense • Client-Side vs. Server-Side Validation • Security checks should be performed server-side • Developers often use client-side checks to improve application performance • Client-side checks can be bypassed"
+        },
+        {
+          "number": 23,
+          "title": "Software Sandboxing",
+          "preview": "A security mechanism used to isolate software • Prevent it from accessing operating system features • Isolate is from other processes/software • Prevent access to network • “Safe Detonation” • Joe Sandbox analysis of a malicious executable file. (Screenshot courtesy of Joe Security, LLC.)"
+        },
+        {
+          "number": 24,
+          "title": "Secure Coding Techniques",
+          "preview": "Application Protections • Software Sandboxing"
+        },
+        {
+          "number": 25,
+          "title": "Assisted Lab: Configuring System Monitoring",
+          "preview": ""
+        },
+        {
+          "number": 26,
+          "title": "Summary",
+          "preview": "Lesson 11 • CompTIA Security+ Exam SY0-701"
+        }
+      ]
+    },
+    {
+      "lesson": 12,
+      "title": "Explain Alerting and Monitoring Concepts",
+      "path": "materials/sy0-701_Lesson 12.pptx",
+      "slideCount": 46,
+      "slides": [
+        {
+          "number": 1,
+          "title": "Explain Alerting and Monitoring Concepts",
+          "preview": "Lesson 12 • CompTIA Security+ Exam SY0-701"
+        },
+        {
+          "number": 2,
+          "title": "Objectives",
+          "preview": "Summarize incident response and digital forensics procedures • Utilize appropriate data sources for incident investigations • Explain security alerting and monitoring concepts and tools"
+        },
+        {
+          "number": 3,
+          "title": "Incident Response",
+          "preview": "Topic 12A • Lesson 12"
+        },
+        {
+          "number": 4,
+          "title": "Incident Response Processes",
+          "preview": ""
+        },
+        {
+          "number": 5,
+          "title": "Preparation (1)",
+          "preview": "Cybersecurity infrastructure • Cyber Incident Response Team • Reporting, categorizing, and prioritizing (triage) • CIRT/CERT/CSIRT/SOC • Management/decision-making authority • Incident analysts • Roles beyond technical response • Legal, Human Resources (HR), Marketing"
+        },
+        {
+          "number": 6,
+          "title": "Preparation (2)",
+          "preview": "Communication plan • Prevent inadvertent disclosure • Call list identifying trusted parties • Share data on a need to know basis • Out-of-band communications—avoid alerting intruder • Stakeholder management • Communication with internal and external stakeholders • Notification and reporting • Incident response plan (IRP)"
+        },
+        {
+          "number": 7,
+          "title": "Detection",
+          "preview": "Detection channels • Monitoring and alerting from logs and other data sources • Deviation from baseline metrics • Manual inspection • Notification procedures • Public reporting and whistleblowing • First responder • Member of CIRT taking charge of a reported incident"
+        },
+        {
+          "number": 8,
+          "title": "Analysis",
+          "preview": "Analysis and incident identification • Classify and prioritize • Downgrade low priority alerts to log-only • Impact • Data integrity, downtime • Economic/publicity • Scope • Detection time, recovery time • Category • Kill chains and threat intelligence • Playbooks"
+        },
+        {
+          "number": 9,
+          "title": "Containment",
+          "preview": "Issues • Loss control • Countermeasures available • Preserving evidence • Isolation-based containment • Segmentation-based containment"
+        },
+        {
+          "number": 10,
+          "title": "Eradication and Recovery",
+          "preview": "Reconstitution of affected systems • Reaudit security controls • Ensure that affected parties are notified"
+        },
+        {
+          "number": 11,
+          "title": "Lessons Learned",
+          "preview": "Meet and report • Root cause analysis • Five whys • Drill through incident with questions: Who, why, when, where, how, what • Walkthrough timeline"
+        },
+        {
+          "number": 12,
+          "title": "Testing and Training",
+          "preview": "Testing • Tabletop • Facilitator presents a scenario • Does not involve live systems • Walkthroughs • Responders demonstrate response actions • Simulations • Red team performs a simulated intrusion • Training • Members of the Kentucky and Alabama National Guard participate in a simulated network attack exercise. • (Photo by Kentucky National Guard Maj. Carla Raisler.)"
+        },
+        {
+          "number": 13,
+          "title": "Threat Hunting",
+          "preview": "Proactive process compared to reactive incident response • Warning of new threat types • Intelligence fusion and threat data • Maneuver • Awareness that threat actor might take countermeasures • The Hunt dashboards in Security Onion can help to determine whether a given alert affects a single system only (as here), or whether it is more widespread across the network. (Screenshot courtesy of Security Onion securityoni"
+        },
+        {
+          "number": 14,
+          "title": "Incident Response",
+          "preview": "Incident response processes • Preparation • Detection • Analysis • Containment • Eradication • Recovery • Lessons learned • Testing and training • Threat hunting"
+        },
+        {
+          "number": 15,
+          "title": "APPLIED LAB: Incident Response: Detection",
+          "preview": ""
+        },
+        {
+          "number": 16,
+          "title": "Digital Forensics",
+          "preview": "Topic 12B • Lesson 12"
+        },
+        {
+          "number": 17,
+          "title": "Due Process and Legal Hold",
+          "preview": "Digital forensics • Collecting evidence from computer systems to a standard that will be accepted in a court of law • Evidence, documentation, and admissibility • Latent evidence • Collection must be documented • Due process • Evidence collection and analysis procedures that ensure fairness • Legal hold • Right to seize systems as evidence"
+        },
+        {
+          "number": 18,
+          "title": "Acquisition",
+          "preview": "Legal seizure and search of devices • Computer on/off state • Order of volatility • CPU registers, cache memory, and non-persistent system memory (RAM) • Data on persistent storage • Remote logging and monitoring data • Physical configuration and network topology • Archival media"
+        },
+        {
+          "number": 19,
+          "title": "System Memory Acquisition",
+          "preview": "Evidence recovery from non-persistent memory • Contents of temporary file systems, registry data, network connections, cryptographic keys, … • Live acquisition • Pre-install kernel driver • Screenshot: Volatility Framework volatilityfoundation.org.)"
+        },
+        {
+          "number": 20,
+          "title": "Disk Image Acquisition",
+          "preview": "Non-volatile storage media and devices • Acquisition types • Live acquisition • Static acquisition by shutting down the host • Static acquisition by pulling the plug • Imaging utilities • Forensic software suites and file formats • Using dcfldd (a version of dd with additional forensics functionality created by the DoD) and generating a hash of the source-disk data (sda)."
+        },
+        {
+          "number": 21,
+          "title": "Preservation",
+          "preview": "Timeline and provenance • Record process of evidence acquisition • Use a write blocker • Evidence integrity and non-repudiation • Cryptographic hashing and checksums • Take hashes of source device, reference image, and copy of image for analysis • Chain of custody • Integrity and proper handling of evidence from collection, to analysis, to storage, and finally to presentation • Secure tamper-evident bagging • Secure "
+        },
+        {
+          "number": 22,
+          "title": "Reporting",
+          "preview": "Summarizes contents of the digital data • Conclusions from the investigator's analysis • Professional ethics • Analysis must be performed without bias • Analysis methods must be repeatable • Evidence must not be changed or manipulated • E-discovery • Electronically Stored Information (ESI) • Identify and de-duplicate files and metadata and facilitate search and tagging • Protect access and make tamper-evident • Facil"
+        },
+        {
+          "number": 23,
+          "title": "Due process and legal hold",
+          "preview": "Acquisition • Order of volatility • System memory acquisition • Disk image acquisition • Preservation • Evidence integrity, reference hash, chain of custody • Reporting • E-discovery • Digital Forensics"
+        },
+        {
+          "number": 24,
+          "title": "APPLIED LAB: Performing Digital Forensics",
+          "preview": ""
+        },
+        {
+          "number": 25,
+          "title": "Data Sources",
+          "preview": "Topic 12C • Lesson 12"
+        },
+        {
+          "number": 26,
+          "title": "Data Sources, Dashboards, and Reports (1)",
+          "preview": "System memory and media device file system data and metadata • Log files generated by network appliances • Network traffic captured by sensors and/or intrusion detection systems • Log files and alerts generated by network-based vulnerability scanners • Log files generated by the OS components of client and server hosts • Log files generated by applications and services running on hosts • Log files and alerts generate"
+        },
+        {
+          "number": 27,
+          "title": "Data Sources, Dashboards, and Reports (2)",
+          "preview": "Analyst dashboard • Console of alerts that require prioritization and investigation • Manager dashboard • Overall status indicators • Automated reports • Alerts and alarms • Status reports for response team, business managers, business owners, and compliance • Screenshot courtesy of Security Onion (securityonion.net.)"
+        },
+        {
+          "number": 28,
+          "title": "Log Data",
+          "preview": "Event • Format and source (local or redirected over network) • Event data versus metadata • Windows Event Viewer • Syslog • PRI – facility and severity • Header with timestamp and host • Message part"
+        },
+        {
+          "number": 29,
+          "title": "Host Operating System Logs",
+          "preview": "Security/audit logs • Authentication and authorization events • File system events • Windows • Application, security, and system • Linux • Syslog versus Journald • Common log files • macOS unified logging • Linux authentication log showing SSH remote access is enabled, failed authentication attempts for root user, and successful login for lamp user."
+        },
+        {
+          "number": 30,
+          "title": "Application and Endpoint Logs",
+          "preview": "Application logs • Endpoint logs • Security software running on hosts • Summarize volume of detection incidents to indicate threat levels • Incident attribution and threat intelligence • Vulnerability scans • Windows Defender logging detection and quarantine of malware to Event Viewer. (Screenshot used with permission from Microsoft.)"
+        },
+        {
+          "number": 31,
+          "title": "Network Data Sources",
+          "preview": "Network logs • Traffic and access data from network appliances • Firewall logs • Correlate to malicious activity on hosts • IPS/IDS logs • Summarize volume of detection incidents to indicate threat levels • Attribution and threat intelligence • Viewing the raw log message generated by a Suricata IDS alert in the Security Onion SIEM."
+        },
+        {
+          "number": 32,
+          "title": "Packet Captures",
+          "preview": "Pivot from alert event to per-packet or frame analysis • Extract binary data • Using the Wireshark packet analyzer to identify malicious executables being transferred over the Windows file-sharing protocol. (Screenshot Wireshark wireshark.org.)"
+        },
+        {
+          "number": 33,
+          "title": "Metadata",
+          "preview": "File • Date/time and security attributes • Extended attributes and properties • Web • Request and response headers • Email • Internet header listing message transfer agents • Spam/security analysis • Analyzing headers in a phishing message: the sender is using typosquatting to hope the recipient confuses structureality.com with the genuine domain structureality.com. (Screenshot courtesy of Mozilla.)"
+        },
+        {
+          "number": 34,
+          "title": "Data sources, dashboards, and reports",
+          "preview": "Log data • Host operating system logs • Application and endpoint logs • Network data sources • Network appliance logs, firewall logs, IPS/IDS logs • Packet captures • Metadata • Data Sources"
+        },
+        {
+          "number": 35,
+          "title": "Applied Lab: Using Network Sniffers",
+          "preview": ""
+        },
+        {
+          "number": 36,
+          "title": "Alerting and Monitoring Tools",
+          "preview": "Topic 12D • Lesson 12"
+        },
+        {
+          "number": 37,
+          "title": "Security Information and Event Management",
+          "preview": "Log collection • Agent-based • Local agent to forward logs • Listener/collector • Protocol-based remote log forwarding (syslog) • Sensor • Packet capture and traffic flow data • Log aggregation • Consolidation of multiple log formats to facilitate search/query and correlation • Normalization of fields • Time synchronization • Wazuh SIEM dashboard—Configurable dashboards provide the high-level status view of network s"
+        },
+        {
+          "number": 38,
+          "title": "Alerting and Monitoring Activities",
+          "preview": "Alerting and correlation • Static rules and logical expressions • Threat intelligence feeds • Validation of alerts as true positives versus false positives • Quarantine for remediation • Reporting • Executive, managerial, and compliance audiences • Archiving • Preserve evidence of attack • Facilitate threat hunting and retrospective incident identification"
+        },
+        {
+          "number": 39,
+          "title": "Alert Tuning (1)",
+          "preview": "Correlation action to log only, trigger alert, or trigger alarm • Reduce false positives without increasing false negatives • False positives raise an alert when there is no actual malicious activity • False negatives do not raise an alert when there is malicious activity • True positives measure successful detection of incidents"
+        },
+        {
+          "number": 40,
+          "title": "Alert Tuning (2)",
+          "preview": "Techniques for tuning • Refining detection rules and muting alert levels • Redirecting sudden alert “floods“ • Redirecting infrastructure-related alerts • Continuous monitoring of alert volume and analyst feedback • Deploying machine learning (ML) analysis"
+        },
+        {
+          "number": 41,
+          "title": "Monitoring Infrastructure",
+          "preview": "Network monitors • Appliance state data • Heartbeat availability monitoring • Simple Network Management Protocol (SNMP) traps • Netflow/IPFIX • Records traffic statistics • Flows defined by endpoints and ports (keys) • Netflow exporters and collectors • ntopng community edition being used to monitor NetFlow traffic data. (Screenshot used courtesy of ntop.)"
+        },
+        {
+          "number": 42,
+          "title": "Monitoring Systems and Applications",
+          "preview": "System monitors and logs • System health reporting • System logs to diagnose availability issues • Security logs to audit access • Application and cloud monitors • Application health monitoring • Cloud service health • Vulnerability scanners • Antivirus • Data loss prevention (DLP)"
+        },
+        {
+          "number": 43,
+          "title": "Benchmarks",
+          "preview": "Scanning for configuration vulnerabilities • Lack of controls • Improper configuration • Security content automation protocol (SCAP) • Language to enable scanners to load configuration benchmarks and scan for deviations • Monitoring template aligned to NIST 800-53 framework requirements."
+        },
+        {
+          "number": 44,
+          "title": "Security Information and Event Management",
+          "preview": "Collection and aggregation • Alerting and monitoring activities • Correlation, reporting, archiving • Alert tuning • False positives, false negatives, alert fatigue • Monitoring infrastructure • Network monitors, NetFlow • Monitoring systems and applications • Benchmarks • SCAP, OVAL, XCCDF configuration baseline scanning • Alerting and Monitoring Tools"
+        },
+        {
+          "number": 45,
+          "title": "Assisted Lab: Performing Root Cause Analysis",
+          "preview": ""
+        },
+        {
+          "number": 46,
+          "title": "Summary",
+          "preview": "Lesson 12 • CompTIA Security+ Exam SY0-701"
+        }
+      ]
+    },
+    {
+      "lesson": 13,
+      "title": "Analyze Indicators of Malicious Activity",
+      "path": "materials/sy0-701_Lesson 13.pptx",
+      "slideCount": 39,
+      "slides": [
+        {
+          "number": 1,
+          "title": "Analyze Indicators of Malicious Activity",
+          "preview": "Lesson 13 • CompTIA Security+ Exam SY0-701"
+        },
+        {
+          "number": 2,
+          "title": "Objectives",
+          "preview": "Analyze indicators of malicious activity in malware, physical, network, and application attacks"
+        },
+        {
+          "number": 3,
+          "title": "Malware Attack Indicators",
+          "preview": "Topic 13A • Lesson 13"
+        },
+        {
+          "number": 4,
+          "title": "Malware Classification​",
+          "preview": "Classification by vector or infection method​ • Viruses and worms​ • Spread within code without authorization​ • Trojans​ • A malicious program concealed within a benign one​ • Potentially unwanted programs/applications (PUPs/PUAs)​ • Pre-installed “bloatware” or installed alongside another app​ • Not completely concealed, but installation may be covert​ • Also called grayware​ • Classification by payload ​"
+        },
+        {
+          "number": 5,
+          "title": "Computer Viruses​",
+          "preview": "Rely on some sort of host file or media​ delivery vector • Non-resident/file infector​ • Memory resident​ • Boot​ • Script/macro ​ • Screenshot used with permission from Microsoft."
+        },
+        {
+          "number": 6,
+          "title": "Computer Worms and Fileless Malware​",
+          "preview": "Early computer worms​ • Propagate in memory/over network links​ • Consume bandwidth and crash process​ • Fileless malware​ • Exploiting remote execution and memory residence to deliver payloads​ • May run from an initial script or Trojan​ • Persistence via the registry​ • Use of shellcode to create backdoors and download additional tools​ • “Living off the land” exploitation of built-in scripting tools​ • Advanced pe"
+        },
+        {
+          "number": 7,
+          "title": "Spyware, Adware, and Keyloggers​",
+          "preview": "Tracking cookies​, supercookies, and beacons • Adware (PUP/bloatware)​ • Changes to browser settings​ • Spyware (malware)​ • Log all local activity​ • Use of recording devices and screenshots​ • Redirection​ • Keylogger​ • Software and hardware​"
+        },
+        {
+          "number": 8,
+          "title": "Backdoors and Remote Access Trojans​",
+          "preview": "Backdoor malware​ • Remote access trojan (RAT)​ • Bots and botnets​ • Command & control (C2 or C&C)​ • Backdoors from misconfiguration and unauthorized software​ • Screenshot used with permission from Wikimedia Commons by CCAS4.0 International."
+        },
+        {
+          "number": 9,
+          "title": "Rootkits",
+          "preview": "Local administrator versus SYSTEM/root privileges​ • Replace key system files and utilities​ • Purge log files​ • Firmware rootkits​"
+        },
+        {
+          "number": 10,
+          "title": "Ransomware, Crypto-Malware, and Logic Bombs​",
+          "preview": "Ransomware​ • Nuisance (lock out user by ​ replacing shell)​ • Crypto-malware​ • High impact ransomware (encrypt data files or drives)​ • Cryptomining/crypojacking​ • Hijack resources to mine cryptocurrency​ • Logic bombs​​ • Image by Wikimedia Commons."
+        },
+        {
+          "number": 11,
+          "title": "TTPs and IoCs",
+          "preview": "Signature detection by anti-virus often ineffective • Tactics, Techniques, and Procedures (TTPs) • Indicators of Compromise (IoCs) • Documented and published TTPs and IoCs • MITRE ATT&CK • Pattern-matching via artificial intelligence (AI) systems"
+        },
+        {
+          "number": 12,
+          "title": "Malicious Activity Indicators​",
+          "preview": "Browser changes or overt ransomware notification​ • Sandbox execution​ • Resource consumption​ • File system • Blocked content • Resource inaccessibility • Account compromise • Logging • Missing and out-of-cycle logging • Windows Performance Monitor recording CPU utilization on a client PC. Anomalous activity is difficult to diagnose, but this graph shows load rarely dropping below 50%. Continual load is not typical "
+        },
+        {
+          "number": 13,
+          "title": "Malware classification​",
+          "preview": "Vector versus payload • Computer viruses​ • Computer worms and fileless malware​ • Spyware, adware, and keyloggers​ • Backdoors and remote access trojans​ • Rootkits • Ransomware, crypto-malware, and logic bombs​ • TTPs and IOCs • Malicious activity indicators​ • Resource consumption, file system, resource inaccessibility, account compromise, logging • Malware Attack Indicators"
+        },
+        {
+          "number": 14,
+          "title": "Assisted Lab: Detecting and Responding to Malware",
+          "preview": ""
+        },
+        {
+          "number": 15,
+          "title": "Physical and Network Attack Indicators",
+          "preview": "Topic 13B • Lesson 13"
+        },
+        {
+          "number": 16,
+          "title": "Physical Attacks",
+          "preview": "Brute force • Physical denial of service • Breaking into premises/cabinets • Environmental • RFID cloning and skimming • Radio Frequency Identification (RFID) and Nearfield Communications (NFC) • Contactless cards, badges, and fobs • Static tokens versus cryptoprocessors"
+        },
+        {
+          "number": 17,
+          "title": "Network Attacks",
+          "preview": "Reconnaissance and credential harvesting • Denial of service • Weaponization/delivery/breach • Command and control (C2 or C&C), beaconing, and persistence • Lateral movement, pivoting, and privilege escalation • Data exfiltration"
+        },
+        {
+          "number": 18,
+          "title": "Distributed Denial of Service Attacks (1)",
+          "preview": "Leverage bandwidth from compromised hosts/networks • Handlers form a command and control (C&C) network • Compromised hosts installed with bots that can run automated scripts • Co-ordinated by the C&C network as a botnet • Overwhelm with superior bandwidth (number of bots) • Consume resources with spoof session requests (SYN flood)"
+        },
+        {
+          "number": 19,
+          "title": "Distributed Denial of Service Attacks (2)",
+          "preview": "Reflected attacks • Spoof victim's IP address and attempt to open connections with multiple servers • Those servers direct their SYN/ACK responses to the victim • Amplified attacks • Bogus DNS/NTP queries • Direct responses at victim • Queries can be constructed to generate large response packets • DDoS indicators • Dropping traffic from blocklisted IP ranges using Security Onion IDS. (Screenshot used with permission"
+        },
+        {
+          "number": 20,
+          "title": "On-path Attacks",
+          "preview": "Threat actor positioned between two hosts • “Man-in-the-middle” • Can target forwarding/protocols at different network layers • Address Resolution Protocol (ARP) poisoning • Broadcasting unsolicited ARP replies to poison the cache of local hosts with spoofed MAC address • Attacker usually tries to masquerade as default gateway • Screenshot used with permission from wireshark.org."
+        },
+        {
+          "number": 21,
+          "title": "Domain Name System Attacks",
+          "preview": "Attacks on public DNS services • Typosquatting, DRDoS, and hijacking • DNS poisoning • DNS-based on-path attacks • Get client to use malicious resolver • DNS client cache poisoning • HOSTS file • DNS server cache poisoning • DNS attack indicators"
+        },
+        {
+          "number": 22,
+          "title": "Wireless Attacks",
+          "preview": "Rogue access points • Non-malicious backdoors • Evil twins masquerade as legitimate AP • Launch on-path attacks • Indicators and detection • Wireless denial of service • Jamming and disassociation • Wireless replay and key recovery • Screenshot used with permission from MetaGeek."
+        },
+        {
+          "number": 23,
+          "title": "Password Attacks​",
+          "preview": "Online password attack​ • Adversary interacts with authentication service​ • Offline attacks​ • Password database​ • Hash transmitted directly​ • Hash used as key to sign an HMAC​​ • Brute force attack • Dictionary and hybrid attacks • Password spraying​"
+        },
+        {
+          "number": 24,
+          "title": "Credential Replay Attacks",
+          "preview": "Credential dumping against Windows cached credentials • Kerberos tickets • NTLM hashes • Reversible encryption passwords • Credential replay against hosts and applications • Pass the hash (PtH) against NTLM • Pass the ticket (PtT) against Kerberos • Images © 123rf.com."
+        },
+        {
+          "number": 25,
+          "title": "Cryptographic Attacks",
+          "preview": "Downgrade attacks • Reduce transport encryption version/force use of weak cipher suites • Use weak cipher suites in Kerberos • Collision attacks • Forge digital signatures • Birthday attacks • Design more efficient collision attacks"
+        },
+        {
+          "number": 26,
+          "title": "Malicious Code Indicators",
+          "preview": "Shellcode • Credential dumping • Lateral movement • Psexec • PowerShell code • Persistence • Registry keys • Scheduled tasks"
+        },
+        {
+          "number": 27,
+          "title": "Physical attacks",
+          "preview": "Brute force, environmental, card cloning • Network attacks • Reconnaissance, weaponization, C&C, data exfiltration • Distributed denial of service attacks • On-path, Domain Name System, and wireless attacks • Password and credential replay attacks • Cryptographic attacks • Malicious code indicators • Shellcode, credential dumping, lateral movement/pivoting, persistence • Physical and Network Attack Indicators"
+        },
+        {
+          "number": 28,
+          "title": "Assisted Lab: Understanding On-Path Attacks",
+          "preview": ""
+        },
+        {
+          "number": 29,
+          "title": "Application Attack Indicators",
+          "preview": "Topic 13C • Lesson 13"
+        },
+        {
+          "number": 30,
+          "title": "Application Attacks",
+          "preview": "Attacks that target vulnerabilities in application code or architecture/design • Privilege escalation • Get privileges from target vulnerable process to run arbitrary code • Remote execution when code is transferred from another machine • Vertical and horizontal privilege escalation • Detect by process logging and auditing plus automated detection scanning • Buffer overflow"
+        },
+        {
+          "number": 31,
+          "title": "Replay Attacks",
+          "preview": "Resubmitting or guessing authorization tokens • Session management cookies • Replay cookie to obtain authenticated session • Using The Browser Exploitation Framework (BeEF) to obtain the session cookie from a browser."
+        },
+        {
+          "number": 32,
+          "title": "Forgery Attacks (1)",
+          "preview": "Cookie hijacking and session prediction • Client-side/cross-site (CSRF/XSRF) request forgery • Passes a URL to another site where the user has an authenticated session • Confused deputy • Images © 123rf.com."
+        },
+        {
+          "number": 33,
+          "title": "Forgery Attacks (2)",
+          "preview": "Server-side Request Forgery (SSRF) • Cause a server to make API calls or HTTP requests with arbitrary parameters • Weak authentication/access control between internal services • Weak input validation and faults in request parsing • Images © 123rf.com."
+        },
+        {
+          "number": 34,
+          "title": "Injection Attacks",
+          "preview": "Persistent XSS and SQL injection • Extensible Markup Language (XML) injection • XML tagged documents • XML External Entity (XXE) to exfiltrate data and files • Lightweight Directory Access Protocol (LDAP) injection • Query language to read and update network directories • SELECT * FROM tbl_user WHERE username = '' or 1=1--# • <?xml version=\"1.0\" encoding=\"UTF-8\"?> • <!DOCTYPE foo [<!ELEMENT foo ANY ><!ENTITY bar SYST"
+        },
+        {
+          "number": 35,
+          "title": "Directory Traversal and Command Injection Attacks",
+          "preview": "Directory traversal • Obtain access to files outside web site root directory • Canonicalization attack and percent encoding • Command injection • Cause server to run OS shell commands • http://victim.foo/?show=../../../../etc/config • http://victim.foo/?show=%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2fetc/config"
+        },
+        {
+          "number": 36,
+          "title": "URL Analysis",
+          "preview": "Uniform Resource Locator (URL) format • HTTP methods • TCP connections • GET, POST, PUT • URL (query parameters) • Percent encoding"
+        },
+        {
+          "number": 37,
+          "title": "Web Server Logs",
+          "preview": "Error log • Traffic log • Status codes • HTTP headers"
+        },
+        {
+          "number": 38,
+          "title": "Application attacks",
+          "preview": "Arbitrary/remote code execution, privilege escalation, buffer overflow • Replay attacks • Forgery attacks • Cross-site and server-side forgery • Injection attacks • SQL, XML, LDAP, directory traversal, command injection • URL analysis • Web server logs • Application Attack Indicators"
+        },
+        {
+          "number": 39,
+          "title": "Summary",
+          "preview": "Lesson 13 • CompTIA Security+ Exam SY0-701"
+        }
+      ]
+    },
+    {
+      "lesson": 14,
+      "title": "Summarize Security Governance Concepts",
+      "path": "materials/sy0-701_Lesson 14.pptx",
+      "slideCount": 26,
+      "slides": [
+        {
+          "number": 1,
+          "title": "Summarize Security Governance Concepts",
+          "preview": "Lesson 14 • CompTIA Security+ Exam SY0-701"
+        },
+        {
+          "number": 2,
+          "title": "Policies, Standards, and Procedures",
+          "preview": "Topic 14A • Lesson 14"
+        },
+        {
+          "number": 3,
+          "title": "Policies (1 of 2)",
+          "preview": "Vital in establishing effective governance and ensuring organizational compliance • Form the framework for operations, decision-making, and behaviors, and rules for a compliant and ethical corporate culture • Align the organization around common goals, prevent misconduct, and remove inefficiencies • Common Policies • Acceptable Use Policy (AUP) • Information Security Policies • Business Continuity & Continuity of Ope"
+        },
+        {
+          "number": 4,
+          "title": "Policies (2 of 2)",
+          "preview": "Guidelines: • Recommendations that steer actions in a particular job role or department • They are more flexible than policies and • Allow flexibility for their implementation"
+        },
+        {
+          "number": 5,
+          "title": "Procedures",
+          "preview": "Define step-by-step instructions and checklists • Ensure a task is completed in a compliant and repeatable way • Playbooks • Collection of critical actions generally associated with Security Operations (SOC) • Examples • Onboarding/Offboarding • Background Checks • Service/Software Provisioning • Desktop Deployment • Patching and updating • “Go-Live” actions • After hours support • Ticket management"
+        },
+        {
+          "number": 6,
+          "title": "Standards",
+          "preview": "Define a set of best practices and include specific details • Often associated with regulations and polices • Regulations and policies use standards to offload details • Standard can change often while policy remains the same • Standard can be managed by subject matter experts • Industry Standards • ISO 27k series, NIST 800 series Special Publications, PCI-DSS, FIPS, many others… • Internal Standards • Encryption, co"
+        },
+        {
+          "number": 7,
+          "title": "Legal Environment (1 of 2)",
+          "preview": "Governance committees ensure their organizations abide by all applicable cybersecurity laws and regulations to protect them from legal liability • Frameworks, benchmarks, and configuration guides may be used to demonstrate compliance with legal/regulatory requirements • Global Law • National Law • State/Local Law • Industry Regulations • Privacy Legislation"
+        },
+        {
+          "number": 8,
+          "title": "Legal Environment (2 of 2)",
+          "preview": "Privacy • GDPR • CCPA • Many others • Energy • North American Electric Reliability Corporation (NERC) (United States and Canada) • Education & Children • Family Educational Rights and Privacy Act (FERPA) (United States) • Children's Internet Protection Act (CIPA) (United States) • Children's Online Privacy Protection Act (COPPA) (United States) • Healthcare • Health Insurance Portability and Accountability Act (HIPAA"
+        },
+        {
+          "number": 9,
+          "title": "Governance and Accountability",
+          "preview": "Governance practices ensure organizations abide by all applicable cybersecurity laws and regulations to protect them from legal liability. • Governance Boards • Committees • Centralized vs Decentralized • Managing Risk and Revising Policies • Data Governance Roles • Owner • Controller • Processor • Custodian"
+        },
+        {
+          "number": 10,
+          "title": "Policies",
+          "preview": "Procedures • Standards • Legal Environment • Governance and Accountability • Policies, Standards, and Procedures"
+        },
+        {
+          "number": 11,
+          "title": "ADAPTIVE LAB: Using a Playbook",
+          "preview": ""
+        },
+        {
+          "number": 12,
+          "title": "Change Management",
+          "preview": "Topic 14B • Lesson 14"
+        },
+        {
+          "number": 13,
+          "title": "Change Management Programs (1 of 2)",
+          "preview": "Systematic approach that manages all changes made to a product or system • Ensures that methods and procedures are used to handle changes efficiently and effectively • Helps minimize risks associated with changes • Ensure changes do not negatively impact security, availability, or performance"
+        },
+        {
+          "number": 14,
+          "title": "Change Management Programs (2 of 2)",
+          "preview": "Stakeholder Input • Change Review Board • Impact Analysis • Test Results • Rollout Plans • Backout Plans • Maintenance Windows • Standard Operating Procedures (SOPs)"
+        },
+        {
+          "number": 15,
+          "title": "Allowed and Blocked Changes",
+          "preview": "Allow lists and deny lists play a role in change management practices. • Allow lists help streamline change management by reducing the time and effort required for trusted changes. • Deny lists includes blocked software, hardware, and specific change types. • Allow and deny lists also refer to technical controls that exists in different context such as access controls, firewall rules, and software restriction mechani"
+        },
+        {
+          "number": 16,
+          "title": "Restarts, Dependencies, and Downtime",
+          "preview": "Typically have a direct impact on business operations • Dependencies complicate changes because a service restart in one area may significantly impact another • Primary goal of change management is to minimize these disruptions • Processes include communication requirements designed to inform/update stakeholders • Legacy Systems and Applications • Often critical to business operations and difficult to manage • Legacy"
+        },
+        {
+          "number": 17,
+          "title": "Documentation and Version Control",
+          "preview": "Assessing how a change impacts existing policies, procedures, documentation and diagrams is essential, and change management plans should include provisions requiring updates to these documents as part of the implementation • Version control • Tacking and controlling changes to documents, diagrams, code, or other important data • Historical record of changes"
+        },
+        {
+          "number": 18,
+          "title": "Change Management Programs",
+          "preview": "Allowed and Blocked Changes • Restarts, Dependencies, and Downtime • Documentation and Version Control • Change Management"
+        },
+        {
+          "number": 19,
+          "title": "Assisted Lab: Implementing Allow Lists and Deny Lists",
+          "preview": ""
+        },
+        {
+          "number": 20,
+          "title": "Automation and Orchestration",
+          "preview": "Topic 14C • Lesson 14"
+        },
+        {
+          "number": 21,
+          "title": "Automation and Scripting",
+          "preview": "Critical tools in modern IT operations • Streamline processes • Enhance security • Improve efficiency • Enforce security policies • Reduce the risk of human error • Reduce implementation time • Provide clear audit trails"
+        },
+        {
+          "number": 22,
+          "title": "Automation and Orchestration Implementation",
+          "preview": "Enhance efficiency by enabling repetitive tasks to be performed quickly and consistently • Mitigate operator fatigue • Orchestration enhances the impact of automation by coordinating automated tasks across different systems and software tools"
+        },
+        {
+          "number": 23,
+          "title": "Automation and Orchestration Implementation",
+          "preview": "Security Automation • DevOps • Important Considerations • Complexity • Cost • Single Point of Failure • Technical Debt • Ongoing Support"
+        },
+        {
+          "number": 24,
+          "title": "Automation and Scripting",
+          "preview": "Automation and Orchestration Implementation • Automation and Orchestration"
+        },
+        {
+          "number": 25,
+          "title": "Assisted Lab: Use Cases of Automation and Scripting",
+          "preview": ""
+        },
+        {
+          "number": 26,
+          "title": "Summary",
+          "preview": "Lesson 14 • CompTIA Security+ Exam SY0-701"
+        }
+      ]
+    },
+    {
+      "lesson": 15,
+      "title": "Explain Risk Management Processes",
+      "path": "materials/sy0-701_Lesson 15.pptx",
+      "slideCount": 23,
+      "slides": [
+        {
+          "number": 1,
+          "title": "Explain Risk Management Processes",
+          "preview": "Lesson 15 • CompTIA Security+ Exam SY0-701"
+        },
+        {
+          "number": 2,
+          "title": "Risk Management Processes and Concepts",
+          "preview": "Topic 15A • Lesson 15"
+        },
+        {
+          "number": 3,
+          "title": "Risk Identification and Assessment (1 of 3)",
+          "preview": "Risk identification is fundamental to managing risk • Malware attacks • Phishing attempts • Insider threats • Equipment failures • Software vulnerabilities • Nontechnical risks like inadequate policies or training • Risk assessment evaluates previously identified risks to determine their potential impact on the organization"
+        },
+        {
+          "number": 4,
+          "title": "Risk Identification and Assessment (2 of 3)",
+          "preview": "Risk Analysis • Describes identifying and evaluating potential risks and the characteristics that define them • Quantitative Analysis • Assign tangible values to each risk • Qualitative Analysis • Assess risks based on subjective judgment • Risk Assessment • Estimates potential risk levels and their significance by interpreting data collected during risk analysis"
+        },
+        {
+          "number": 5,
+          "title": "Risk Identification and Assessment (3 of 3)",
+          "preview": "Inherent Risk • Level of risk before any type of mitigation has been attempted • Heat Map • Traffic light impact grid."
+        },
+        {
+          "number": 6,
+          "title": "Risk Management Strategies (1 of 2)",
+          "preview": "Risk management strategies • Describe the proactive and systematic approaches used to identify, assess, prioritize, and mitigate risks to minimize their negative impacts • Risk responses • Identify how risk items are managed • The four risk responses are avoid, accept, mitigate, and transfer."
+        },
+        {
+          "number": 7,
+          "title": "Risk Management Strategies (2 of 2)",
+          "preview": "Residual Risk • The amount of risk left after mitigations are implemented • Risk cannot be fully eliminated • Risk Appetite • Acceptable levels of risk • Varies from one organization to another • Sometimes defined in a formal risk appetite statement"
+        },
+        {
+          "number": 8,
+          "title": "Risk Management Processes (1 of 2)",
+          "preview": "Identifying, assessing, and mitigating vulnerabilities and threats to the essential functions that a business must perform to fulfill its purpose • Risk • A measure of threats, vulnerabilities, impact, and probability • Risk Registers • Risk description • Severity • Owner of the risk item • Identified mitigations • Often utilize heat maps"
+        },
+        {
+          "number": 9,
+          "title": "Risk Management Processes (2 of 2)",
+          "preview": "Risk Threshold • Defines the limits or levels of acceptable risk • Key Risk Indicators • Predictive indicators for monitoring and predicting potential risks • Risk Reporting • Communicate an organization's risk profile • Communicate the effectiveness of a risk management program"
+        },
+        {
+          "number": 10,
+          "title": "Business Impact Analysis",
+          "preview": "Identification of Critical Systems • Mission Essential Functions • Maximum Tolerable Downtime (MTD) • Recovery Time Objective (RTO) • Work Recovery Time (WRT) • Recovery Point Objective (RPO) • Metrics governing mission essential functions. (Images © 123RF.com.)"
+        },
+        {
+          "number": 11,
+          "title": "Risk Identification and Assessment",
+          "preview": "Risk Management Strategies • Risk Management Processes • Business Impact Analysis • Risk Management Processes and Concepts"
+        },
+        {
+          "number": 12,
+          "title": "Vendor Management Concepts",
+          "preview": "Topic 15B • Lesson 15"
+        },
+        {
+          "number": 13,
+          "title": "Vendor Selection (1 of 2)",
+          "preview": "Systematically evaluate and assess potential vendors to minimize risks associated with outsourcing or procurement • Third-Party Vendor Assessment • Critical component of Governance, Risk, and Compliance (GRC) • Vendor assessments provide evidence of due diligence • Conflict of Interest • When an individual or organization has competing interests or obligations that could compromise their ability to act objectively, i"
+        },
+        {
+          "number": 14,
+          "title": "Vendor Selection (2 of 2)",
+          "preview": "Vendor Assessment Methods • Evidence of Internal Audits • Independent Assessments • Penetration Testing • Supply Chain Analysis • Right-to-Audit Clause • Vendor Monitoring • Continuously evaluating vendors to ensure ongoing adherence to security standards, compliance requirements, and contractual obligations"
+        },
+        {
+          "number": 15,
+          "title": "Legal Agreements",
+          "preview": "Initial Agreements • Memorandum of Understanding (MOU) • Nondisclosure Agreement (NDA) • Memorandum of Agreement (MOA) • Business Partnership Agreement (BPA) • Master Service Agreement (MSA) • Operational/Performance Agreements • Service-level Agreement (SLA) • Statement of Work (SOW)/Work Order (WO) • Expectations • Rules of Engagement (RoE)"
+        },
+        {
+          "number": 16,
+          "title": "Vendor Selection",
+          "preview": "Vendor Assessment Methods • Legal Agreements • Vendor Management Concepts"
+        },
+        {
+          "number": 17,
+          "title": "Audits and Assessments",
+          "preview": "Topic 15C • Lesson 15"
+        },
+        {
+          "number": 18,
+          "title": "Attestation and Assessments",
+          "preview": "Attestation • Verifying the accuracy, reliability, and effectiveness of security controls • Internal Assessment • Organization's own employees conduct an in-depth assessment • Relatively simple to perform and customize • External Assessment • Independent Third-Party • Impartial and objective evaluation of business practices • Required for legal compliance"
+        },
+        {
+          "number": 19,
+          "title": "Penetration Testing",
+          "preview": "Uses authorized hacking techniques to discover exploitable weaknesses in the target's security systems. • Sometimes referred to as Pen Test or Ethical Hacking • Internal Pen Test performed by a “Red Team” • May include Active and Passive Reconnaissance • Known Environment Penetration Testing • Partially Known Environment Penetration Testing • Unknown Environment Penetration Testing"
+        },
+        {
+          "number": 20,
+          "title": "Exercise Types",
+          "preview": "Different types of penetration tests allow organizations to use a flexible and prioritized approach toward security assessment • Offensive Penetration Testing “Red Team” • Defensive Penetration Testing “Blue Team” • Physical Penetration Testing • Integrated Penetration Testing • Combines different types of penetration testing techniques"
+        },
+        {
+          "number": 21,
+          "title": "Attestation and Assessments",
+          "preview": "Penetration Testing • Exercise Types • Penetration Testing Concepts"
+        },
+        {
+          "number": 22,
+          "title": "Assisted Lab: Performing Reconnaissance",
+          "preview": "Assisted Lab: Performing Penetration Testing"
+        },
+        {
+          "number": 23,
+          "title": "Summary",
+          "preview": "Lesson 15 • CompTIA Security+ Exam SY0-701"
+        }
+      ]
+    },
+    {
+      "lesson": 16,
+      "title": "Summarize Data Protection and Compliance Concepts",
+      "path": "materials/sy0-701_Lesson 16.pptx",
+      "slideCount": 21,
+      "slides": [
+        {
+          "number": 1,
+          "title": "Summarize Data Protection and Compliance Concepts",
+          "preview": "Lesson 16 • CompTIA Security+ Exam SY0-701"
+        },
+        {
+          "number": 2,
+          "title": "Data Classification and Compliance",
+          "preview": "Topic 16A • Lesson 16"
+        },
+        {
+          "number": 3,
+          "title": "Data Types",
+          "preview": "Categorizing or classifying data based on its inherent characteristics, structure, and intended use • Regulated Data • Trade Secrets • Intellectual Property • Legal and Financial Data • Many Others"
+        },
+        {
+          "number": 4,
+          "title": "Data Classifications",
+          "preview": "Identifying the importance and associated protections required to protect different types of data • Typically defined in 3 levels • Using Microsoft Azure Information Protection to define an automatic document labeling and watermarking policy. (Screenshot used with permission from Microsoft.)"
+        },
+        {
+          "number": 5,
+          "title": "Data Sovereignty and Geographical Considerations",
+          "preview": "Data Sovereignty • A legal jurisdiction restricting processing and storage of data on systems that do not physically reside within that jurisdiction • Geographical Considerations • Organizations must ensure data remains within a designated boundary • Access controls to validate a user's geographic location"
+        },
+        {
+          "number": 6,
+          "title": "Privacy Data",
+          "preview": "Personally identifiable or sensitive information associated with an individual's personal, financial, or social identity • Data that could infringe upon an individual's privacy rights, if exposed or mishandled • Data protection and privacy laws safeguard both data types • Rapidly evolving legal environment • Privacy data is closely associated with the rights of individuals to control the use and disclosure of their p"
+        },
+        {
+          "number": 7,
+          "title": "Privacy Data",
+          "preview": "Legal Implications • Protecting privacy data carries significant local, national, and global legal implications • Many countries have specific privacy laws and regulations that dictate how personal data should be handled within their jurisdiction • The General Data Protection Regulation (GDPR) in the European Union has had a substantial impact globally by setting high privacy and data protection standards • GDPR appl"
+        },
+        {
+          "number": 8,
+          "title": "Privacy Data",
+          "preview": "Right to Be Forgotten • Fundamental principle outlined in the General Data Protection Regulation (GDPR) • Grants data subjects the right to request the deletion of their personal data under certain circumstances • Ownership of Privacy Data • It is not easy to attribute traditional notions of ownership to privacy data • Many data protection laws place the emphasis on protecting the data subject • Data Inventories and "
+        },
+        {
+          "number": 9,
+          "title": "Privacy Breaches and Data Breaches",
+          "preview": "When information is read, modified, or deleted without authorization • Organizational Consequences • Reputation damage • Identity theft • Fines • Intellectual Property (IP) theft • Breach Notification • Requirements for different types of breach are established in laws and in regulations • Public Notification and Disclosure"
+        },
+        {
+          "number": 10,
+          "title": "Compliance",
+          "preview": "Security compliance refers to organizations' adherence to applicable security standards, regulations, policy and best practices • Compliance Issues • Legal & Regulatory Noncompliance • Software Licensing • Contractual Noncompliance"
+        },
+        {
+          "number": 11,
+          "title": "Monitoring and Reporting",
+          "preview": "Systematically assessing, evaluating, and reporting an organization's adherence to laws, regulations, contracts, and industry standards • Internal and External Compliance Reporting • Compliance Monitoring"
+        },
+        {
+          "number": 12,
+          "title": "Data Protection and Data Loss Prevention",
+          "preview": "Data requires different protection methods for each state • Data at rest • Data in motion • Data in use • Data Loss Prevention • Automates the discovery and classification of data types and enforce rules so that data is not viewed or transferred without a proper authorization • Creating a DLP policy in Office 365. (Screenshot used with permission from Microsoft.)"
+        },
+        {
+          "number": 13,
+          "title": "Data Types",
+          "preview": "Data Classifications • Data Sovereignty and Geographical Considerations • Privacy Data • Privacy Breaches and Data Breaches • Compliance • Monitoring and Reporting • Data Protection • Data Loss Prevention • Data Classification and Compliance"
+        },
+        {
+          "number": 14,
+          "title": "Personnel Policies",
+          "preview": "Topic 16B • Lesson 16"
+        },
+        {
+          "number": 15,
+          "title": "Conduct Policies",
+          "preview": "Operational policies include credential management, data handling, incident response and those governing employee conduct and respect for privacy • Acceptable Use Policy • Code of Conduct • Social Media Use and Analysis • Use of Personally Owned Devices • Clean Desk Policy"
+        },
+        {
+          "number": 16,
+          "title": "User and Role-Based Training",
+          "preview": "Untrained users represent a serious vulnerability because they are susceptible to social engineering and malware attacks and may be careless when handling sensitive or confidential data • Appropriate security awareness training needs to be delivered to employees at all levels, including end users, technical staff, and executives • Training should be tailored to the audience and job role"
+        },
+        {
+          "number": 17,
+          "title": "Training Topics and Techniques",
+          "preview": "Popular Techniques • Computer-Based Training • Gamification • Phishing Campaigns • Topics • Situational Awareness • Reporting and Escalation Procedures • Policy/Handbooks • Insider Threat • Password Management • Removable Media and Cables • Hybrid/Remote Work Environments"
+        },
+        {
+          "number": 18,
+          "title": "Security Awareness Training Lifecycle",
+          "preview": "Security awareness training practices should follow a lifecycle approach consisting of several stages • Security Awareness Training Lifecycle."
+        },
+        {
+          "number": 19,
+          "title": "Conduct Policies",
+          "preview": "User and Role-Based Training • Training Topics and Techniques • Security Awareness Training Lifecycle • Personnel Policies"
+        },
+        {
+          "number": 20,
+          "title": "Assisted Lab: Training and Awareness through Simulation",
+          "preview": "Challenge Lab: Discovering Anomalous Behavior"
+        },
+        {
+          "number": 21,
+          "title": "Summary",
+          "preview": "Lesson 16 • CompTIA Security+ Exam SY0-701"
+        }
+      ]
+    }
+  ],
+  "textbook": {
+    "title": "CompTIA Security+ SY0-701 Student",
+    "path": "materials/CompTIA Security+ SY0-701 Student.pdf",
+    "note": "Consult the original textbook for complete explanations; its text is not republished.",
+    "chapters": []
+  }
+}
