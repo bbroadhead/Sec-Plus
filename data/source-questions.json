@@ -225,6 +225,230 @@
       "answer": 0,
       "slide": 5,
       "explanation": "The Data Sovereignty slide addresses jurisdictional restrictions on data processing and storage."
+    },
+    {
+      "lesson": 1,
+      "domain": 1,
+      "slide": 13,
+      "prompt": "Which control type substitutes for a principal security control?",
+      "options": [
+        "Compensating",
+        "Detective",
+        "Preventive",
+        "Deterrent"
+      ],
+      "answer": 0,
+      "explanation": "The slide describes compensating controls as substitutes for principal controls."
+    },
+    {
+      "lesson": 2,
+      "domain": 2,
+      "slide": 10,
+      "prompt": "A contractor with authorized access unintentionally exposes data because of weak security awareness. How is this threat classified?",
+      "options": [
+        "Unintentional insider",
+        "Nation-state actor",
+        "External hacktivist",
+        "Competitor espionage"
+      ],
+      "answer": 0,
+      "explanation": "The Internal Threat Actors slide includes weak training and poor policy adherence as unintentional insider risks."
+    },
+    {
+      "lesson": 3,
+      "domain": 1,
+      "slide": 9,
+      "prompt": "Which combination underlies a digital signature?",
+      "options": [
+        "Public-key cryptography and hashing",
+        "Symmetric encryption and compression",
+        "Encoding and data masking",
+        "Tokenization and mirroring"
+      ],
+      "answer": 0,
+      "explanation": "The Digital Signatures slide identifies public-key cryptography and hashing."
+    },
+    {
+      "lesson": 4,
+      "domain": 4,
+      "slide": 8,
+      "prompt": "Which biometric metric describes rejecting a legitimate user?",
+      "options": [
+        "False Rejection Rate",
+        "False Acceptance Rate",
+        "Keyspace",
+        "Recovery Time Objective"
+      ],
+      "answer": 0,
+      "explanation": "The Biometric Authentication slide identifies FRR as Type I error."
+    },
+    {
+      "lesson": 5,
+      "domain": 3,
+      "slide": 10,
+      "prompt": "Which protocol allows switches to implement EAP over LAN?",
+      "options": [
+        "IEEE 802.1X",
+        "SMTP",
+        "SNMPv1",
+        "FTP"
+      ],
+      "answer": 0,
+      "explanation": "The Port Security slide identifies IEEE 802.1X and EAPoL."
+    },
+    {
+      "lesson": 6,
+      "domain": 3,
+      "slide": 8,
+      "prompt": "Under the cloud responsibility matrix, who manages user identities and cloud resource access controls?",
+      "options": [
+        "Cloud service customer",
+        "Internet service provider",
+        "Certificate authority",
+        "Physical datacenter landlord"
+      ],
+      "answer": 0,
+      "explanation": "The Cloud Service Customer slide lists user identity management and access controls."
+    },
+    {
+      "lesson": 7,
+      "domain": 3,
+      "slide": 9,
+      "prompt": "Which action is explicitly included in secure asset disposal?",
+      "options": [
+        "Sanitization",
+        "Disabling monitoring",
+        "Sharing old credentials",
+        "Leaving drives intact without review"
+      ],
+      "answer": 0,
+      "explanation": "The Secure Data Destruction slide lists sanitization, destruction and certification."
+    },
+    {
+      "lesson": 8,
+      "domain": 2,
+      "slide": 8,
+      "prompt": "What is sideloading?",
+      "options": [
+        "Installing apps outside the official app store",
+        "Encrypting a system drive",
+        "Reinstalling the operating system",
+        "Enabling automatic patching"
+      ],
+      "answer": 0,
+      "explanation": "The Sideloading, Rooting, and Jailbreaking slide defines sideloading as installation from outside official stores."
+    },
+    {
+      "lesson": 9,
+      "domain": 3,
+      "slide": 10,
+      "prompt": "What is the primary purpose of network access control?",
+      "options": [
+        "Authenticate users or devices before network access",
+        "Encrypt every backup",
+        "Replace all firewalls",
+        "Disable wireless encryption"
+      ],
+      "answer": 0,
+      "explanation": "The Network Access Control slide describes pre-access authentication."
+    },
+    {
+      "lesson": 10,
+      "domain": 4,
+      "slide": 8,
+      "prompt": "What is a data diode intended to enforce?",
+      "options": [
+        "One-directional data flow",
+        "Unlimited bidirectional routing",
+        "Shared administrator passwords",
+        "Automatic public access"
+      ],
+      "answer": 0,
+      "explanation": "The Hardening Specialized Devices slide describes unidirectional gateways that limit data flow to one direction."
+    },
+    {
+      "lesson": 11,
+      "domain": 3,
+      "slide": 10,
+      "prompt": "Which DNS record type is used to publish SPF information?",
+      "options": [
+        "TXT",
+        "AAAA only",
+        "PTR only",
+        "SOA only"
+      ],
+      "answer": 0,
+      "explanation": "The Email Security slide says SPF uses DNS TXT records to identify authorized senders."
+    },
+    {
+      "lesson": 12,
+      "domain": 4,
+      "slide": 11,
+      "prompt": "Which technique is explicitly included in the incident-response lessons-learned phase?",
+      "options": [
+        "Five whys root cause analysis",
+        "Deleting incident logs",
+        "Skipping the timeline",
+        "Turning off detection"
+      ],
+      "answer": 0,
+      "explanation": "The Lessons Learned slide includes root cause analysis, the five whys and a timeline walkthrough."
+    },
+    {
+      "lesson": 13,
+      "domain": 2,
+      "slide": 9,
+      "prompt": "Which malware category can replace key system files and purge logs?",
+      "options": [
+        "Rootkit",
+        "Adware only",
+        "Tracking cookie",
+        "Benign update"
+      ],
+      "answer": 0,
+      "explanation": "The Rootkits slide identifies system file replacement and log purging."
+    },
+    {
+      "lesson": 14,
+      "domain": 5,
+      "slide": 9,
+      "prompt": "Which is a data governance role listed in the lesson?",
+      "options": [
+        "Custodian",
+        "Packet repeater",
+        "Load balancer",
+        "Hypervisor"
+      ],
+      "answer": 0,
+      "explanation": "The Governance and Accountability slide lists owner, controller, processor and custodian."
+    },
+    {
+      "lesson": 15,
+      "domain": 5,
+      "slide": 10,
+      "prompt": "Which metric describes the targeted time to restore a critical service?",
+      "options": [
+        "Recovery Time Objective",
+        "Recovery Point Objective",
+        "False Acceptance Rate",
+        "Key Risk Indicator"
+      ],
+      "answer": 0,
+      "explanation": "The Business Impact Analysis slide includes RTO among critical recovery metrics."
+    },
+    {
+      "lesson": 16,
+      "domain": 5,
+      "slide": 9,
+      "prompt": "Which consequence of a data breach is explicitly listed in the lesson?",
+      "options": [
+        "Identity theft",
+        "Guaranteed immunity from fines",
+        "Automatic elimination of risk",
+        "Reduced legal obligations"
+      ],
+      "answer": 0,
+      "explanation": "The Privacy Breaches and Data Breaches slide lists identity theft, fines and reputation damage."
     }
   ]
 }
