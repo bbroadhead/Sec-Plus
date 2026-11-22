@@ -6,31 +6,67 @@ on:
       - 'materials/**'
       - 'scripts/extract_materials.py'
       - '.github/workflows/extract-materials.yml'
+
 permissions:
   contents: write
+
+# Newer extraction runs queue behind the active run rather than racing its push.
+concurrency:
+  group: secplus-materials-main
+  cancel-in-progress: false
+
 jobs:
   extract:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - run: pip install python-pptx==1.0.2 pymupdf==1.26.5
-      - run: python scripts/extract_materials.py
+      - name: Extract material index
+        run: python scripts/extract_materials.py
       - name: Upload extracted index for review
         uses: actions/upload-artifact@v4
         with:
           name: security-plus-lesson-index
           path: data/lessons.json
           if-no-files-found: error
-      - name: Commit generated lesson index
+      - name: Wait for newer commits and publish without overwriting them
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/lessons.json
-          if ! git diff --cached --quiet; then
+
+          # A pending run for a newer commit may still be modifying the branch.
+          # Check the branch again before every push and retry on races.
+          for attempt in $(seq 1 20); do
+            git fetch origin main
+            git reset --hard origin/main
+
+            # Re-extract against the latest committed materials/scripts.
+            python scripts/extract_materials.py
+            git add data/lessons.json
+            if git diff --cached --quiet; then
+              echo "Lesson index already up to date."
+              exit 0
+            fi
+
             git commit -m "Generate slide-based study index"
-            git pull --rebase origin main
-            git push origin HEAD:main
-          fi
+            if git push origin HEAD:main; then
+              echo "Published generated lesson index."
+              exit 0
+            fi
+
+            echo "Main advanced during push (attempt $attempt); waiting and retrying."
+            sleep 15
+          done
+          echo "Unable to publish after 20 retries; another writer may be active." >&2
+          exit 1
