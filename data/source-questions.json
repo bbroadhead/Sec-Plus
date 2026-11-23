@@ -1453,6 +1453,306 @@
       "slide": 23,
       "explanation": "The Impersonation and Pretexting slide describes convincing scenarios and additional detail used to support false identity claims.",
       "style": "scenario"
+    },
+    {
+      "lesson": 12,
+      "domain": 4,
+      "prompt": "During an active intrusion, why should responders use an out-of-band communication channel?",
+      "options": [
+        "To avoid alerting the intruder",
+        "To eliminate the need for a response plan",
+        "To publish all findings immediately",
+        "To replace evidence preservation"
+      ],
+      "answer": 0,
+      "slide": 6,
+      "explanation": "The Preparation (2) slide identifies out-of-band communication as a way to avoid alerting the intruder.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 12,
+      "domain": 4,
+      "prompt": "An analyst categorizes a detected incident based on its impact and scope. Which incident response phase is this?",
+      "options": [
+        "Analysis",
+        "Recovery",
+        "Lessons learned",
+        "Preparation"
+      ],
+      "answer": 0,
+      "slide": 8,
+      "explanation": "The Analysis slide describes classifying and prioritizing incidents using impact, scope, and category.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 12,
+      "domain": 4,
+      "prompt": "A response team separates compromised endpoints from other systems to stop further spread. Which phase is this?",
+      "options": [
+        "Containment",
+        "Eradication",
+        "Preparation",
+        "Lessons learned"
+      ],
+      "answer": 0,
+      "slide": 9,
+      "explanation": "The Containment slide identifies isolation- and segmentation-based containment.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 12,
+      "domain": 4,
+      "prompt": "A facilitator presents an incident scenario and participants discuss responses without touching live systems. Which exercise is this?",
+      "options": [
+        "Tabletop exercise",
+        "Live red-team simulation",
+        "Production penetration test",
+        "System recovery"
+      ],
+      "answer": 0,
+      "slide": 12,
+      "explanation": "The Testing and Training slide says a tabletop exercise presents a scenario without involving live systems.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 12,
+      "domain": 4,
+      "prompt": "An investigator must prioritize volatile evidence on a running computer. Which should be collected before persistent disk data?",
+      "options": [
+        "RAM and CPU state",
+        "Archival backup tapes",
+        "Printed network diagrams",
+        "Offline disk images"
+      ],
+      "answer": 0,
+      "slide": 18,
+      "explanation": "The Acquisition slide lists CPU registers, cache, and RAM before persistent storage in the order of volatility.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 13,
+      "domain": 2,
+      "prompt": "Malicious code runs in memory and abuses built-in scripting tools rather than relying on a conventional executable file. Which description best fits?",
+      "options": [
+        "Fileless malware",
+        "Boot-sector virus",
+        "Adware",
+        "Hardware keylogger"
+      ],
+      "answer": 0,
+      "slide": 6,
+      "explanation": "The Computer Worms and Fileless Malware slide describes memory residence and living-off-the-land scripting tools.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 13,
+      "domain": 2,
+      "prompt": "A compromised workstation receives remote commands from an attacker's control infrastructure. Which malware capability is implicated?",
+      "options": [
+        "Remote access trojan/backdoor",
+        "Data classification",
+        "Certificate enrollment",
+        "Key escrow"
+      ],
+      "answer": 0,
+      "slide": 8,
+      "explanation": "The Backdoors and Remote Access Trojans slide associates RATs and bots with command and control.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 13,
+      "domain": 2,
+      "prompt": "Malware replaces system utilities and purges log files to conceal itself. Which malware category is most consistent?",
+      "options": [
+        "Rootkit",
+        "Adware",
+        "Macro-only virus",
+        "Potentially unwanted application"
+      ],
+      "answer": 0,
+      "slide": 9,
+      "explanation": "The Rootkits slide describes replacing system files and utilities and purging logs.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 13,
+      "domain": 2,
+      "prompt": "An unauthorized program silently uses workstation resources to mine cryptocurrency. Which activity is occurring?",
+      "options": [
+        "Cryptojacking",
+        "Data escrow",
+        "Certificate pinning",
+        "Access recertification"
+      ],
+      "answer": 0,
+      "slide": 10,
+      "explanation": "The Ransomware, Crypto-Malware, and Logic Bombs slide describes cryptojacking as hijacking resources for cryptocurrency mining.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 13,
+      "domain": 2,
+      "prompt": "Many compromised hosts are centrally coordinated to overwhelm a public service with traffic. What is this?",
+      "options": [
+        "Distributed denial-of-service attack",
+        "Single-host port scan",
+        "Certificate replay",
+        "Data masking"
+      ],
+      "answer": 0,
+      "slide": 18,
+      "explanation": "The Distributed Denial of Service slide describes botnets coordinated by command and control to overwhelm targets.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 14,
+      "domain": 5,
+      "prompt": "A document offers flexible recommendations for how a department should perform its work. What type of governance document is it?",
+      "options": [
+        "Guideline",
+        "Mandatory policy",
+        "Incident evidence log",
+        "Service-level agreement"
+      ],
+      "answer": 0,
+      "slide": 4,
+      "explanation": "The Policies (2 of 2) slide describes guidelines as flexible recommendations.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 14,
+      "domain": 5,
+      "prompt": "A team needs repeatable step-by-step instructions for onboarding and offboarding users. Which document fits best?",
+      "options": [
+        "Procedure",
+        "Risk appetite statement",
+        "Data classification label",
+        "Threat intelligence feed"
+      ],
+      "answer": 0,
+      "slide": 5,
+      "explanation": "The Procedures slide describes step-by-step instructions and checklists, including onboarding and offboarding.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 14,
+      "domain": 5,
+      "prompt": "A planned security change may disrupt a critical service. Which artifact provides a defined way to reverse the deployment?",
+      "options": [
+        "Backout plan",
+        "Threat actor profile",
+        "Certificate revocation list",
+        "Data retention label"
+      ],
+      "answer": 0,
+      "slide": 14,
+      "explanation": "The Change Management Programs (2 of 2) slide lists backout plans among change-management considerations.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 14,
+      "domain": 5,
+      "prompt": "A team needs a historical record of modifications to security diagrams and code. Which practice supports this?",
+      "options": [
+        "Version control",
+        "Risk transfer",
+        "Password spraying",
+        "Tokenization"
+      ],
+      "answer": 0,
+      "slide": 17,
+      "explanation": "The Documentation and Version Control slide identifies version control as tracking changes and maintaining history.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 15,
+      "domain": 5,
+      "prompt": "A risk analyst assigns monetary values to estimated potential losses. Which method is being used?",
+      "options": [
+        "Quantitative risk analysis",
+        "Qualitative risk analysis",
+        "Asset labeling",
+        "Threat hunting"
+      ],
+      "answer": 0,
+      "slide": 4,
+      "explanation": "The Risk Identification and Assessment (2 of 3) slide says quantitative analysis assigns tangible values.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 15,
+      "domain": 5,
+      "prompt": "A risk assessment reports exposure before any safeguards have been applied. Which risk level is this?",
+      "options": [
+        "Inherent risk",
+        "Residual risk",
+        "Accepted risk",
+        "Transferred risk"
+      ],
+      "answer": 0,
+      "slide": 5,
+      "explanation": "The Risk Identification and Assessment (3 of 3) slide defines inherent risk before mitigation.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 15,
+      "domain": 5,
+      "prompt": "After new safeguards are implemented, an organization still faces some exposure. What is that remaining exposure called?",
+      "options": [
+        "Residual risk",
+        "Inherent risk",
+        "Risk avoidance",
+        "Risk transfer"
+      ],
+      "answer": 0,
+      "slide": 7,
+      "explanation": "The Risk Management Strategies (2 of 2) slide defines residual risk as risk remaining after mitigation.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 15,
+      "domain": 5,
+      "prompt": "A contract allows a customer to examine a supplier's compliance controls. Which provision supports this?",
+      "options": [
+        "Right-to-audit clause",
+        "Nondisclosure exception",
+        "Risk acceptance waiver",
+        "Change freeze"
+      ],
+      "answer": 0,
+      "slide": 14,
+      "explanation": "The Vendor Selection (2 of 2) slide lists right-to-audit clauses among vendor assessment methods.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 16,
+      "domain": 5,
+      "prompt": "A law requires regulated information to remain on systems physically located within a particular jurisdiction. Which concept applies?",
+      "options": [
+        "Data sovereignty",
+        "Data deduplication",
+        "Token rotation",
+        "Certificate transparency"
+      ],
+      "answer": 0,
+      "slide": 5,
+      "explanation": "The Data Sovereignty and Geographical Considerations slide defines jurisdiction-based storage and processing restrictions.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 16,
+      "domain": 5,
+      "prompt": "An organization automatically identifies sensitive data and prevents unauthorized transfers. Which control is designed for this?",
+      "options": [
+        "Data loss prevention",
+        "Network address translation",
+        "Load balancing",
+        "Time synchronization"
+      ],
+      "answer": 0,
+      "slide": 12,
+      "explanation": "The Data Protection and Data Loss Prevention slide describes discovery, classification, and enforcement against unauthorized viewing or transfer.",
+      "style": "scenario"
     }
   ]
 }
