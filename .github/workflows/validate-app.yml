@@ -6,6 +6,7 @@ on:
       - 'data/source-questions.json'
       - 'data/lessons.json'
       - 'scripts/test-app.cjs'
+      - 'scripts/test-browser.cjs'
       - '.github/workflows/validate-app.yml'
   pull_request:
     paths:
@@ -13,6 +14,7 @@ on:
       - 'data/source-questions.json'
       - 'data/lessons.json'
       - 'scripts/test-app.cjs'
+      - 'scripts/test-browser.cjs'
       - '.github/workflows/validate-app.yml'
   workflow_dispatch:
 permissions:
@@ -27,3 +29,18 @@ jobs:
           node-version: '22'
       - name: Run static app smoke tests
         run: node scripts/test-app.cjs
+  browser-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Playwright Chromium
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+      - name: Start static site
+        run: python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/secplus-server.log 2>&1 &
+      - name: Test desktop and mobile Chromium
+        run: node scripts/test-browser.cjs
