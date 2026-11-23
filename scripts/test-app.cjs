@@ -9,7 +9,7 @@ assert.equal(lessonsIndex.lessons.length,16,'Expected 16 indexed course lessons'
 const script=html.match(/<script\b[^>]*>([\s\S]*?)<\/script>/i);
 assert(script,'Inline application script is present');
 new vm.Script(script[1],{filename:'index.html'});
-assert.equal(source.questions.length,48,'Expected 48 slide-referenced questions');
+assert.equal(source.questions.length,64,'Expected 64 slide-referenced questions');
 const lessons=new Set();
 for(const [i,q] of source.questions.entries()){
   assert(Number.isInteger(q.lesson)&&q.lesson>=1&&q.lesson<=16,'Valid lesson at '+i);
@@ -37,7 +37,7 @@ function createApp(){const ctx=vm.createContext({document,localStorage,fetch,set
 async function flush(){for(let pass=0;pass<8;pass++){while(deferred.length){const {url,resolve}=deferred.shift();resolve({ok:true,json:async()=>url.includes('source-questions')?source:lessonsIndex})}await Promise.resolve();await Promise.resolve();await Promise.resolve()}}
 (async()=>{
  let app=createApp();await flush();
- assert.equal(app.normalizedQuestions().length,68,'20 starter plus 48 source questions');
+ assert.equal(app.normalizedQuestions().length,84,'20 starter plus 64 source questions');
  assert(node('view').innerHTML.includes('command center'),'Dashboard renders');
  app.startQuiz();
  assert.equal(app.getState().session.questions.length,10);
@@ -58,5 +58,5 @@ async function flush(){for(let pass=0;pass<8;pass++){while(deferred.length){cons
  node('timer').value='0';node('pool').value='all';node('count').value='10';
  expired.startMockExam();assert.equal(expired.getState().session.questions.length,68,'Mock exam includes all questions');
  assert(expired.getState().session.deadline>Date.now(),'Mock exam is timed');
- console.log('PASS: syntax, 48 source questions with valid slide references, 16 lessons, loading, quiz, resume, timeout, mock exam');
+ console.log('PASS: syntax, 64 source questions with valid slide references, 16 lessons, loading, quiz, resume, timeout, mock exam');
 })().catch(e=>{console.error(e);process.exitCode=1});
