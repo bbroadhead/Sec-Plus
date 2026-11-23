@@ -42,6 +42,10 @@ const assert=require('node:assert/strict');
    page.once('dialog',dialog=>dialog.accept());
    await page.getByRole('button',{name:'Submit quiz'}).click();
    await page.getByRole('heading',{name:'Quiz complete'}).waitFor();
+   // Every slide-sourced question should provide an indexed textbook topic link.
+   const textbookLink=page.getByRole('link',{name:/Read Topic \d+[A-Z]: .*PDF p\. \d+/}).first();
+   await textbookLink.waitFor();
+   assert.match(await textbookLink.getAttribute('href'),/CompTIA.*Student\.pdf#page=\d+$/,'Textbook topic links point to PDF pages');
    // History should retain both completed sessions.
    await page.getByRole('button',{name:'History & Export'}).click();
    await page.getByRole('heading',{name:'Quiz history & export'}).waitFor();
