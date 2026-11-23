@@ -2053,6 +2053,156 @@
       "slide": 11,
       "explanation": "The Email Security slide explains that DKIM signs messages and receivers verify using the sender's DNS record.",
       "style": "scenario"
+    },
+    {
+      "lesson": 4,
+      "domain": 2,
+      "prompt": "A remote employee authenticates using a password and a fingerprint scan. A reviewer asks whether the design satisfies MFA. Which assessment is best?",
+      "options": [
+        "It combines knowledge and biometric factors",
+        "It repeats two knowledge factors",
+        "It uses two possession factors",
+        "It provides only a single biometric factor"
+      ],
+      "answer": 0,
+      "slide": 7,
+      "explanation": "The Multifactor Authentication slide distinguishes knowledge and biometric factors; combining different factor types satisfies MFA.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 5,
+      "domain": 3,
+      "prompt": "A network has strong perimeter filtering but unrestricted east-west access between workstations and database servers. After one workstation is compromised, the attacker reaches the database. Which change best limits similar lateral movement?",
+      "options": [
+        "Segment internal systems into restricted security zones",
+        "Increase the perimeter firewall logging interval",
+        "Consolidate the database onto the workstation subnet",
+        "Disable authentication on internal database connections"
+      ],
+      "answer": 0,
+      "slide": 9,
+      "explanation": "The Attack Surface slide emphasizes defense in depth; Security Zones (lesson 5, slide 8) describes segmentation by access requirements.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 6,
+      "domain": 3,
+      "prompt": "A company migrates an application to cloud infrastructure. The provider secures physical servers, but users still have overly broad permissions to customer records. Who should correct those permissions?",
+      "options": [
+        "The cloud customer managing identity and access controls",
+        "The provider's physical facilities team",
+        "The provider's hardware supply chain",
+        "The regional internet service provider"
+      ],
+      "answer": 0,
+      "slide": 8,
+      "explanation": "The Responsibility Matrix slides distinguish provider infrastructure protection from customer identity and access-control configuration.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 7,
+      "domain": 4,
+      "prompt": "A recovery exercise finds that nightly backups exist but the restore process has never been tested. What is the most defensible next step?",
+      "options": [
+        "Perform a controlled restoration test against recovery requirements",
+        "Assume backups are sufficient because files exist",
+        "Delete older backups to reduce the number of copies",
+        "Disable monitoring during the next backup cycle"
+      ],
+      "answer": 0,
+      "slide": 6,
+      "explanation": "The Data Backups slide frames backup systems around preserving availability and integrity; a controlled restoration verifies that backups are usable.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 8,
+      "domain": 2,
+      "prompt": "A privileged application validates a temporary file, then opens it later. An attacker swaps the file between those operations. What underlying weakness should developers address?",
+      "options": [
+        "A time-of-check to time-of-use race condition",
+        "An expired certificate authority trust anchor",
+        "An incorrectly sized network subnet",
+        "A failed DNS zone transfer"
+      ],
+      "answer": 0,
+      "slide": 12,
+      "explanation": "The Application Vulnerabilities slide identifies time-of-check to time-of-use (TOCTOU) race conditions.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 9,
+      "domain": 4,
+      "prompt": "An organization defines a hardened server baseline but finds settings drifting across hundreds of hosts. Which approach best improves consistent enforcement?",
+      "options": [
+        "Use configuration management to deploy and measure baseline compliance",
+        "Ask each administrator to memorize every baseline setting",
+        "Disable compliance scans to reduce alert volume",
+        "Replace baseline documentation with a one-time email"
+      ],
+      "answer": 0,
+      "slide": 4,
+      "explanation": "The Configuration Management slide names tools for deploying and measuring compliance with secure baselines.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 10,
+      "domain": 4,
+      "prompt": "A workstation is compromised after a user launches an unapproved executable. The team wants to limit which applications can run while retaining approved business software. Which control is most appropriate?",
+      "options": [
+        "Application allowlisting",
+        "Unrestricted local administrator access",
+        "Disabling file-system permissions",
+        "Removing centralized configuration enforcement"
+      ],
+      "answer": 0,
+      "slide": 6,
+      "explanation": "The Endpoint Configuration slide identifies application allow lists and block lists alongside least privilege.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 11,
+      "domain": 4,
+      "prompt": "A company publishes SPF records but forged messages that pass through forwarding still create inconsistent authentication results. Which additional policy can define how receivers handle SPF and DKIM outcomes?",
+      "options": [
+        "DMARC",
+        "RADIUS",
+        "SNMPv2c",
+        "NAT"
+      ],
+      "answer": 0,
+      "slide": 11,
+      "explanation": "The Email Security (2 of 3) slide describes DMARC as using SPF and DKIM results to define message handling rules.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 12,
+      "domain": 4,
+      "prompt": "A responder arrives at a powered-on compromised server. Disk imaging will take hours, and a reboot is scheduled. Which evidence should be prioritized before the reboot?",
+      "options": [
+        "Volatile memory and running-state evidence",
+        "Archived configuration manuals",
+        "Previously printed incident procedures",
+        "A backup stored offline last month"
+      ],
+      "answer": 0,
+      "slide": 18,
+      "explanation": "The Acquisition slide identifies RAM and CPU state as more volatile than persistent disk evidence.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 15,
+      "domain": 5,
+      "prompt": "A risk owner compares exposure before safeguards with exposure after a mitigation project. What pair of terms correctly labels these values?",
+      "options": [
+        "Inherent risk before, residual risk after",
+        "Residual risk before, inherent risk after",
+        "Transferred risk before, avoided risk after",
+        "Accepted risk before, quantitative risk after"
+      ],
+      "answer": 0,
+      "slide": 5,
+      "explanation": "The Risk Identification and Assessment slide defines inherent risk before mitigation; Risk Management Strategies describes residual risk after mitigation.",
+      "style": "scenario"
     }
   ]
 }
