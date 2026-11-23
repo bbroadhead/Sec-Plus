@@ -1,0 +1,27 @@
+name: Validate Security+ app
+on:
+  push:
+    paths:
+      - 'index.html'
+      - 'data/source-questions.json'
+      - 'scripts/test-app.cjs'
+      - '.github/workflows/validate-app.yml'
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'data/source-questions.json'
+      - 'scripts/test-app.cjs'
+      - '.github/workflows/validate-app.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  smoke-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run static app smoke tests
+        run: node scripts/test-app.cjs
