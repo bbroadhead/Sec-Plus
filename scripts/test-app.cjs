@@ -33,7 +33,7 @@ const localStorage={getItem:k=>memory.get(k)||null,setItem:(k,v)=>memory.set(k,v
 const deferred=[];
 const fetch=(url)=>new Promise(resolve=>deferred.push({url,resolve}));
 const intervals=[];
-function createApp(){const ctx=vm.createContext({document,localStorage,fetch,setInterval:fn=>intervals.push(fn),alert:msg=>{throw Error(msg)},Date,Math,JSON,Blob,URL,console});vm.runInContext(script[1],ctx);return vm.runInContext('({startQuiz,startMockExam,answer,nextQuestion,render,finishQuiz,quiz,startTargetedPractice,reviewQuiz,returnToQuiz,normalizedQuestions,getState:()=>({session,state,tab})})',ctx)}
+function createApp(){const ctx=vm.createContext({document,localStorage,fetch,setInterval:fn=>intervals.push(fn),alert:msg=>{throw Error(msg)},Date,Math,JSON,Blob,URL,console});vm.runInContext(script[1],ctx);return vm.runInContext('({startQuiz,startMockExam,answer,nextQuestion,render,finishQuiz,quiz,startTargetedPractice,setPbqAnswer,questionAnswered,reviewQuiz,returnToQuiz,normalizedQuestions,getState:()=>({session,state,tab})})',ctx)}
 async function flush(){for(let pass=0;pass<8;pass++){while(deferred.length){const {url,resolve}=deferred.shift();resolve({ok:true,json:async()=>url.includes('source-questions')?source:lessonsIndex})}await Promise.resolve();await Promise.resolve();await Promise.resolve()}}
 (async()=>{
  let app=createApp();await flush();
@@ -68,5 +68,16 @@ async function flush(){for(let pass=0;pass<8;pass++){while(deferred.length){cons
  assert.equal(counts.reduce((a,b)=>a+b,0),90,'Exam domains sum to 90');
  assert(counts.every(n=>n>0),'Every domain represented');
  assert(expired.getState().session.deadline>Date.now(),'Mock exam is timed');
+ const pbqIndex=expired.getState().session.questions.findIndex(q=>q.type==='pbq');
+ assert(pbqIndex>=0,'Exam includes a PBQ');
+ expired.getState().session.index=pbqIndex;
+ const pbq=expired.getState().session.questions[pbqIndex];
+ expired.setPbqAnswer(0,0);
+ assert.equal(expired.questionAnswered(pbq,expired.getState().session.answers[pbqIndex]),false,'Partial PBQ remains unanswered');
+ for(let j=1;j<pbq.tasks.length;j++)expired.setPbqAnswer(j,(pbq.tasks[j].correct+1)%pbq.tasks[j].choices.length);
+ assert.equal(expired.questionAnswered(pbq,expired.getState().session.answers[pbqIndex]),true,'Fully selected PBQ counts as answered even if incorrect');
+ expired.nextQuestion();
+ assert.notEqual(expired.getState().session.index,pbqIndex,'Incorrect but complete PBQ permits navigation');
+
  console.log('PASS: syntax, 80 source questions with valid slide references, 16 lessons, loading, quiz, resume, timeout, mock exam');
 })().catch(e=>{console.error(e);process.exitCode=1});
