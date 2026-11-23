@@ -2483,6 +2483,8 @@
     "title": "CompTIA Security+ SY0-701 Student",
     "path": "materials/CompTIA Security+ SY0-701 Student.pdf",
     "note": "Consult the original textbook for complete explanations; its text is not republished.",
-    "chapters": []
+    "chapters": [],
+    "indexMethod": "unavailable",
+    "pageCount": 628
   }
 }
