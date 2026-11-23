@@ -11,7 +11,7 @@ const assert=require('node:assert/strict');
    await page.goto('http://127.0.0.1:8765/',{waitUntil:'networkidle'});
    await page.getByRole('heading',{name:/security\+ command center/i}).waitFor();
    await page.getByRole('button',{name:'Practice Quiz',exact:true}).click();
-   await page.getByText(/Question bank: \\d+ questions/).waitFor();
+   await page.getByText(/Question bank: \d+ questions/).waitFor();
    await page.locator('#count').fill('2');
    await page.getByRole('button',{name:'Start quiz',exact:true}).click();
    await page.getByText('Question 1 of 2').waitFor();
