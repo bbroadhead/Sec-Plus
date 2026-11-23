@@ -10,6 +10,17 @@ const script=html.match(/<script\b[^>]*>([\s\S]*?)<\/script>/i);
 assert(script,'Inline application script is present');
 new vm.Script(script[1],{filename:'index.html'});
 assert(source.questions.length>=80,'Expected at least 80 slide-referenced questions');
+const normalizedPrompts=new Set();
+const domainCounts=new Map();
+for(const [i,q] of source.questions.entries()){
+ const normalized=q.prompt.toLowerCase().replace(/[^a-z0-9]/g,'');
+ assert(!normalizedPrompts.has(normalized),'Duplicate question prompt at '+i);
+ normalizedPrompts.add(normalized);
+ assert(q.options.every(o=>typeof o==='string'&&o.trim().length>=3),'Nonempty distractors at '+i);
+ assert(new Set(q.options.map(o=>o.trim().toLowerCase())).size===4,'Case-insensitive unique distractors at '+i);
+ domainCounts.set(String(q.domain),(domainCounts.get(String(q.domain))||0)+1);
+}
+for(let domain=1;domain<=5;domain++)assert((domainCounts.get(String(domain))||0)>=15,'At least 15 source questions in domain '+domain);
 const lessons=new Set();
 for(const [i,q] of source.questions.entries()){
   assert(Number.isInteger(q.lesson)&&q.lesson>=1&&q.lesson<=16,'Valid lesson at '+i);
