@@ -120,7 +120,7 @@ function textbookLink(q){
     let topicCode='';
     for(const slide of slides){
       if(Number(slide.number)>Number(q.slide))break;
-      const match=(String(slide.title||'')+' '+String(slide.preview||'')).match(/\\bTopic\\s+(\\d{1,2}[A-Z])\\b/i);
+      const match=(String(slide.title||'')+' '+String(slide.preview||'')).match(/\bTopic\s+(\d{1,2}[A-Z])\b/i);
       if(match)topicCode=match[1].toUpperCase();
     }
     const topic=chapters.find(c=>c.level===2&&c.title.startsWith('Topic '+topicCode+':'));
