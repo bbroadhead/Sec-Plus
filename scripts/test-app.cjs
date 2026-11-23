@@ -58,7 +58,11 @@ async function flush(){for(let pass=0;pass<8;pass++){while(deferred.length){cons
  assert.equal(expired.getState().state.history.at(-1).timedOut,true,'Timeout marked');
  assert.equal(expired.getState().state.history.at(-1).answers.filter(a=>a.selected==='Not answered').length,2);
  node('timer').value='0';node('pool').value='all';node('count').value='10';
- expired.startMockExam();assert.equal(expired.getState().session.questions.length,100,'Mock exam includes all questions');
+ expired.startMockExam();assert.equal(expired.getState().session.questions.length,90,'Exam simulator selects 90 questions');
+ assert.equal(expired.getState().session.mode,'exam','Exam mode recorded');
+ const counts=[1,2,3,4,5].map(d=>expired.getState().session.questions.filter(q=>Number(q.domain)===d).length);
+ assert.equal(counts.reduce((a,b)=>a+b,0),90,'Exam domains sum to 90');
+ assert(counts.every(n=>n>0),'Every domain represented');
  assert(expired.getState().session.deadline>Date.now(),'Mock exam is timed');
  console.log('PASS: syntax, 80 source questions with valid slide references, 16 lessons, loading, quiz, resume, timeout, mock exam');
 })().catch(e=>{console.error(e);process.exitCode=1});
