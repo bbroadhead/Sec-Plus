@@ -41,7 +41,7 @@ def extract_chapters(doc):
     # Only headings visibly printed on a page are indexed. PDF pages are 1-based.
     found = []
     seen = set()
-    lesson_pattern = re.compile(r"^(?:lesson|chapter|unit)\\s+(\\d{1,2})(?:\\s*[:.\\-–]\\s*|\\s+)(.{3,100})$", re.I)
+    lesson_pattern = re.compile(r"^(?:lesson|chapter|unit)\s+(\d{1,2})(?:\s*[:.\\-–]\s*|\s+)(.{3,100})$", re.I)
     for page_no, page in enumerate(doc, 1):
         if page_no <= 4:
             continue
@@ -57,7 +57,7 @@ def extract_chapters(doc):
             if not 1 <= number <= 99 or number in seen:
                 continue
             title = normalize(match.group(2))
-            if not title or re.search(r"\\.{3,}\\s*\\d+$", title):
+            if not title or re.search(r"\\.{3,}\s*\d+$", title):
                 continue
             seen.add(number)
             found.append({"level": 1, "title": f"Lesson {number}: {title}"[:180], "page": page_no})
@@ -72,8 +72,8 @@ def extract_chapters(doc):
             if not lines:
                 continue
             for index, (label, size, y) in enumerate(lines):
-                match_lesson = re.fullmatch(r"Lesson\\s+(\\d{1,2})", label, re.I)
-                match_topic = re.fullmatch(r"Topic\\s+(\\d{1,2})([A-Z])", label, re.I)
+                match_lesson = re.fullmatch(r"Lesson\s+(\d{1,2})", label, re.I)
+                match_topic = re.fullmatch(r"Topic\s+(\d{1,2})([A-Z])", label, re.I)
                 if size < 25 or not (match_lesson or match_topic):
                     continue
                 if match_lesson:
