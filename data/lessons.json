@@ -2483,8 +2483,309 @@
     "title": "CompTIA Security+ SY0-701 Student",
     "path": "materials/CompTIA Security+ SY0-701 Student.pdf",
     "note": "Consult the original textbook for complete explanations; its text is not republished.",
-    "chapters": [],
-    "indexMethod": "unavailable",
+    "chapters": [
+      {
+        "level": 1,
+        "title": "Lesson 1: Summarize Fundamental Security Concepts",
+        "page": 11
+      },
+      {
+        "level": 2,
+        "title": "Topic 1A: Security Concepts",
+        "page": 12
+      },
+      {
+        "level": 2,
+        "title": "Topic 1B: Security Controls",
+        "page": 18
+      },
+      {
+        "level": 1,
+        "title": "Lesson 2: Compare Threat Types",
+        "page": 25
+      },
+      {
+        "level": 2,
+        "title": "Topic 2A: Threat Actors",
+        "page": 26
+      },
+      {
+        "level": 2,
+        "title": "Topic 2B: Attack Surfaces",
+        "page": 33
+      },
+      {
+        "level": 2,
+        "title": "Topic 2C: Social Engineering",
+        "page": 40
+      },
+      {
+        "level": 1,
+        "title": "Lesson 3: Explain Cryptographic Solutions",
+        "page": 47
+      },
+      {
+        "level": 2,
+        "title": "Topic 3A: Cryptographic Algorithms",
+        "page": 48
+      },
+      {
+        "level": 2,
+        "title": "Topic 3B: Public Key Infrastructure",
+        "page": 57
+      },
+      {
+        "level": 2,
+        "title": "Topic 3C: Cryptographic Solutions",
+        "page": 70
+      },
+      {
+        "level": 1,
+        "title": "Lesson 4: Implement Identity and Access Management",
+        "page": 79
+      },
+      {
+        "level": 2,
+        "title": "Topic 4A: Authentication",
+        "page": 80
+      },
+      {
+        "level": 2,
+        "title": "Topic 4B: Authorization",
+        "page": 91
+      },
+      {
+        "level": 2,
+        "title": "Topic 4C: Identity Management",
+        "page": 99
+      },
+      {
+        "level": 1,
+        "title": "Lesson 5: Secure Enterprise Network Architecture",
+        "page": 109
+      },
+      {
+        "level": 2,
+        "title": "Topic 5A: Enterprise Network Architecture",
+        "page": 110
+      },
+      {
+        "level": 2,
+        "title": "Topic 5B: Network Security Appliances",
+        "page": 125
+      },
+      {
+        "level": 2,
+        "title": "Topic 5C: Secure Communications",
+        "page": 139
+      },
+      {
+        "level": 1,
+        "title": "Lesson 6: Secure Cloud Network Architecture",
+        "page": 151
+      },
+      {
+        "level": 2,
+        "title": "Topic 6A: Cloud Infrastructure",
+        "page": 152
+      },
+      {
+        "level": 2,
+        "title": "Topic 6B: Embedded Systems and Zero Trust Architecture",
+        "page": 168
+      },
+      {
+        "level": 1,
+        "title": "Lesson 7: Explain Resiliency and Site Security Concepts",
+        "page": 181
+      },
+      {
+        "level": 2,
+        "title": "Topic 7A: Asset Management",
+        "page": 182
+      },
+      {
+        "level": 2,
+        "title": "Topic 7B: Redundancy Strategies",
+        "page": 192
+      },
+      {
+        "level": 2,
+        "title": "Topic 7C: Physical Security",
+        "page": 208
+      },
+      {
+        "level": 1,
+        "title": "Lesson 8: Explain Vulnerability Management",
+        "page": 219
+      },
+      {
+        "level": 2,
+        "title": "Topic 8A: Device and OS Vulnerabilities",
+        "page": 220
+      },
+      {
+        "level": 2,
+        "title": "Topic 8B: Application and Cloud Vulnerabilities",
+        "page": 230
+      },
+      {
+        "level": 2,
+        "title": "Topic 8C: Vulnerability Identification Methods",
+        "page": 241
+      },
+      {
+        "level": 2,
+        "title": "Topic 8D: Vulnerability Analysis and Remediation",
+        "page": 252
+      },
+      {
+        "level": 1,
+        "title": "Lesson 9: Evaluate Network Security Capabilities",
+        "page": 261
+      },
+      {
+        "level": 2,
+        "title": "Topic 9A: Network Security Baselines",
+        "page": 262
+      },
+      {
+        "level": 2,
+        "title": "Topic 9B: Network Security Capability Enhancement",
+        "page": 273
+      },
+      {
+        "level": 1,
+        "title": "Lesson 10: Assess Endpoint Security Capabilities",
+        "page": 283
+      },
+      {
+        "level": 2,
+        "title": "Topic 10A: Implement Endpoint Security",
+        "page": 284
+      },
+      {
+        "level": 2,
+        "title": "Topic 10B: Mobile Device Hardening",
+        "page": 302
+      },
+      {
+        "level": 1,
+        "title": "Lesson 11: Enhance Application Security Capabilities",
+        "page": 313
+      },
+      {
+        "level": 2,
+        "title": "Topic 11A: Application Protocol Security Baselines",
+        "page": 314
+      },
+      {
+        "level": 2,
+        "title": "Topic 11B: Cloud and Web Application Security Concepts",
+        "page": 328
+      },
+      {
+        "level": 1,
+        "title": "Lesson 12: Explain Incident Response and Monitoring Concepts",
+        "page": 337
+      },
+      {
+        "level": 2,
+        "title": "Topic 12A: Incident Response",
+        "page": 338
+      },
+      {
+        "level": 2,
+        "title": "Topic 12B: Digital Forensics",
+        "page": 350
+      },
+      {
+        "level": 2,
+        "title": "Topic 12C: Data Sources",
+        "page": 357
+      },
+      {
+        "level": 2,
+        "title": "Topic 12D: Alerting and Monitoring Tools",
+        "page": 368
+      },
+      {
+        "level": 1,
+        "title": "Lesson 13: Analyze Indicators of Malicious Activity",
+        "page": 381
+      },
+      {
+        "level": 2,
+        "title": "Topic 13A: Malware Attack Indicators",
+        "page": 382
+      },
+      {
+        "level": 2,
+        "title": "Topic 13B: Physical and Network Attack Indicators",
+        "page": 395
+      },
+      {
+        "level": 2,
+        "title": "Topic 13C: Application Attack Indicators",
+        "page": 409
+      },
+      {
+        "level": 1,
+        "title": "Lesson 14: Summarize Security Governance Concepts",
+        "page": 419
+      },
+      {
+        "level": 2,
+        "title": "Topic 14A: Policies, Standards, and Procedures",
+        "page": 420
+      },
+      {
+        "level": 2,
+        "title": "Topic 14B: Change Management",
+        "page": 435
+      },
+      {
+        "level": 2,
+        "title": "Topic 14C: Automation and Orchestration",
+        "page": 443
+      },
+      {
+        "level": 1,
+        "title": "Lesson 15: Explain Risk Management Processes",
+        "page": 449
+      },
+      {
+        "level": 2,
+        "title": "Topic 15A: Risk Management Processes and Concepts",
+        "page": 450
+      },
+      {
+        "level": 2,
+        "title": "Topic 15B: Vendor Management Concepts",
+        "page": 463
+      },
+      {
+        "level": 2,
+        "title": "Topic 15C: Audits and Assessments",
+        "page": 470
+      },
+      {
+        "level": 1,
+        "title": "Lesson 16: Summarize Data Protection and Compliance Concepts",
+        "page": 479
+      },
+      {
+        "level": 2,
+        "title": "Topic 16A: Data Classification and Compliance",
+        "page": 480
+      },
+      {
+        "level": 2,
+        "title": "Topic 16B: Personnel Policies",
+        "page": 498
+      }
+    ],
+    "indexMethod": "page-headings",
     "pageCount": 628
   }
 }
