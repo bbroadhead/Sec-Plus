@@ -1153,6 +1153,306 @@
       "slide": 5,
       "style": "scenario",
       "explanation": "Lesson 16, slide 5 (Data Sovereignty and Geographical Considerations) covers Data Sovereignty and A legal jurisdiction restricting processing and storage of data on systems that do not physically reside within that jurisdiction. The scenario applies that lesson concept."
+    },
+    {
+      "lesson": 1,
+      "domain": 1,
+      "prompt": "A security team deploys a control directly within an operating system to enforce access restrictions. Which control category applies?",
+      "options": [
+        "Technical",
+        "Managerial",
+        "Operational",
+        "Physical"
+      ],
+      "answer": 0,
+      "slide": 11,
+      "explanation": "The Security Control Categories slide identifies controls implemented in operating systems, software, and security appliances as technical.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 1,
+      "domain": 1,
+      "prompt": "An intrusion detection sensor alerts analysts while an attacker is attempting access. What functional control type is it?",
+      "options": [
+        "Detective",
+        "Corrective",
+        "Deterrent",
+        "Compensating"
+      ],
+      "answer": 0,
+      "slide": 12,
+      "explanation": "The Security Control Functional Types slide describes detective controls as identifying attempted or successful intrusions during an attack.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 1,
+      "domain": 1,
+      "prompt": "An organization uses an alternative safeguard because its primary mandated control cannot be implemented. What is this called?",
+      "options": [
+        "Compensating control",
+        "Preventive control",
+        "Directive control",
+        "Detective control"
+      ],
+      "answer": 0,
+      "slide": 13,
+      "explanation": "The slide defines compensating controls as substitutes for principal controls.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 2,
+      "domain": 2,
+      "prompt": "An attacker steals customer records and demands payment to prevent their release. Which motivation best matches this behavior?",
+      "options": [
+        "Financial extortion",
+        "Political whistleblowing",
+        "Unintentional error",
+        "Service availability"
+      ],
+      "answer": 0,
+      "slide": 6,
+      "explanation": "The Motivations of Threat Actors slide lists blackmail and extortion among financial motivations.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 2,
+      "domain": 2,
+      "prompt": "An employee installs an unauthorized cloud service without understanding its security implications. Which insider-risk concept fits?",
+      "options": [
+        "Shadow IT",
+        "Nation-state espionage",
+        "Supply-chain tampering",
+        "False flag operation"
+      ],
+      "answer": 0,
+      "slide": 10,
+      "explanation": "The Internal Threat Actors slide includes shadow IT among unintentional insider-threat concerns.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 2,
+      "domain": 2,
+      "prompt": "A penetration tester inventories all externally reachable applications and network ports. What is being identified?",
+      "options": [
+        "Attack surface",
+        "Keyspace",
+        "Chain of trust",
+        "Certificate lifecycle"
+      ],
+      "answer": 0,
+      "slide": 13,
+      "explanation": "The Attack Surface and Vectors slide defines the attack surface as points where vulnerabilities can be discovered or exploited.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 2,
+      "domain": 2,
+      "prompt": "An attacker leaves infected removable drives where employees might pick them up. Which vector is being used?",
+      "options": [
+        "Lure-based drop attack",
+        "Certificate revocation",
+        "DNSSEC validation",
+        "Session failover"
+      ],
+      "answer": 0,
+      "slide": 16,
+      "explanation": "The Lure-based Vectors slide identifies removable devices and drop attacks as bait-based techniques.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 2,
+      "domain": 2,
+      "prompt": "A victim is redirected to a fraudulent website after DNS records are spoofed. Which technique is illustrated?",
+      "options": [
+        "Pharming",
+        "Whaling",
+        "Pretexting",
+        "Smishing"
+      ],
+      "answer": 0,
+      "slide": 24,
+      "explanation": "The Phishing and Pharming slide associates pharming with redirection through DNS spoofing.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 2,
+      "domain": 2,
+      "prompt": "A malicious site uses a nearly identical domain spelling to a trusted organization's site. What is the technique?",
+      "options": [
+        "Typosquatting",
+        "Key escrow",
+        "Port mirroring",
+        "Credential rotation"
+      ],
+      "answer": 0,
+      "slide": 25,
+      "explanation": "The Typosquatting slide describes cousin domains designed to resemble trusted domains.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 3,
+      "domain": 1,
+      "prompt": "A company needs to encrypt a very large backup efficiently using a shared secret key. Which approach best fits?",
+      "options": [
+        "Symmetric encryption",
+        "Asymmetric encryption for every block",
+        "Digital signing alone",
+        "One-way hashing"
+      ],
+      "answer": 0,
+      "slide": 5,
+      "explanation": "The Symmetric Encryption slide describes shared-key encryption as fast and suitable for bulk data.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 3,
+      "domain": 1,
+      "prompt": "What is the principal brute-force benefit of increasing a cryptographic key's bit length?",
+      "options": [
+        "A larger keyspace",
+        "A shorter ciphertext",
+        "Automatic key rotation",
+        "Removal of key storage requirements"
+      ],
+      "answer": 0,
+      "slide": 6,
+      "explanation": "The Key Length slide states that longer keys increase keyspace and resistance to brute-force cryptanalysis.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 3,
+      "domain": 1,
+      "prompt": "A security engineer needs a one-way digest to detect file changes. Which cryptographic operation best matches?",
+      "options": [
+        "Hashing",
+        "Decryption",
+        "Key escrow",
+        "Asymmetric key exchange"
+      ],
+      "answer": 0,
+      "slide": 8,
+      "explanation": "The Hashing slide describes fixed-length, one-way digests used for integrity checks.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 3,
+      "domain": 1,
+      "prompt": "A sender needs recipients to verify message integrity and origin and support non-repudiation. Which mechanism is appropriate?",
+      "options": [
+        "Digital signature",
+        "Symmetric encryption alone",
+        "Network address translation",
+        "Certificate suspension alone"
+      ],
+      "answer": 0,
+      "slide": 9,
+      "explanation": "The Digital Signatures slide lists integrity, authentication, and non-repudiation as signature properties.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 3,
+      "domain": 1,
+      "prompt": "What does a digital certificate contain to associate a subject with cryptographic identity?",
+      "options": [
+        "The subject's public key",
+        "The subject's private key",
+        "Every user's shared password",
+        "A symmetric master key for all users"
+      ],
+      "answer": 0,
+      "slide": 14,
+      "explanation": "The Digital Certificates slide states that a certificate contains the subject's public key and identifying information.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 3,
+      "domain": 1,
+      "prompt": "During a certificate signing request, which item must remain with the applicant rather than being sent to the CA?",
+      "options": [
+        "Private key",
+        "Public key",
+        "Certificate request",
+        "Subject identity information"
+      ],
+      "answer": 0,
+      "slide": 16,
+      "explanation": "The Certificate Signing Requests slide explicitly says the subject must not send its private key.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 3,
+      "domain": 1,
+      "prompt": "A TLS certificate needs to identify several hostnames. Which certificate field is designed for this?",
+      "options": [
+        "Subject Alternative Name",
+        "Certificate serial number",
+        "Key usage alone",
+        "Revocation reason code"
+      ],
+      "answer": 0,
+      "slide": 17,
+      "explanation": "The Subject Name Attributes slide describes SAN as supporting multiple hostnames and subdomains.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 3,
+      "domain": 1,
+      "prompt": "A client wants to check the current status of one certificate per request. Which protocol is designed for this?",
+      "options": [
+        "OCSP",
+        "SMTP",
+        "SNMP",
+        "SFTP"
+      ],
+      "answer": 0,
+      "slide": 18,
+      "explanation": "The Certificate Revocation slide describes OCSP as querying a single certificate per transaction.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 3,
+      "domain": 1,
+      "prompt": "Which technology provides a dedicated hardware cryptoprocessor for protecting cryptographic keys?",
+      "options": [
+        "Hardware Security Module",
+        "Software load balancer",
+        "Network intrusion detector",
+        "DNS resolver"
+      ],
+      "answer": 0,
+      "slide": 20,
+      "explanation": "The Cryptoprocessors and Secure Enclaves slide identifies HSMs as dedicated or removable cryptoprocessors.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 3,
+      "domain": 1,
+      "prompt": "An organization places archived recovery keys with a trusted third party. Which practice is this?",
+      "options": [
+        "Key escrow",
+        "Key stretching",
+        "Certificate pinning",
+        "Key derivation"
+      ],
+      "answer": 0,
+      "slide": 21,
+      "explanation": "The Key Escrow slide describes placing archived keys with a trusted third party.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 2,
+      "domain": 2,
+      "prompt": "A caller invents a detailed emergency scenario to persuade a help desk to reset another person's account. What social engineering method is central?",
+      "options": [
+        "Pretexting",
+        "Cryptanalysis",
+        "Port scanning",
+        "Certificate enrollment"
+      ],
+      "answer": 0,
+      "slide": 23,
+      "explanation": "The Impersonation and Pretexting slide describes convincing scenarios and additional detail used to support false identity claims.",
+      "style": "scenario"
     }
   ]
 }
