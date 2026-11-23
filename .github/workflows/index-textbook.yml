@@ -1,0 +1,33 @@
+name: Build textbook chapter index
+on:
+  push:
+    paths:
+      - 'scripts/index_textbook.py'
+      - 'scripts/extract_materials.py'
+      - 'materials/CompTIA Security+ SY0-701 Student.pdf'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install PDF parser
+        run: pip install pymupdf
+      - name: Extract textbook headings from source PDF
+        run: python scripts/index_textbook.py
+      - name: Commit generated index
+        run: |
+          if ! git diff --quiet -- data/lessons.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/lessons.json
+            git commit -m "Generate textbook chapter index from source PDF"
+            git push
+          fi
