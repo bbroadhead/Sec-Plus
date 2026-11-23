@@ -449,6 +449,246 @@
       ],
       "answer": 0,
       "explanation": "The Privacy Breaches and Data Breaches slide lists identity theft, fines and reputation damage."
+    },
+    {
+      "lesson": 1,
+      "domain": 1,
+      "slide": 12,
+      "prompt": "A security analyst wants a control that identifies an intrusion after it occurs, rather than blocking access beforehand. Which functional control should they select?",
+      "options": [
+        "Detective",
+        "Preventive",
+        "Compensating",
+        "Directive"
+      ],
+      "answer": 0,
+      "explanation": "The Security Control Functional Types slide distinguishes detective controls, which identify attempted or successful intrusions, from preventive controls.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 2,
+      "domain": 2,
+      "slide": 8,
+      "prompt": "A well-funded group with military intelligence backing conducts a long-running espionage campaign. Which threat actor best matches this scenario?",
+      "options": [
+        "Nation-state/APT",
+        "Unintentional insider",
+        "Unskilled attacker",
+        "Accidental user"
+      ],
+      "answer": 0,
+      "explanation": "The Nation-state Actors and Advanced Persistent Threats slide associates such actors with intelligence services, high capability and espionage.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 3,
+      "domain": 1,
+      "slide": 8,
+      "prompt": "An administrator needs to check whether a downloaded file changed without recovering the original file contents. Which mechanism best fits?",
+      "options": [
+        "Cryptographic hash",
+        "Asymmetric decryption",
+        "Data compression",
+        "Password aging"
+      ],
+      "answer": 0,
+      "explanation": "The Hashing slide describes a one-way fixed-length digest used for integrity checks.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 4,
+      "domain": 4,
+      "slide": 10,
+      "prompt": "A company proposes sending login verification codes by SMS. Which limitation should the team explicitly consider?",
+      "options": [
+        "The code can be intercepted",
+        "SMS requires a hardware security key",
+        "SMS eliminates phishing risks",
+        "SMS cannot be used out of band"
+      ],
+      "answer": 0,
+      "explanation": "The Soft Authentication Tokens slide lists SMS as an out-of-band method and notes the possibility of interception.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 5,
+      "domain": 3,
+      "slide": 11,
+      "prompt": "A laboratory must keep a sensitive group of computers disconnected from every other network. Which approach is most appropriate?",
+      "options": [
+        "Physical isolation (air gap)",
+        "Public wireless access",
+        "Flat network routing",
+        "Shared guest VLAN"
+      ],
+      "answer": 0,
+      "explanation": "The Physical Isolation slide describes hosts that are not connected to another network as air-gapped.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 6,
+      "domain": 3,
+      "slide": 7,
+      "prompt": "A cloud provider secures its datacenter hardware, but a customer accidentally grants public access to cloud resources. Which party is responsible for configuring resource access controls?",
+      "options": [
+        "The customer",
+        "The datacenter landlord",
+        "The equipment manufacturer",
+        "The certificate issuer"
+      ],
+      "answer": 0,
+      "explanation": "The cloud responsibility slides distinguish provider physical infrastructure duties from customer access-control configuration.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 7,
+      "domain": 3,
+      "slide": 6,
+      "prompt": "An organization needs to recover critical data after a storage failure. Which capability should be planned and tested?",
+      "options": [
+        "Data backups",
+        "Disabling asset tracking",
+        "Removing configuration management",
+        "Turning off encryption"
+      ],
+      "answer": 0,
+      "explanation": "The Data Backups slide emphasizes protecting availability and integrity through an enterprise data protection strategy.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 8,
+      "domain": 2,
+      "slide": 6,
+      "prompt": "A new cloud service is deployed with its vendor's default settings, unintentionally exposing a service. What vulnerability class best describes the issue?",
+      "options": [
+        "Misconfiguration",
+        "Zero-day exclusively",
+        "Physical theft",
+        "Supply chain compromise exclusively"
+      ],
+      "answer": 0,
+      "explanation": "The Misconfiguration Vulnerabilities slide lists default configurations in software, hardware and cloud services as common causes.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 9,
+      "domain": 3,
+      "slide": 4,
+      "prompt": "A security team wants to deploy and measure compliance with secure configuration baselines across many systems. Which tool family is directly relevant?",
+      "options": [
+        "Configuration management and SCAP tools",
+        "Consumer media players",
+        "Email marketing systems",
+        "Disk defragmentation only"
+      ],
+      "answer": 0,
+      "explanation": "The secure configuration guide slide lists Puppet, Chef, Ansible and SCAP-related compliance tools.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 10,
+      "domain": 4,
+      "slide": 6,
+      "prompt": "An endpoint user needs access to one folder but not administrator privileges. Which security principle should govern the permissions?",
+      "options": [
+        "Least privilege",
+        "Implicit trust",
+        "Unrestricted access",
+        "Privilege accumulation"
+      ],
+      "answer": 0,
+      "explanation": "The Endpoint Configuration slide explicitly lists least privilege and filesystem permissions.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 11,
+      "domain": 3,
+      "slide": 9,
+      "prompt": "An email administrator discovers that an SMTP server accepts mail for unrelated domains and forwards it onward. What misconfiguration is described?",
+      "options": [
+        "Open relay",
+        "Encrypted mailbox",
+        "SPF TXT record",
+        "Secure directory service"
+      ],
+      "answer": 0,
+      "explanation": "The Email Services slide identifies an improperly configured SMTP open relay as a mechanism used to send spam.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 12,
+      "domain": 4,
+      "slide": 9,
+      "prompt": "An incident response team isolates an affected subnet while preserving evidence. Which response phase does this most closely match?",
+      "options": [
+        "Containment",
+        "Preparation",
+        "Lessons learned",
+        "Policy drafting"
+      ],
+      "answer": 0,
+      "explanation": "The Containment slide identifies isolation, segmentation and evidence preservation as containment considerations.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 13,
+      "domain": 2,
+      "slide": 10,
+      "prompt": "Files across a workstation are encrypted by malware and a payment demand appears. Which malware type is most directly indicated?",
+      "options": [
+        "Crypto-ransomware",
+        "Adware",
+        "Benign remote administration",
+        "Tracking cookie"
+      ],
+      "answer": 0,
+      "explanation": "The Ransomware, Crypto-Malware, and Logic Bombs slide describes high-impact ransomware encrypting data files or drives.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 14,
+      "domain": 5,
+      "slide": 5,
+      "prompt": "An operations team needs a repeatable checklist that specifies each step for handling an approved security task. Which governance document is most appropriate?",
+      "options": [
+        "Procedure",
+        "Flexible guideline",
+        "Broad mission statement",
+        "Risk appetite"
+      ],
+      "answer": 0,
+      "explanation": "The Procedures slide defines procedures as step-by-step instructions and checklists for repeatable tasks.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 15,
+      "domain": 5,
+      "slide": 7,
+      "prompt": "After applying safeguards, management reviews the remaining exposure. What risk term describes the amount left?",
+      "options": [
+        "Residual risk",
+        "Inherent risk",
+        "Risk-free state",
+        "Asset value"
+      ],
+      "answer": 0,
+      "explanation": "The Risk Management Strategies slide defines residual risk as the amount left after mitigations.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 16,
+      "domain": 5,
+      "slide": 8,
+      "prompt": "A person asks an organization to erase their personal information under an applicable privacy law. Which concept is most relevant?",
+      "options": [
+        "Right to be forgotten",
+        "Network segmentation",
+        "Certificate pinning",
+        "Data mirroring"
+      ],
+      "answer": 0,
+      "explanation": "The Privacy Data slide describes the GDPR right to request deletion of personal data under certain circumstances.",
+      "style": "scenario"
     }
   ]
 }
