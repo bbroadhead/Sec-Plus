@@ -79,6 +79,8 @@ async function flush(){for(let pass=0;pass<8;pass++){while(deferred.length){cons
  assert.equal(counts.reduce((a,b)=>a+b,0),90,'Exam domains sum to 90');
  assert(counts.every(n=>n>0),'Every domain represented');
  assert(expired.getState().session.deadline>Date.now(),'Mock exam is timed');
+ const evidenceKinds=expired.getState().session.questions.filter(q=>q.type==='pbq').map(q=>q.kind);
+ assert(evidenceKinds.includes('firewall')&&evidenceKinds.includes('logs'),'PBQ evidence types preserved in exam session');
  const pbqIndex=expired.getState().session.questions.findIndex(q=>q.type==='pbq');
  assert(pbqIndex>=0,'Exam includes a PBQ');
  expired.getState().session.index=pbqIndex;
