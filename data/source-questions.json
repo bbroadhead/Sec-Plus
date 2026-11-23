@@ -913,6 +913,246 @@
       "answer": 0,
       "slide": 5,
       "explanation": "Lesson 16, slide 5 (Data Sovereignty and Geographical Considerations): Data Sovereignty; A legal jurisdiction restricting processing and storage of data on systems that do not physically reside within that jurisdiction; Geographical Considerations."
+    },
+    {
+      "lesson": 1,
+      "domain": 1,
+      "prompt": "A security analyst discovers that an unauthorized user read a confidential personnel file, but the file was not changed. Which security objective was compromised?",
+      "options": [
+        "Confidentiality",
+        "Integrity",
+        "Availability",
+        "Non-repudiation"
+      ],
+      "answer": 0,
+      "slide": 4,
+      "style": "scenario",
+      "explanation": "Lesson 1, slide 4 (Information Security) covers Confidentiality​ and Information should only be read by authorized persons. The scenario applies that lesson concept."
+    },
+    {
+      "lesson": 2,
+      "domain": 2,
+      "prompt": "A contractor with valid credentials abuses access to copy sensitive records. Which threat-actor attribute best fits this situation?",
+      "options": [
+        "Internal access",
+        "External unauthenticated access",
+        "No capability",
+        "No organizational access"
+      ],
+      "answer": 0,
+      "slide": 5,
+      "style": "scenario",
+      "explanation": "Lesson 2, slide 5 (Attributes of Threat Actors​) covers Known threats versus adversary behaviors​ and Internal/external​. The scenario applies that lesson concept."
+    },
+    {
+      "lesson": 3,
+      "domain": 1,
+      "prompt": "A team needs to encrypt several terabytes of archived data efficiently using one protected shared secret. Which approach best matches the lesson?",
+      "options": [
+        "Symmetric encryption",
+        "Public-key encryption for every block",
+        "Plaintext storage",
+        "Hashing instead of encryption"
+      ],
+      "answer": 0,
+      "slide": 5,
+      "style": "scenario",
+      "explanation": "Lesson 3, slide 5 (Symmetric Encryption) covers Encryption uses a reversible process (algorithm) based on a ​key that is only known by authorized persons and Substitution​ and transposition​. The scenario applies that lesson concept."
+    },
+    {
+      "lesson": 4,
+      "domain": 4,
+      "prompt": "An employee signs in using a password and then enters a PIN. Which issue should the security team recognize?",
+      "options": [
+        "Both are knowledge factors",
+        "They represent two distinct factor categories",
+        "The PIN is a possession factor",
+        "The password is an inherence factor"
+      ],
+      "answer": 0,
+      "slide": 4,
+      "style": "scenario",
+      "explanation": "Lesson 4, slide 4 (Authentication Design​) covers Meet requirements for confidentiality, integrity, and availability​ and Keeps credentials secure​ (confidentiality. The scenario applies that lesson concept."
+    },
+    {
+      "lesson": 5,
+      "domain": 3,
+      "prompt": "A network engineer wants the same logical IP subnet to be independent of which physical switch port a workstation uses. What should be configured?",
+      "options": [
+        "VLAN-based logical topology",
+        "Longer encryption keys",
+        "A backup retention schedule",
+        "A password manager"
+      ],
+      "answer": 0,
+      "slide": 7,
+      "style": "scenario",
+      "explanation": "Lesson 5, slide 7 (Routing Infrastructure Considerations) covers Layer 3 logical segmentation and Networks and subnetworks (subnets). The scenario applies that lesson concept."
+    },
+    {
+      "lesson": 6,
+      "domain": 3,
+      "prompt": "A cloud migration team is unsure whether the provider or the customer must implement a specific security control. What should it consult first?",
+      "options": [
+        "The cloud responsibility matrix",
+        "The physical cabling map",
+        "A user password hint",
+        "The DNS cache"
+      ],
+      "answer": 0,
+      "slide": 6,
+      "style": "scenario",
+      "explanation": "Lesson 6, slide 6 (Responsibility Matrix) covers Describes the balance of responsibility between a customer and a cloud service provider and Responsibility model. The scenario applies that lesson concept."
+    },
+    {
+      "lesson": 7,
+      "domain": 3,
+      "prompt": "A ransomware recovery plan requires services to resume quickly at an alternate site. Which backup capability is most relevant?",
+      "options": [
+        "Replication and instant recovery",
+        "Manual inventory alone",
+        "Password aging",
+        "Port security"
+      ],
+      "answer": 0,
+      "slide": 6,
+      "style": "scenario",
+      "explanation": "Lesson 7, slide 6 (Data Backups) covers Ensure the availability and integrity of an organization's critical data and systems and Simple backups vs Enterprise Data Protection Strategy. The scenario applies that lesson concept."
+    },
+    {
+      "lesson": 8,
+      "domain": 2,
+      "prompt": "A previously unknown software flaw is being exploited before the vendor has had time to prepare a fix. How should the flaw be classified?",
+      "options": [
+        "Zero-day vulnerability",
+        "Approved configuration baseline",
+        "Retired asset",
+        "Standard change request"
+      ],
+      "answer": 0,
+      "slide": 5,
+      "style": "scenario",
+      "explanation": "Lesson 8, slide 5 (Zero-Day Vulnerabilities) covers Previously unknown software or hardware flaws. and Developers have \"zero days\" to fix once the vulnerability becomes known. The scenario applies that lesson concept."
+    },
+    {
+      "lesson": 9,
+      "domain": 4,
+      "prompt": "A new router arrives with factory credentials and unnecessary management features enabled. What is the best initial hardening action?",
+      "options": [
+        "Change default credentials and disable unnecessary features",
+        "Disable all audit logs",
+        "Publish the default password",
+        "Remove all ACLs"
+      ],
+      "answer": 0,
+      "slide": 5,
+      "style": "scenario",
+      "explanation": "Lesson 9, slide 5 (Switches and Routers) covers Examples of changes designed to improve security: and Change Default Credentials. The scenario applies that lesson concept."
+    },
+    {
+      "lesson": 10,
+      "domain": 4,
+      "prompt": "An endpoint team needs to enforce file permissions and approved application execution consistently. Which principle is central to its configuration?",
+      "options": [
+        "Least privilege",
+        "Unrestricted access",
+        "Anonymous administration",
+        "Shared credentials"
+      ],
+      "answer": 0,
+      "slide": 6,
+      "style": "scenario",
+      "explanation": "Lesson 10, slide 6 (Endpoint Configuration) covers Principle of Least Privilege and Access Control Lists. The scenario applies that lesson concept."
+    },
+    {
+      "lesson": 11,
+      "domain": 3,
+      "prompt": "A legacy web server still negotiates TLS 1.0. Which change aligns with the course guidance?",
+      "options": [
+        "Disable older protocols and require TLS 1.2 or newer",
+        "Enable SSL 2.0 for compatibility",
+        "Remove encryption entirely",
+        "Allow any TLS version without review"
+      ],
+      "answer": 0,
+      "slide": 4,
+      "style": "scenario",
+      "explanation": "Lesson 11, slide 4 (Transport Layer Security) covers Most Common Uses and Secure HTTP communications. The scenario applies that lesson concept."
+    },
+    {
+      "lesson": 12,
+      "domain": 4,
+      "prompt": "An incident-response team suspects an intruder is monitoring internal chat. Which communication approach should it use for sensitive coordination?",
+      "options": [
+        "Out-of-band communications",
+        "The suspected compromised chat",
+        "A public status page",
+        "An unverified shared mailbox"
+      ],
+      "answer": 0,
+      "slide": 6,
+      "style": "scenario",
+      "explanation": "Lesson 12, slide 6 (Preparation (2)) covers Communication plan and Prevent inadvertent disclosure. The scenario applies that lesson concept."
+    },
+    {
+      "lesson": 13,
+      "domain": 2,
+      "prompt": "An attacker executes malicious commands through built-in scripting tools without dropping a conventional executable. Which technique does this suggest?",
+      "options": [
+        "Fileless living-off-the-land activity",
+        "Only boot-sector infection",
+        "A harmless software update",
+        "Physical media destruction"
+      ],
+      "answer": 0,
+      "slide": 6,
+      "style": "scenario",
+      "explanation": "Lesson 13, slide 6 (Computer Worms and Fileless Malware​) covers Early computer worms​ and Propagate in memory/over network links​. The scenario applies that lesson concept."
+    },
+    {
+      "lesson": 14,
+      "domain": 5,
+      "prompt": "A SOC manager wants analysts to follow the same sequence of actions during an alert investigation. What should the manager publish?",
+      "options": [
+        "A step-by-step procedure or playbook",
+        "An informal rumor",
+        "A router firmware image",
+        "A public IP allocation"
+      ],
+      "answer": 0,
+      "slide": 5,
+      "style": "scenario",
+      "explanation": "Lesson 14, slide 5 (Procedures) covers Define step-by-step instructions and checklists and Ensure a task is completed in a compliant and repeatable way. The scenario applies that lesson concept."
+    },
+    {
+      "lesson": 15,
+      "domain": 5,
+      "prompt": "An organization buys insurance to shift part of the financial impact of a cyber incident. Which risk response does this represent?",
+      "options": [
+        "Transfer",
+        "Avoid",
+        "Accept without action",
+        "Eliminate all risk"
+      ],
+      "answer": 0,
+      "slide": 6,
+      "style": "scenario",
+      "explanation": "Lesson 15, slide 6 (Risk Management Strategies (1 of 2)) covers Risk management strategies and Describe the proactive and systematic approaches used to identify, assess, prioritize, and mitigate risks to minimize their negative impacts. The scenario applies that lesson concept."
+    },
+    {
+      "lesson": 16,
+      "domain": 5,
+      "prompt": "A company is told that regulated customer data must remain stored and processed inside a particular country. Which concept governs this requirement?",
+      "options": [
+        "Data sovereignty",
+        "Password complexity",
+        "Port mirroring",
+        "Network address translation"
+      ],
+      "answer": 0,
+      "slide": 5,
+      "style": "scenario",
+      "explanation": "Lesson 16, slide 5 (Data Sovereignty and Geographical Considerations) covers Data Sovereignty and A legal jurisdiction restricting processing and storage of data on systems that do not physically reside within that jurisdiction. The scenario applies that lesson concept."
     }
   ]
 }
