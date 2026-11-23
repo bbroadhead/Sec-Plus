@@ -49,7 +49,7 @@ async function flush(){for(let pass=0;pass<8;pass++){while(deferred.length){cons
 (async()=>{
  let app=createApp();await flush();
  assert.equal(app.normalizedQuestions().length,20+source.questions.length,'20 starter plus source questions');
- assert(node('view').innerHTML.includes('command center'),'Dashboard renders');
+ assert(node('view').innerHTML.includes('Study progress'),'Dashboard renders');
  app.startQuiz();
  assert.equal(app.getState().session.questions.length,10);
  app.answer(0);
