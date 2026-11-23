@@ -33,7 +33,7 @@ const localStorage={getItem:k=>memory.get(k)||null,setItem:(k,v)=>memory.set(k,v
 const deferred=[];
 const fetch=(url)=>new Promise(resolve=>deferred.push({url,resolve}));
 const intervals=[];
-function createApp(){const ctx=vm.createContext({document,localStorage,fetch,setInterval:fn=>intervals.push(fn),alert:msg=>{throw Error(msg)},Date,Math,JSON,Blob,URL,console});vm.runInContext(script[1],ctx);return vm.runInContext('({startQuiz,startMockExam,answer,nextQuestion,render,finishQuiz,quiz,reviewQuiz,returnToQuiz,normalizedQuestions,getState:()=>({session,state,tab})})',ctx)}
+function createApp(){const ctx=vm.createContext({document,localStorage,fetch,setInterval:fn=>intervals.push(fn),alert:msg=>{throw Error(msg)},Date,Math,JSON,Blob,URL,console});vm.runInContext(script[1],ctx);return vm.runInContext('({startQuiz,startMockExam,answer,nextQuestion,render,finishQuiz,quiz,startTargetedPractice,reviewQuiz,returnToQuiz,normalizedQuestions,getState:()=>({session,state,tab})})',ctx)}
 async function flush(){for(let pass=0;pass<8;pass++){while(deferred.length){const {url,resolve}=deferred.shift();resolve({ok:true,json:async()=>url.includes('source-questions')?source:lessonsIndex})}await Promise.resolve();await Promise.resolve();await Promise.resolve()}}
 (async()=>{
  let app=createApp();await flush();
@@ -50,6 +50,10 @@ async function flush(){for(let pass=0;pass<8;pass++){while(deferred.length){cons
  resumed.finishQuiz(false);
  assert.equal(resumed.getState().state.history.length,1,'Completed quiz saved');
  assert(!memory.has('secplus-active-quiz-v1'),'Active session cleared');
+ const firstDomain=resumed.getState().state.history.at(-1).answers[0].domain;
+ resumed.startTargetedPractice(firstDomain,false);
+ assert(resumed.getState().session.questions.every(q=>String(q.domain)===String(firstDomain)),'Targeted practice restricts domain');
+ resumed.finishQuiz(false);
  node('pool').value='all';node('count').value='3';node('timer').value='60';
  resumed.startQuiz();resumed.answer(0);
  const active=JSON.parse(memory.get('secplus-active-quiz-v1'));active.deadline=Date.now()-1000;memory.set('secplus-active-quiz-v1',JSON.stringify(active));
