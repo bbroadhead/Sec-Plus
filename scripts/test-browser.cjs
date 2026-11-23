@@ -22,6 +22,24 @@ const assert=require('node:assert/strict');
    await page.locator('button.option').first().click();
    await page.getByRole('button',{name:'Finish quiz'}).click();
    await page.getByRole('heading',{name:'Quiz complete'}).waitFor();
+   // Source-only quiz: validate that loaded lesson questions render and finish.
+   await page.getByRole('button',{name:'Practice Quiz',exact:true}).click();
+   await page.locator('#pool').selectOption('source');
+   await page.locator('#count').fill('1');
+   await page.getByRole('button',{name:'Start quiz',exact:true}).click();
+   await page.getByText('Question 1 of 1').waitFor();
+   await page.locator('button.option').first().click();
+   await page.getByRole('button',{name:'Finish quiz'}).click();
+   await page.getByRole('heading',{name:'Quiz complete'}).waitFor();
+   // History should retain both completed sessions.
+   await page.getByRole('button',{name:'History & Export'}).click();
+   await page.getByRole('heading',{name:'Quiz history & export'}).waitFor();
+   assert.equal(await page.locator('.sub').count()>=2,true,'Quiz history contains both sessions');
+   // Mock exam should include every loaded question and have an active timer.
+   await page.getByRole('button',{name:'Practice Quiz',exact:true}).click();
+   await page.getByRole('button',{name:/Start mock exam/}).click();
+   await page.getByText('Question 1 of 68').waitFor();
+   await page.locator('#quiz-clock').waitFor();
    assert.equal(errors.length,0,'No uncaught page errors: '+errors.join('; '));
    const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>window.innerWidth+2);
    assert(!overflow,'No horizontal overflow at '+viewport.width+'px');
