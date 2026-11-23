@@ -11,7 +11,7 @@ const assert=require('node:assert/strict');
    await page.goto('http://127.0.0.1:8765/',{waitUntil:'networkidle'});
    await page.getByRole('heading',{name:/security\+ command center/i}).waitFor();
    await page.getByRole('button',{name:'Practice Quiz',exact:true}).click();
-   await page.getByText('Question bank: 68 questions').waitFor();
+   await page.getByText('Question bank: 84 questions').waitFor();
    await page.locator('#count').fill('2');
    await page.getByRole('button',{name:'Start quiz',exact:true}).click();
    await page.getByText('Question 1 of 2').waitFor();
@@ -38,7 +38,7 @@ const assert=require('node:assert/strict');
    // Mock exam should include every loaded question and have an active timer.
    await page.getByRole('button',{name:'Practice Quiz',exact:true}).click();
    await page.getByRole('button',{name:/Start mock exam/}).click();
-   await page.getByText('Question 1 of 68').waitFor();
+   await page.getByText('Question 1 of 84').waitFor();
    await page.locator('#quiz-clock').waitFor();
    assert.equal(errors.length,0,'No uncaught page errors: '+errors.join('; '));
    const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>window.innerWidth+2);
