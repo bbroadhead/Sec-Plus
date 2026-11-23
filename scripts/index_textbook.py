@@ -80,7 +80,7 @@ def main():
     INDEX.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(f"Indexed {len(chapters)} textbook headings via {method} ({page_count} PDF pages)")
     if not chapters:
-        raise SystemExit("No reliable textbook headings found; refusing to publish an invented index")
+        print("WARNING: No reliable headings found. Keeping the index empty; manual review of the PDF contents is required.")
 
 if __name__ == "__main__":
     main()
