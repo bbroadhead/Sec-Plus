@@ -27,10 +27,10 @@ function node(id){if(!nodes.has(id))nodes.set(id,{value:{count:'10',pool:'all',t
 const document={getElementById:node,querySelectorAll(){return []},createElement(){return {click(){}}}};
 const localStorage={getItem:k=>memory.get(k)||null,setItem:(k,v)=>memory.set(k,v),removeItem:k=>memory.delete(k)};
 const deferred=[];
-const fetch=()=>new Promise(resolve=>deferred.push(resolve));
+const fetch=(url)=>new Promise(resolve=>deferred.push({url,resolve}));
 const intervals=[];
 function createApp(){const ctx=vm.createContext({document,localStorage,fetch,setInterval:fn=>intervals.push(fn),alert:msg=>{throw Error(msg)},Date,Math,JSON,Blob,URL,console});vm.runInContext(script[1],ctx);return vm.runInContext('({startQuiz,startMockExam,answer,nextQuestion,render,finishQuiz,quiz,normalizedQuestions,getState:()=>({session,state,tab})})',ctx)}
-async function flush(){while(deferred.length){deferred.shift()({ok:true,json:async()=>source})}await Promise.resolve();await Promise.resolve()}
+async function flush(){for(let pass=0;pass<8;pass++){while(deferred.length){const {url,resolve}=deferred.shift();resolve({ok:true,json:async()=>url.includes('source-questions')?source:{lessons:[]}})}await Promise.resolve();await Promise.resolve();await Promise.resolve()}}
 (async()=>{
  let app=createApp();await flush();
  assert.equal(app.normalizedQuestions().length,68,'20 starter plus 48 source questions');
