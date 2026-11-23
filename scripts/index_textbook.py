@@ -72,6 +72,9 @@ def main():
         page_count = len(doc)
     data = json.loads(INDEX.read_text(encoding="utf-8"))
     textbook = data.setdefault("textbook", {})
+    if not chapters:
+        print("WARNING: No verified chapter headings found; leaving existing textbook index untouched.")
+        return
     textbook.update({
         "chapters": chapters,
         "indexMethod": method,
