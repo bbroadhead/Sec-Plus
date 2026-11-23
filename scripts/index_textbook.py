@@ -70,6 +70,13 @@ def main():
     with fitz.open(PDF) as doc:
         chapters, method = extract_chapters(doc)
         page_count = len(doc)
+        if not chapters:
+            print("PDF diagnostics: pages=", page_count, "bookmarks=", len(doc.get_toc()))
+            for page_number in range(min(page_count, 16)):
+                page = doc[page_number]
+                lines = heading_candidates(page)
+                print("Page", page_number + 1, "chars=", len(page.get_text()), "sample headings=", repr([(t[:65], round(sz,1)) for t,sz,_ in sorted(lines,key=lambda x:-x[1])[:5]]))
+
     data = json.loads(INDEX.read_text(encoding="utf-8"))
     textbook = data.setdefault("textbook", {})
     if not chapters:
