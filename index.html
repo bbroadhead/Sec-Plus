@@ -16,7 +16,34 @@ select,input[type=number],input[type=search]{background:rgba(12,13,15,.52);color
 @media(max-width:600px){.barrow{grid-template-columns:1fr}.barrow .bar{width:100%}header{padding:16px 20px}.card{padding:17px;border-radius:18px}.tabs button{flex:1 1 auto}.btn{max-width:100%}}
 @media(prefers-reduced-motion:reduce){.tabs button,.btn,.option{transition:none}body{background-attachment:scroll}}
  .pbq-topology{border:1px solid var(--edge);border-radius:18px;padding:18px;margin:16px 0;text-align:center;background:rgba(255,255,255,.035)}.pbq-node{padding:12px;border:1px solid var(--edge);border-radius:12px;background:rgba(255,255,255,.09);min-width:110px}.pbq-gateway{border-style:dashed}.pbq-arrow{padding:6px;color:var(--text-muted)}.pbq-endpoints{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:10px}.pbq-endpoints .pbq-node{flex:1;max-width:230px}.pbq-node small{color:var(--text-muted)}
-.pbq-bank{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}.pbq-chip{cursor:grab}.pbq-chip:active{cursor:grabbing}.pbq-task{display:grid;grid-template-columns:minmax(160px,1fr) minmax(150px,1fr);gap:12px;align-items:center;border:1px dashed var(--edge);border-radius:14px;padding:14px;margin:10px 0;background:rgba(255,255,255,.035)}.pbq-task label{font-weight:600}.pbq-task .small{grid-column:1/-1}@media(max-width:620px){.pbq-task{grid-template-columns:1fr}}\n.pbq-evidence{border:1px solid var(--edge);border-radius:16px;padding:14px;margin:14px 0;background:rgba(255,255,255,.035);overflow-x:auto}.pbq-evidence h3{margin-top:0}.pbq-table{width:100%;border-collapse:collapse;min-width:540px;text-align:left}.pbq-table th,.pbq-table td{padding:10px;border-bottom:1px solid var(--edge);font-size:.88rem}.pbq-log{padding:14px;border-radius:12px;background:rgba(0,0,0,.4);overflow:auto;line-height:1.9}.pbq-log code{white-space:nowrap;font-size:.85rem}\n.pbq-review-task{padding:12px 0;border-bottom:1px solid var(--edge)}.pbq-review-task p{margin:6px 0}.pbq-review-task:last-child{border-bottom:0}\n</style></head><body><header><div class="brand"><img class="brand-logo" src="assets/sec-plus-logo.png" alt="Security+ Study Hub logo" width="48" height="48"> <span>Sec+ Study Hub</span> <span class="pill">SY0-701</span></div><span class="muted small">Progress saved on this device</span></header><main><nav class="tabs" aria-label="Main navigation"><button data-tab="dashboard" class="active">Dashboard</button><button data-tab="study">Study</button><button data-tab="quiz">Practice Quiz</button><button data-tab="history">History & Export</button></nav><section id="view"></section><footer>Independent study aid, not affiliated with or endorsed by CompTIA. Starter content is illustrative and should be reviewed against your licensed course materials and the official exam objectives. Local data can be cleared by your browser.</footer></main>
+.pbq-bank{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}.pbq-chip{cursor:grab}.pbq-chip:active{cursor:grabbing}.pbq-task{display:grid;grid-template-columns:minmax(160px,1fr) minmax(150px,1fr);gap:12px;align-items:center;border:1px dashed var(--edge);border-radius:14px;padding:14px;margin:10px 0;background:rgba(255,255,255,.035)}.pbq-task label{font-weight:600}.pbq-task .small{grid-column:1/-1}@media(max-width:620px){.pbq-task{grid-template-columns:1fr}}\n.pbq-evidence{border:1px solid var(--edge);border-radius:16px;padding:14px;margin:14px 0;background:rgba(255,255,255,.035);overflow-x:auto}.pbq-evidence h3{margin-top:0}.pbq-table{width:100%;border-collapse:collapse;min-width:540px;text-align:left}.pbq-table th,.pbq-table td{padding:10px;border-bottom:1px solid var(--edge);font-size:.88rem}.pbq-log{padding:14px;border-radius:12px;background:rgba(0,0,0,.4);overflow:auto;line-height:1.9}.pbq-log code{white-space:nowrap;font-size:.85rem}\n.pbq-review-task{padding:12px 0;border-bottom:1px solid var(--edge)}.pbq-review-task p{margin:6px 0}.pbq-review-task:last-child{border-bottom:0}\n
+/* Warm aurora palette: amber, coral, violet and mint; no blue accents. */
+:root{--accent:#f3b56a;--accent-soft:rgba(243,181,106,.18);--edge:rgba(244,200,157,.19);--text-muted:#c7bfc4}
+html{background:#130f18}
+body{background:radial-gradient(ellipse at 8% 4%,rgba(210,109,91,.20),transparent 35%),radial-gradient(ellipse at 92% 18%,rgba(155,91,170,.17),transparent 38%),radial-gradient(ellipse at 55% 90%,rgba(93,157,125,.10),transparent 42%),linear-gradient(145deg,#211720 0%,#120f18 54%,#211722 100%)}
+header{background:rgba(41,27,39,.67);border-bottom-color:rgba(243,181,106,.22)}
+.brand{color:#ffe1ba}
+button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,summary:focus-visible{outline-color:#f3b56a}
+.tabs button.active,.primary{background:linear-gradient(145deg,rgba(226,128,91,.45),rgba(155,83,133,.42));border-color:rgba(255,193,135,.58);box-shadow:inset 0 1px rgba(255,236,206,.30),0 5px 24px rgba(121,53,84,.22)}
+.tabs button:hover,.btn:hover:not(:disabled){background:rgba(243,181,106,.16);border-color:rgba(243,181,106,.45)}
+.card{background:linear-gradient(140deg,rgba(255,218,191,.105),rgba(167,113,150,.065));border-color:rgba(247,202,166,.18)}
+.dashboard-stats .card:nth-child(4n+1){border-top:3px solid #f0b66b}
+.dashboard-stats .card:nth-child(4n+2){border-top:3px solid #dd8a88}
+.dashboard-stats .card:nth-child(4n+3){border-top:3px solid #b792d8}
+.dashboard-stats .card:nth-child(4n+4){border-top:3px solid #7bc5a1}
+.dashboard-stats .card:nth-child(4n+1) .stat{color:#ffd08a}
+.dashboard-stats .card:nth-child(4n+2) .stat{color:#f2a7a4}
+.dashboard-stats .card:nth-child(4n+3) .stat{color:#d1b3ed}
+.dashboard-stats .card:nth-child(4n+4) .stat{color:#9fdfba}
+.progress{background:rgba(255,233,216,.11)}.fill{background:linear-gradient(90deg,#df8e75,#f0bc76)}
+.bar{background:rgba(255,233,216,.13)}.bar span{background:linear-gradient(90deg,#b48bd1,#f0b66b)}
+.pill{background:rgba(243,181,106,.12);border-color:rgba(243,181,106,.26)}
+.tip{border-left-color:#f0b66b;background:rgba(240,182,107,.09)}
+.option.selected{border-color:#f3b56a;background:rgba(243,181,106,.18)}
+.option.correct{border-color:#7bc5a1}.option.wrong{border-color:#ed8c8c}
+a{color:#f5c48f}a:hover{color:#ffe1b7}
+input[type=checkbox]{accent-color:#d88e78}
+</style></head><body><header><div class="brand"><img class="brand-logo" src="assets/sec-plus-logo.png" alt="Security+ Study Hub logo" width="48" height="48"> <span>Sec+ Study Hub</span> <span class="pill">SY0-701</span></div><span class="muted small">Progress saved on this device</span></header><main><nav class="tabs" aria-label="Main navigation"><button data-tab="dashboard" class="active">Dashboard</button><button data-tab="study">Study</button><button data-tab="quiz">Practice Quiz</button><button data-tab="history">History & Export</button></nav><section id="view"></section><footer>Independent study aid, not affiliated with or endorsed by CompTIA. Starter content is illustrative and should be reviewed against your licensed course materials and the official exam objectives. Local data can be cleared by your browser.</footer></main>
 <script>
 'use strict';
 const domains=[
