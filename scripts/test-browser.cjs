@@ -9,7 +9,7 @@ const assert=require('node:assert/strict');
    const errors=[];
    page.on('pageerror',e=>errors.push(e.message));
    await page.goto('http://127.0.0.1:8765/',{waitUntil:'networkidle'});
-   await page.getByRole('heading',{name:/security\+ command center/i}).waitFor();
+   await page.getByText('Study progress').waitFor();
    await page.getByRole('button',{name:'Practice Quiz',exact:true}).click();
    await page.getByText(/Question bank: \d+ questions/).waitFor();
    await page.locator('#count').fill('2');
