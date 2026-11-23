@@ -26,6 +26,9 @@ const assert=require('node:assert/strict');
    await page.getByRole('button',{name:'Go to question 2'}).click();
    await page.locator('button.option').first().click();
    await page.getByRole('button',{name:'Finish quiz'}).click();
+   await page.getByRole('heading',{name:'Review before submission'}).waitFor();
+   page.once('dialog',dialog=>dialog.accept());
+   await page.getByRole('button',{name:'Submit quiz'}).click();
    await page.getByRole('heading',{name:'Quiz complete'}).waitFor();
    // Source-only quiz: validate that loaded lesson questions render and finish.
    await page.getByRole('button',{name:'Practice Quiz',exact:true}).click();
@@ -35,6 +38,9 @@ const assert=require('node:assert/strict');
    await page.getByText('Question 1 of 1').waitFor();
    await page.locator('button.option').first().click();
    await page.getByRole('button',{name:'Finish quiz'}).click();
+   await page.getByRole('heading',{name:'Review before submission'}).waitFor();
+   page.once('dialog',dialog=>dialog.accept());
+   await page.getByRole('button',{name:'Submit quiz'}).click();
    await page.getByRole('heading',{name:'Quiz complete'}).waitFor();
    // History should retain both completed sessions.
    await page.getByRole('button',{name:'History & Export'}).click();
