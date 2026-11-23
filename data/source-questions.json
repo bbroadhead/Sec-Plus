@@ -1753,6 +1753,306 @@
       "slide": 12,
       "explanation": "The Data Protection and Data Loss Prevention slide describes discovery, classification, and enforcement against unauthorized viewing or transfer.",
       "style": "scenario"
+    },
+    {
+      "lesson": 4,
+      "domain": 2,
+      "prompt": "A user enters a password and answers a second knowledge-based security question. Why does this not qualify as multifactor authentication?",
+      "options": [
+        "Both checks use the knowledge factor",
+        "Both checks use the possession factor",
+        "The second check is biometric",
+        "Passwords cannot be used for authentication"
+      ],
+      "answer": 0,
+      "slide": 7,
+      "explanation": "The Multifactor Authentication slide distinguishes combining different factor categories from two knowledge checks.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 4,
+      "domain": 2,
+      "prompt": "A biometric reader frequently rejects legitimate enrolled employees. Which metric captures this problem?",
+      "options": [
+        "False rejection rate",
+        "False acceptance rate",
+        "Password reuse rate",
+        "Token expiration rate"
+      ],
+      "answer": 0,
+      "slide": 8,
+      "explanation": "The Biometric Authentication slide lists false rejection rate (FRR) as a key biometric efficacy metric.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 4,
+      "domain": 2,
+      "prompt": "An organization replaces passwords with an authenticator that holds a private key and requires a local PIN. Which design is being used?",
+      "options": [
+        "Passwordless authentication",
+        "Shared-password federation",
+        "Knowledge-only authentication",
+        "SMS-only authentication"
+      ],
+      "answer": 0,
+      "slide": 11,
+      "explanation": "The Passwordless Authentication slide describes private keys stored on authenticators and local proof of presence.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 5,
+      "domain": 3,
+      "prompt": "A company groups public-facing servers separately from internal file servers because their access requirements differ. What is being created?",
+      "options": [
+        "Security zones",
+        "A single broadcast domain",
+        "An unrestricted flat network",
+        "A password vault"
+      ],
+      "answer": 0,
+      "slide": 8,
+      "explanation": "The Security Zones slide defines segments with shared access-control and security requirements.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 5,
+      "domain": 3,
+      "prompt": "A switch requires a workstation to authenticate before its network port provides access. Which mechanism supports this?",
+      "options": [
+        "IEEE 802.1X",
+        "Network address translation",
+        "Port mirroring",
+        "Static DNS"
+      ],
+      "answer": 0,
+      "slide": 10,
+      "explanation": "The Port Security slide associates 802.1X, EAP and RADIUS with port-based authentication.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 5,
+      "domain": 3,
+      "prompt": "A sensitive standalone system has no network connection to other systems. Which isolation approach is this?",
+      "options": [
+        "Air gap",
+        "Virtual LAN trunk",
+        "Site-to-site VPN",
+        "Reverse proxy"
+      ],
+      "answer": 0,
+      "slide": 11,
+      "explanation": "The Physical Isolation slide defines air-gapped hosts as not connected to other networks.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 6,
+      "domain": 3,
+      "prompt": "A team is uncertain which cloud security tasks belong to the provider and which belong to the customer. Which artifact clarifies this?",
+      "options": [
+        "Shared responsibility matrix",
+        "Firewall deny log",
+        "Certificate revocation list",
+        "Software bill of materials"
+      ],
+      "answer": 0,
+      "slide": 6,
+      "explanation": "The Responsibility Matrix slide describes the balance of customer and cloud provider responsibilities.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 6,
+      "domain": 3,
+      "prompt": "In a cloud deployment, who is identified in the course material as responsible for configuring user access controls?",
+      "options": [
+        "Cloud service customer",
+        "Physical datacenter landlord",
+        "Internet transit provider",
+        "Certificate authority"
+      ],
+      "answer": 0,
+      "slide": 8,
+      "explanation": "The Cloud Service Customer slide lists user and service access controls among customer responsibilities.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 6,
+      "domain": 3,
+      "prompt": "An application stores replicated copies across geographic regions to improve resilience. Which concept best fits?",
+      "options": [
+        "Geo-redundant storage",
+        "Single-zone dependency",
+        "Local-only caching",
+        "Air-gapped isolation"
+      ],
+      "answer": 0,
+      "slide": 11,
+      "explanation": "The Resilient Architecture Concepts slide lists geo-redundant storage and local/regional replication.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 7,
+      "domain": 4,
+      "prompt": "A security team needs a central database of hardware and software configuration items to improve asset tracking. What should it use?",
+      "options": [
+        "Configuration management database",
+        "Password blacklist",
+        "Certificate transparency log",
+        "Web application firewall"
+      ],
+      "answer": 0,
+      "slide": 4,
+      "explanation": "The Asset Tracking and Monitoring slide lists the configuration management database (CMDB).",
+      "style": "scenario"
+    },
+    {
+      "lesson": 7,
+      "domain": 4,
+      "prompt": "An administrator creates a virtual-machine checkpoint before making risky changes. Which protection technique is being used?",
+      "options": [
+        "Snapshot",
+        "Secure erase",
+        "Certificate pinning",
+        "Data masking"
+      ],
+      "answer": 0,
+      "slide": 7,
+      "explanation": "The Advanced Data Protection slide discusses VM snapshots and Hyper-V checkpoints.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 8,
+      "domain": 2,
+      "prompt": "A previously unknown vulnerability becomes publicly known before a vendor has a fix. Which term applies?",
+      "options": [
+        "Zero-day vulnerability",
+        "Known patched vulnerability",
+        "Expired certificate",
+        "Misconfigured backup schedule"
+      ],
+      "answer": 0,
+      "slide": 5,
+      "explanation": "The Zero-Day Vulnerabilities slide describes previously unknown flaws and the lack of lead time to fix them.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 8,
+      "domain": 2,
+      "prompt": "An internet-facing service is deployed with its default security settings unchanged. Which weakness is most directly implicated?",
+      "options": [
+        "Misconfiguration",
+        "Data sovereignty",
+        "Cryptographic key rotation",
+        "Risk transference"
+      ],
+      "answer": 0,
+      "slide": 6,
+      "explanation": "The Misconfiguration Vulnerabilities slide identifies default configurations as a common weakness.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 8,
+      "domain": 2,
+      "prompt": "A program checks a file's permissions, but the file changes before the program uses it. Which vulnerability class is implicated?",
+      "options": [
+        "Time-of-check to time-of-use race condition",
+        "Certificate expiration",
+        "Data deduplication",
+        "Key escrow"
+      ],
+      "answer": 0,
+      "slide": 12,
+      "explanation": "The Application Vulnerabilities slide lists race conditions and time-of-check to time-of-use (TOCTOU).",
+      "style": "scenario"
+    },
+    {
+      "lesson": 9,
+      "domain": 4,
+      "prompt": "A team wants a standard hardened configuration for its servers and switches. Which reference is relevant?",
+      "options": [
+        "CIS secure baseline guidance",
+        "Email marketing template",
+        "Risk acceptance register",
+        "Incident press release"
+      ],
+      "answer": 0,
+      "slide": 3,
+      "explanation": "The Benchmarks and Secure Configuration Guides slide identifies secure baselines and CIS.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 9,
+      "domain": 4,
+      "prompt": "A wireless upgrade replaces older personal-mode authentication with SAE. Which wireless standard is associated with SAE?",
+      "options": [
+        "WPA3",
+        "WEP",
+        "WPS",
+        "Open authentication"
+      ],
+      "answer": 0,
+      "slide": 8,
+      "explanation": "The Wireless Encryption slide associates WPA3 with Simultaneous Authentication of Equals (SAE).",
+      "style": "scenario"
+    },
+    {
+      "lesson": 10,
+      "domain": 4,
+      "prompt": "An organization needs endpoint telemetry and response capabilities for investigating threats. Which control best matches?",
+      "options": [
+        "Endpoint detection and response",
+        "Data sovereignty policy",
+        "Static routing table",
+        "Certificate enrollment"
+      ],
+      "answer": 0,
+      "slide": 5,
+      "explanation": "The Advanced Endpoint Protection slide identifies EDR among endpoint protection technologies.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 10,
+      "domain": 4,
+      "prompt": "An industrial controller should send telemetry outward without accepting inbound traffic. Which specialized control fits?",
+      "options": [
+        "Unidirectional gateway",
+        "Bidirectional VPN",
+        "Unrestricted switch trunk",
+        "Open wireless access point"
+      ],
+      "answer": 0,
+      "slide": 8,
+      "explanation": "The Hardening Specialized Devices slide describes data diodes as limiting data flow to one direction.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 11,
+      "domain": 4,
+      "prompt": "A security administrator disables SSL and TLS 1.0/1.1 on a public service. What minimum TLS version does the course recommend?",
+      "options": [
+        "TLS 1.2",
+        "TLS 1.0",
+        "SSL 3.0",
+        "SSL 2.0"
+      ],
+      "answer": 0,
+      "slide": 4,
+      "explanation": "The Transport Layer Security slide says to use TLS 1.2 or newer.",
+      "style": "scenario"
+    },
+    {
+      "lesson": 11,
+      "domain": 4,
+      "prompt": "A recipient verifies an email's cryptographic signature using a DNS-published record from the sender's domain. Which email control is being used?",
+      "options": [
+        "DKIM",
+        "SPF",
+        "NAT",
+        "RADIUS"
+      ],
+      "answer": 0,
+      "slide": 11,
+      "explanation": "The Email Security slide explains that DKIM signs messages and receivers verify using the sender's DNS record.",
+      "style": "scenario"
     }
   ]
 }
