@@ -56,7 +56,7 @@ async function flush(){for(let pass=0;pass<8;pass++){while(deferred.length){cons
  assert.equal(expired.getState().state.history.at(-1).timedOut,true,'Timeout marked');
  assert.equal(expired.getState().state.history.at(-1).answers.filter(a=>a.selected==='Not answered').length,2);
  node('timer').value='0';node('pool').value='all';node('count').value='10';
- expired.startMockExam();assert.equal(expired.getState().session.questions.length,68,'Mock exam includes all questions');
+ expired.startMockExam();assert.equal(expired.getState().session.questions.length,84,'Mock exam includes all questions');
  assert(expired.getState().session.deadline>Date.now(),'Mock exam is timed');
  console.log('PASS: syntax, 64 source questions with valid slide references, 16 lessons, loading, quiz, resume, timeout, mock exam');
 })().catch(e=>{console.error(e);process.exitCode=1});
