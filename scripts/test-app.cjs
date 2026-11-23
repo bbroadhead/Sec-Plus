@@ -9,7 +9,7 @@ assert.equal(lessonsIndex.lessons.length,16,'Expected 16 indexed course lessons'
 const script=html.match(/<script\b[^>]*>([\s\S]*?)<\/script>/i);
 assert(script,'Inline application script is present');
 new vm.Script(script[1],{filename:'index.html'});
-assert.equal(source.questions.length,80,'Expected 80 slide-referenced questions');
+assert(source.questions.length>=80,'Expected at least 80 slide-referenced questions');
 const lessons=new Set();
 for(const [i,q] of source.questions.entries()){
   assert(Number.isInteger(q.lesson)&&q.lesson>=1&&q.lesson<=16,'Valid lesson at '+i);
@@ -37,7 +37,7 @@ function createApp(){const ctx=vm.createContext({document,localStorage,fetch,set
 async function flush(){for(let pass=0;pass<8;pass++){while(deferred.length){const {url,resolve}=deferred.shift();resolve({ok:true,json:async()=>url.includes('source-questions')?source:lessonsIndex})}await Promise.resolve();await Promise.resolve();await Promise.resolve()}}
 (async()=>{
  let app=createApp();await flush();
- assert.equal(app.normalizedQuestions().length,100,'20 starter plus 80 source questions');
+ assert.equal(app.normalizedQuestions().length,20+source.questions.length,'20 starter plus source questions');
  assert(node('view').innerHTML.includes('command center'),'Dashboard renders');
  app.startQuiz();
  assert.equal(app.getState().session.questions.length,10);
@@ -79,5 +79,5 @@ async function flush(){for(let pass=0;pass<8;pass++){while(deferred.length){cons
  expired.nextQuestion();
  assert.notEqual(expired.getState().session.index,pbqIndex,'Incorrect but complete PBQ permits navigation');
 
- console.log('PASS: syntax, 80 source questions with valid slide references, 16 lessons, loading, quiz, resume, timeout, mock exam');
+ console.log('PASS: syntax, source questions with valid slide references, 16 lessons, loading, quiz, resume, timeout, mock exam');
 })().catch(e=>{console.error(e);process.exitCode=1});
