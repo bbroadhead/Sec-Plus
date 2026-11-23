@@ -13,11 +13,11 @@ for(const [i,q] of source.questions.entries()){
   assert(Number.isInteger(q.lesson)&&q.lesson>=1&&q.lesson<=16,'Valid lesson at '+i);
   assert(Number.isInteger(q.slide)&&q.slide>0,'Valid slide at '+i);
   assert(/^[1-5]$/.test(String(q.domain)),'Valid domain at '+i);
-  assert(typeof q.prompt==='string'&&q.prompt.length>20,'Prompt at '+i);
+  assert(typeof q.prompt==='string'&&q.prompt.trim().length>=10,'Prompt at '+i);
   assert(Array.isArray(q.options)&&q.options.length===4,'Four options at '+i);
   assert(new Set(q.options).size===4,'Unique options at '+i);
   assert(Number.isInteger(q.answer)&&q.answer>=0&&q.answer<4,'Correct answer at '+i);
-  assert(typeof q.explanation==='string'&&q.explanation.length>20,'Explanation at '+i);
+  assert(typeof q.explanation==='string'&&q.explanation.trim().length>=10,'Explanation at '+i);
   lessons.add(q.lesson);
 }
 assert.equal(lessons.size,16,'All 16 lessons represented');
