@@ -48,8 +48,8 @@ const assert=require('node:assert/strict');
    assert.equal(await page.locator('.sub').count()>=2,true,'Quiz history contains both sessions');
    // Mock exam should include every loaded question and have an active timer.
    await page.getByRole('button',{name:'Practice Quiz',exact:true}).click();
-   await page.getByRole('button',{name:/Start mock exam/}).click();
-   await page.getByText('Question 1 of 100').waitFor();
+   await page.getByRole('button',{name:/Start 90-question exam simulation/}).click();
+   await page.getByText('Question 1 of 90').waitFor();
    await page.locator('#quiz-clock').waitFor();
    assert.equal(errors.length,0,'No uncaught page errors: '+errors.join('; '));
    const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>window.innerWidth+2);
