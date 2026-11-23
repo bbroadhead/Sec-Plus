@@ -4,6 +4,8 @@ const fs=require('node:fs');
 const vm=require('node:vm');
 const html=fs.readFileSync('index.html','utf8');
 const source=JSON.parse(fs.readFileSync('data/source-questions.json','utf8'));
+const lessonsIndex=JSON.parse(fs.readFileSync('data/lessons.json','utf8'));
+assert.equal(lessonsIndex.lessons.length,16,'Expected 16 indexed course lessons');
 const script=html.match(/<script\b[^>]*>([\s\S]*?)<\/script>/i);
 assert(script,'Inline application script is present');
 new vm.Script(script[1],{filename:'index.html'});
@@ -12,6 +14,8 @@ const lessons=new Set();
 for(const [i,q] of source.questions.entries()){
   assert(Number.isInteger(q.lesson)&&q.lesson>=1&&q.lesson<=16,'Valid lesson at '+i);
   assert(Number.isInteger(q.slide)&&q.slide>0,'Valid slide at '+i);
+  const indexed=lessonsIndex.lessons.find(l=>l.lesson===q.lesson);
+  assert(indexed&&indexed.slides.some(sl=>sl.number===q.slide),'Source slide exists for question '+i);
   assert(/^[1-5]$/.test(String(q.domain)),'Valid domain at '+i);
   assert(typeof q.prompt==='string'&&q.prompt.trim().length>=10,'Prompt at '+i);
   assert(Array.isArray(q.options)&&q.options.length===4,'Four options at '+i);
@@ -30,7 +34,7 @@ const deferred=[];
 const fetch=(url)=>new Promise(resolve=>deferred.push({url,resolve}));
 const intervals=[];
 function createApp(){const ctx=vm.createContext({document,localStorage,fetch,setInterval:fn=>intervals.push(fn),alert:msg=>{throw Error(msg)},Date,Math,JSON,Blob,URL,console});vm.runInContext(script[1],ctx);return vm.runInContext('({startQuiz,startMockExam,answer,nextQuestion,render,finishQuiz,quiz,normalizedQuestions,getState:()=>({session,state,tab})})',ctx)}
-async function flush(){for(let pass=0;pass<8;pass++){while(deferred.length){const {url,resolve}=deferred.shift();resolve({ok:true,json:async()=>url.includes('source-questions')?source:{lessons:[]}})}await Promise.resolve();await Promise.resolve();await Promise.resolve()}}
+async function flush(){for(let pass=0;pass<8;pass++){while(deferred.length){const {url,resolve}=deferred.shift();resolve({ok:true,json:async()=>url.includes('source-questions')?source:lessonsIndex})}await Promise.resolve();await Promise.resolve();await Promise.resolve()}}
 (async()=>{
  let app=createApp();await flush();
  assert.equal(app.normalizedQuestions().length,68,'20 starter plus 48 source questions');
@@ -54,5 +58,5 @@ async function flush(){for(let pass=0;pass<8;pass++){while(deferred.length){cons
  node('timer').value='0';node('pool').value='all';node('count').value='10';
  expired.startMockExam();assert.equal(expired.getState().session.questions.length,68,'Mock exam includes all questions');
  assert(expired.getState().session.deadline>Date.now(),'Mock exam is timed');
- console.log('PASS: syntax, 48 source questions, 16 lessons, loading, quiz, resume, timeout, mock exam');
+ console.log('PASS: syntax, 48 source questions with valid slide references, 16 lessons, loading, quiz, resume, timeout, mock exam');
 })().catch(e=>{console.error(e);process.exitCode=1});
