@@ -689,6 +689,230 @@
       "answer": 0,
       "explanation": "The Privacy Data slide describes the GDPR right to request deletion of personal data under certain circumstances.",
       "style": "scenario"
+    },
+    {
+      "lesson": 1,
+      "domain": 1,
+      "prompt": "Which security-control category relies on a person to implement it?",
+      "options": [
+        "Operational",
+        "Technical",
+        "Physical",
+        "Cryptographic"
+      ],
+      "answer": 0,
+      "slide": 11,
+      "explanation": "Lesson 1, slide 11 (Security Control Categories​): Managerial​; Give oversight of system​; Operational​."
+    },
+    {
+      "lesson": 2,
+      "domain": 2,
+      "prompt": "An attacker demands payment to avoid releasing stolen information. Which motivation is represented?",
+      "options": [
+        "Financial extortion",
+        "Accidental error",
+        "Availability testing",
+        "Hardware maintenance"
+      ],
+      "answer": 0,
+      "slide": 6,
+      "explanation": "Lesson 2, slide 6 (Motivations of Threat Actors): Intent/motivation​; Maliciously targeted versus opportunistic​; Accidental/unintentional​."
+    },
+    {
+      "lesson": 3,
+      "domain": 1,
+      "prompt": "Why is symmetric encryption commonly used for large volumes of data?",
+      "options": [
+        "It needs no key",
+        "It is fast for bulk encryption",
+        "It prevents all tampering by itself",
+        "It uses a public key for every operation"
+      ],
+      "answer": 1,
+      "slide": 5,
+      "explanation": "Lesson 3, slide 5 (Symmetric Encryption): Encryption uses a reversible process (algorithm) based on a ​key that is only known by authorized persons; Substitution​ and transposition​; Process should be too complex to unravel without the key​."
+    },
+    {
+      "lesson": 4,
+      "domain": 4,
+      "prompt": "What protects a password manager's stored credential vault?",
+      "options": [
+        "A master password",
+        "A public DNS record",
+        "A switch port",
+        "A subnet mask"
+      ],
+      "answer": 0,
+      "slide": 6,
+      "explanation": "Lesson 4, slide 6 (Password Managers): Vault and master password; Built-in OS/browser password managers; Third-party cloud/plug-in."
+    },
+    {
+      "lesson": 5,
+      "domain": 3,
+      "prompt": "Why do campus networks limit the size of broadcast domains?",
+      "options": [
+        "To support segmentation",
+        "To remove all routers",
+        "To eliminate cabling",
+        "To prevent use of IP addresses"
+      ],
+      "answer": 0,
+      "slide": 6,
+      "explanation": "Lesson 5, slide 6 (Switching Infrastructure Considerations): Topology of nodes and links; Physical versus logical; On-premises networks."
+    },
+    {
+      "lesson": 6,
+      "domain": 3,
+      "prompt": "What describes the division of cloud security duties between customer and provider?",
+      "options": [
+        "Responsibility matrix",
+        "Firewall rule list",
+        "Asset serial register",
+        "Password history"
+      ],
+      "answer": 0,
+      "slide": 6,
+      "explanation": "Lesson 6, slide 6 (Responsibility Matrix): Describes the balance of responsibility between a customer and a cloud service provider; Responsibility model."
+    },
+    {
+      "lesson": 7,
+      "domain": 3,
+      "prompt": "Which system is specifically named for tracking configuration items and assets?",
+      "options": [
+        "Configuration Management Database (CMDB)",
+        "Content delivery network",
+        "Network time protocol",
+        "Packet sniffer"
+      ],
+      "answer": 0,
+      "slide": 4,
+      "explanation": "Lesson 7, slide 4 (Asset Tracking): Asset Tracking and Monitoring; Manual Inventory; Network Scanning."
+    },
+    {
+      "lesson": 8,
+      "domain": 2,
+      "prompt": "Which practice is highlighted as a common source of misconfiguration vulnerabilities?",
+      "options": [
+        "Leaving default configurations in place",
+        "Using approved change control",
+        "Reviewing cloud settings",
+        "Removing unused services"
+      ],
+      "answer": 0,
+      "slide": 6,
+      "explanation": "Lesson 8, slide 6 (Misconfiguration Vulnerabilities): Common cause of security vulnerabilities; Default configurations; Hardware/devices."
+    },
+    {
+      "lesson": 9,
+      "domain": 4,
+      "prompt": "Which organization publishes security configuration benchmarks mentioned in the lesson?",
+      "options": [
+        "Center for Internet Security (CIS)",
+        "Internet Assigned Numbers Authority",
+        "World Trade Organization",
+        "National Weather Service"
+      ],
+      "answer": 0,
+      "slide": 3,
+      "explanation": "Lesson 9, slide 3 (Benchmarks and Secure Configuration Guides (1 of 2)): Secure baseline; Collection of standard configurations and settings for operating systems, network devices, software, cloud instances, patching and updates, access controls, logging, monitoring, password policies, encryption, endpoint protection, and many others; Center for Internet Security (CIS)."
+    },
+    {
+      "lesson": 10,
+      "domain": 4,
+      "prompt": "Which endpoint technology focuses on detecting and responding to endpoint activity?",
+      "options": [
+        "EDR",
+        "DNS",
+        "NAT",
+        "RAID"
+      ],
+      "answer": 0,
+      "slide": 5,
+      "explanation": "Lesson 10, slide 5 (Advanced Endpoint Protection): Endpoint Detection and Response (EDR); Extended Detection and Response (XDR); Host-Based Intrusion Detection/Prevention (HIDS/HIPS)."
+    },
+    {
+      "lesson": 11,
+      "domain": 3,
+      "prompt": "Which TLS versions does the lesson recommend using?",
+      "options": [
+        "TLS 1.2 or newer",
+        "SSL 2.0 only",
+        "TLS 1.0 only",
+        "Any SSL version"
+      ],
+      "answer": 0,
+      "slide": 4,
+      "explanation": "Lesson 11, slide 4 (Transport Layer Security): Most Common Uses; Secure HTTP communications; Virtual Private Networking (VPN)."
+    },
+    {
+      "lesson": 12,
+      "domain": 4,
+      "prompt": "Why might an incident-response team use out-of-band communication?",
+      "options": [
+        "To avoid alerting an intruder",
+        "To skip stakeholder notification",
+        "To disable evidence collection",
+        "To eliminate incident triage"
+      ],
+      "answer": 0,
+      "slide": 6,
+      "explanation": "Lesson 12, slide 6 (Preparation (2)): Communication plan; Prevent inadvertent disclosure; Call list identifying trusted parties."
+    },
+    {
+      "lesson": 13,
+      "domain": 2,
+      "prompt": "Which technique is associated with fileless malware in the lesson?",
+      "options": [
+        "Using built-in scripting tools",
+        "Requiring an executable file on disk",
+        "Only infecting optical media",
+        "Disabling all memory execution"
+      ],
+      "answer": 0,
+      "slide": 6,
+      "explanation": "Lesson 13, slide 6 (Computer Worms and Fileless Malware​): Early computer worms​; Propagate in memory/over network links​; Consume bandwidth and crash process​."
+    },
+    {
+      "lesson": 14,
+      "domain": 5,
+      "prompt": "What is the main purpose of a security procedure?",
+      "options": [
+        "Provide repeatable step-by-step instructions",
+        "Set a vague organizational vision",
+        "Replace all technical controls",
+        "Define network packet formats"
+      ],
+      "answer": 0,
+      "slide": 5,
+      "explanation": "Lesson 14, slide 5 (Procedures): Define step-by-step instructions and checklists; Ensure a task is completed in a compliant and repeatable way; Playbooks."
+    },
+    {
+      "lesson": 15,
+      "domain": 5,
+      "prompt": "Which set contains the four risk responses named in the lesson?",
+      "options": [
+        "Avoid, accept, mitigate, transfer",
+        "Encrypt, hash, sign, rotate",
+        "Detect, deny, route, log",
+        "Patch, scan, reboot, archive"
+      ],
+      "answer": 0,
+      "slide": 6,
+      "explanation": "Lesson 15, slide 6 (Risk Management Strategies (1 of 2)): Risk management strategies; Describe the proactive and systematic approaches used to identify, assess, prioritize, and mitigate risks to minimize their negative impacts; Risk responses."
+    },
+    {
+      "lesson": 16,
+      "domain": 5,
+      "prompt": "What is data sovereignty concerned with?",
+      "options": [
+        "Jurisdictional restrictions on where data is stored and processed",
+        "Password expiration timing",
+        "Endpoint malware signatures",
+        "Network port speed"
+      ],
+      "answer": 0,
+      "slide": 5,
+      "explanation": "Lesson 16, slide 5 (Data Sovereignty and Geographical Considerations): Data Sovereignty; A legal jurisdiction restricting processing and storage of data on systems that do not physically reside within that jurisdiction; Geographical Considerations."
     }
   ]
 }
