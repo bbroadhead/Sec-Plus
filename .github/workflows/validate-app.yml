@@ -4,12 +4,14 @@ on:
     paths:
       - 'index.html'
       - 'data/source-questions.json'
+      - 'data/lessons.json'
       - 'scripts/test-app.cjs'
       - '.github/workflows/validate-app.yml'
   pull_request:
     paths:
       - 'index.html'
       - 'data/source-questions.json'
+      - 'data/lessons.json'
       - 'scripts/test-app.cjs'
       - '.github/workflows/validate-app.yml'
   workflow_dispatch:
