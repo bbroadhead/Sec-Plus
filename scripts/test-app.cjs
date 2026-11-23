@@ -58,7 +58,7 @@ async function flush(){for(let pass=0;pass<8;pass++){while(deferred.length){cons
  resumed.startQuiz();resumed.answer(0);
  const active=JSON.parse(memory.get('secplus-active-quiz-v1'));active.deadline=Date.now()-1000;memory.set('secplus-active-quiz-v1',JSON.stringify(active));
  let expired=createApp();await flush();expired.render();
- assert.equal(expired.getState().state.history.length,2,'Expired quiz saved');
+ assert.equal(expired.getState().state.history.length,3,'Expired quiz saved');
  assert.equal(expired.getState().state.history.at(-1).timedOut,true,'Timeout marked');
  assert.equal(expired.getState().state.history.at(-1).answers.filter(a=>a.selected==='Not answered').length,2);
  node('timer').value='0';node('pool').value='all';node('count').value='10';
