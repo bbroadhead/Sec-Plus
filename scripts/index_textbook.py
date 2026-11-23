@@ -62,6 +62,45 @@ def extract_chapters(doc):
             seen.add(number)
             found.append({"level": 1, "title": f"Lesson {number}: {title}"[:180], "page": page_no})
             break
+    if not found:
+        # Official Student Guide: lesson/topic number is a large standalone
+        # heading, followed by one or more 20pt title lines.
+        lesson_seen = set()
+        topic_seen = set()
+        for page_no, page in enumerate(doc, 1):
+            lines = heading_candidates(page)
+            if not lines:
+                continue
+            for index, (label, size, y) in enumerate(lines):
+                match_lesson = re.fullmatch(r"Lesson\\s+(\\d{1,2})", label, re.I)
+                match_topic = re.fullmatch(r"Topic\\s+(\\d{1,2})([A-Z])", label, re.I)
+                if size < 25 or not (match_lesson or match_topic):
+                    continue
+                if match_lesson:
+                    number = int(match_lesson.group(1))
+                    key = number
+                    if key in lesson_seen or not 1 <= number <= 16:
+                        continue
+                    lesson_seen.add(key)
+                    level, prefix = 1, f"Lesson {number}: "
+                else:
+                    number = int(match_topic.group(1))
+                    key = f"{number}{match_topic.group(2).upper()}"
+                    if key in topic_seen or not 1 <= number <= 16:
+                        continue
+                    topic_seen.add(key)
+                    level, prefix = 2, f"Topic {key}: "
+                title_lines = []
+                for next_label, next_size, next_y in lines[index+1:index+5]:
+                    if next_y <= y or next_size < 16 or next_size > 26:
+                        break
+                    if next_label.upper().startswith("LICENSED FOR USE"):
+                        break
+                    title_lines.append(next_label)
+                title = normalize(" ".join(title_lines))
+                if title:
+                    found.append({"level": level, "title": (prefix + title)[:180], "page": page_no})
+        found.sort(key=lambda item: (item["page"], item["level"]))
     return found, "page-headings" if found else "unavailable"
 
 def main():
