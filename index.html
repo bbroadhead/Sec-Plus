@@ -109,7 +109,27 @@ function questionStats(){let stats=new Map();(state.history||[]).forEach(r=>(r.a
 function questionInsights(limit=8){let items=questionStats().filter(q=>q.total>=2||!q.lastCorrect).sort((a,b)=>Number(a.lastCorrect)-Number(b.lastCorrect)||a.correct/a.total-b.correct/b.total||b.total-a.total).slice(0,limit);return items.length?items.map(q=>'<div class="sub"><div><strong>'+esc(q.question)+'</strong><p class="muted small">'+q.correct+'/'+q.total+' correct ('+pct(q.correct,q.total)+'%) · '+(q.lastCorrect?'Last attempt correct':'Last attempt missed')+'</p>'+(q.lesson?'<p class="small">'+sourceLink(q)+'</p>':'')+'</div></div>').join(''):'<p class="muted">No missed or repeatedly attempted questions yet. Complete a quiz to see targeted review suggestions.</p>'}
 function readiness(){let recent=(state.history||[]).slice(-5),counts={};recent.forEach(r=>(r.answers||[]).forEach(a=>{let d=counts[a.domain]||(counts[a.domain]={correct:0,total:0});d.total++;if(a.correct)d.correct++}));let covered=domains.filter(d=>(counts[d.id]?.total||0)>=5),total=Object.values(counts).reduce((n,x)=>n+x.total,0);return {counts,covered:covered.length,total}}
 function readinessPanel(){let r=readiness();return '<div class="card"><h2>Practice coverage & readiness indicators</h2><p class="muted small">Based on your last five saved quizzes. These are practice indicators, not a prediction of passing Security+.</p><p><strong>'+r.covered+' of '+domains.length+' domains</strong> have at least five recent answers · '+r.total+' recent answers analyzed</p>'+domains.map(d=>{let x=r.counts[d.id]||{correct:0,total:0};return '<div class="flex between"><strong>'+esc(d.name)+'</strong><span class="muted small">'+x.correct+'/'+x.total+' correct'+(x.total<5?' · More practice needed':'')+'</span></div><div class="progress"><div class="fill" style="width:'+pct(x.correct,x.total)+'%"></div></div>'}).join('')+'</div>'}
-function sourceLink(q){if(!q.lesson)return '';let path='materials/sy0-701_Lesson '+String(q.lesson).padStart(2,'0')+'.pptx';return '<a href="'+encodeURI(path)+'" target="_blank" rel="noopener">Review Lesson '+q.lesson+', slide '+q.slide+' ↗</a>'}
+function textbookLink(q){
+  if(!q.lesson||!lessonIndex?.textbook?.chapters?.length)return '';
+  const chapters=lessonIndex.textbook.chapters;
+  const lesson=chapters.find(c=>c.level===1&&c.title.startsWith('Lesson '+q.lesson+':'));
+  if(!lesson)return '';
+  let target=lesson;
+  const slides=(lessonIndex.lessons||[]).find(l=>Number(l.lesson)===Number(q.lesson))?.slides||[];
+  if(Number.isInteger(Number(q.slide))&&Number(q.slide)>0){
+    let topicCode='';
+    for(const slide of slides){
+      if(Number(slide.number)>Number(q.slide))break;
+      const match=(String(slide.title||'')+' '+String(slide.preview||'')).match(/\\bTopic\\s+(\\d{1,2}[A-Z])\\b/i);
+      if(match)topicCode=match[1].toUpperCase();
+    }
+    const topic=chapters.find(c=>c.level===2&&c.title.startsWith('Topic '+topicCode+':'));
+    if(topicCode&&topic)target=topic;
+  }
+  const href=encodeURI(lessonIndex.textbook.path)+'#page='+target.page;
+  return '<a href="'+href+'" target="_blank" rel="noopener">Read '+esc(target.title)+' (PDF p. '+target.page+') ↗</a>';
+}
+function sourceLink(q){if(!q.lesson)return '';let path='materials/sy0-701_Lesson '+String(q.lesson).padStart(2,'0')+'.pptx';return '<a href="'+encodeURI(path)+'" target="_blank" rel="noopener">Review Lesson '+q.lesson+', slide '+q.slide+' ↗</a>'+(textbookLink(q)?' · '+textbookLink(q):'')}
 
 const KEY='secplus-hub-v1',SESSION_KEY='secplus-active-quiz-v1';let state;try{state=JSON.parse(localStorage.getItem(KEY))||{completed:{},flagged:{},history:[]}}catch{state={completed:{},flagged:{},history:[]}};state.history=Array.isArray(state.history)?state.history:[];state.completed=state.completed||{};state.flagged=state.flagged||{};let tab='dashboard',session=null;try{let saved=JSON.parse(localStorage.getItem(SESSION_KEY));if(saved&&Array.isArray(saved.questions)&&saved.questions.length&&Array.isArray(saved.answers)&&Number.isInteger(saved.index)&&saved.index>=0&&saved.index<saved.questions.length&&saved.questions.every(q=>Array.isArray(q.options)&&q.options.some(o=>o.correct))){session=saved;tab='quiz'}else localStorage.removeItem(SESSION_KEY)}catch{try{localStorage.removeItem(SESSION_KEY)}catch{}}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch{alert('Local storage unavailable. Export your results before leaving.')}}function saveSession(){try{if(session)localStorage.setItem(SESSION_KEY,JSON.stringify(session));else localStorage.removeItem(SESSION_KEY)}catch{}}function el(id){return document.getElementById(id)}function pct(a,b){return b?Math.round(a/b*100):0}function allSub(){return domains.flatMap(d=>d.topics.flatMap(t=>t[1].map(s=>d.id+'|'+t[0]+'|'+s)))}function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}function shuffle(a){let b=[...a];for(let i=b.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]]}return b}
